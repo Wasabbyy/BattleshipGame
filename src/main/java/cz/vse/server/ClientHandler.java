@@ -23,6 +23,7 @@ class ClientHandler implements Runnable {
             out = new PrintWriter(clientSocket.getOutputStream(), true);
 
             out.println("Welcome to Battleships Server! Please log in using 'LOGIN: username'");
+            out.flush();
 
             String message;
             while ((message = in.readLine()) != null) {
@@ -50,9 +51,10 @@ class ClientHandler implements Runnable {
 
             // ⚓ Fáze umisťování lodí
             out.println("⚓ Place your ships using 'PLACE x,y' (5 ships total)");
+            out.flush();
 
             int shipsPlaced = 0;
-            while (shipsPlaced < 5) {
+            while (shipsPlaced < 2) {
                 message = in.readLine();
                 if (message.startsWith("PLACE ")) {
                     String[] parts = message.substring(6).trim().split(",");
@@ -65,6 +67,7 @@ class ClientHandler implements Runnable {
                                 out.println("✅ Ship placed at " + x + "," + y + " (" + shipsPlaced + "/5)");
                             } else {
                                 out.println("⚠ Invalid position or already occupied!");
+                                out.flush();
                             }
                         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
                             out.println("❌ Invalid coordinates! Use numbers between 0-9.");
@@ -74,10 +77,16 @@ class ClientHandler implements Runnable {
                     }
                 }
             }
+
+            // ✅ Po umístění lodí čekáme na druhého hráče
             out.println("🎮 All ships placed! Waiting for opponent...");
+            while (!game.isSetupComplete()) {
+                Thread.sleep(500);
+            }
 
             // ✅ Hra začíná
             out.println("🎮 Game started! Your opponent is " + game.getOpponent(username));
+            out.flush();
 
             while ((message = in.readLine()) != null) {
                 if ("EXIT".equalsIgnoreCase(message)) {
