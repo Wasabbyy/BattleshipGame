@@ -30,13 +30,13 @@ class ClientHandler implements Runnable {
                         out.println("Username already in use. Try another one.");
                     } else {
                         Server.activeUsers.add(username);
+                        Server.registerPlayerOutput(username, out); // ✅ Uložíme PrintWriter hráče
                         GameManager.addPlayerToQueue(username);
                         out.println("Welcome, " + username + "! Waiting for an opponent...");
                         break;
                     }
-                } else {
-                    out.println("Invalid command. Use 'LOGIN: username'");
                 }
+
             }
 
             BattleshipGame game;
@@ -48,7 +48,7 @@ class ClientHandler implements Runnable {
             out.flush();
 
             int shipsPlaced = 0;
-            while (shipsPlaced < 5) { // Oprava: 5 lodí místo 2
+            while (shipsPlaced < 5) {
                 message = in.readLine();
                 if (message.startsWith("PLACE ")) {
                     String[] parts = message.substring(6).trim().split(",");
@@ -79,12 +79,51 @@ class ClientHandler implements Runnable {
 
             out.println("🎮 Game started! Your opponent is " + game.getOpponent(username));
             out.flush();
+
+            // ✅ **Přidání herní smyčky pro střelbu**
+            while (true) {
+                message = in.readLine();
+                if (message == null) break;
+
+                if ("EXIT".equalsIgnoreCase(message)) {
+                    out.println("Goodbye, " + username + "!");
+                    break;
+                }
+
+                if (message.startsWith("FIRE ")) {
+                    String move = message.substring(5).trim();
+                    game.processMove(username, move, out); // 🔥 Volání processMove()!
+                } else {
+                    out.println("❌ Invalid command! Use 'FIRE x,y' to shoot.");
+                }
+            }
+
         } catch (IOException | InterruptedException e) {
-            GameManager.removePlayer(username);
-            BattleshipGame game = GameManager.getGame(username);
-            if (game != null) {
-                game.forfeit(username);
+            System.out.println("❌ Connection lost with client.");
+            if (username != null) {
+                Server.activeUsers.remove(username);
+                GameManager.removePlayer(username);
+                BattleshipGame game = GameManager.getGame(username);
+                if (game != null) {
+                    game.forfeit(username); // ✅ Označí hru jako ukončenou
+
+                    // 🔹 Získání soupeře
+                    String opponent = game.getOpponent(username);
+                    PrintWriter opponentOut = Server.getPlayerOutput(opponent);
+
+                    if (opponentOut != null) {
+                        opponentOut.println("🏆 Your opponent forfeited! You win!");
+                    }
+                }
+            }
+        } finally {
+            Server.removePlayerOutput(username); // ✅ Odebrání hráče při odchodu
+            try {
+                clientSocket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
+
     }
 }

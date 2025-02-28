@@ -11,18 +11,17 @@ public class BattleshipGame {
     private char[][] grid1 = new char[10][10];
     private char[][] grid2 = new char[10][10];
     private String currentTurn;
-    private int ships1 = 5; // Opraveno z 2 na 5
+    private int ships1 = 5;
     private int ships2 = 5;
     private Set<String> placedShips1 = new HashSet<>();
     private Set<String> placedShips2 = new HashSet<>();
-    private boolean setupComplete1 = false;
-    private boolean setupComplete2 = false;
-    private boolean gameFinished = false;
+    private GameState gameState; // Použití enumu místo boolean proměnných
 
     public BattleshipGame(String player1, String player2) {
         this.player1 = player1;
         this.player2 = player2;
         this.currentTurn = player1;
+        this.gameState = GameState.WAITING_FOR_PLAYERS;
         initializeGrid(grid1);
         initializeGrid(grid2);
     }
@@ -38,17 +37,18 @@ public class BattleshipGame {
     }
 
     public boolean placeShip(String player, int x, int y) {
-        if (gameFinished) return false;
+        if (gameState == GameState.FINISHED) return false;
+
         char[][] grid = player.equals(player1) ? grid1 : grid2;
         Set<String> placedShips = player.equals(player1) ? placedShips1 : placedShips2;
 
-        if (x < 0 || x >= 10 || y < 0 || y >= 10) return false; // Oprava: Validace souřadnic
-        if (grid[x][y] == '~' && placedShips.size() < 5) { // Oprava: 5 lodí místo 2
+        if (x < 0 || x >= 10 || y < 0 || y >= 10) return false;
+        if (grid[x][y] == '~' && placedShips.size() < 5) {
             grid[x][y] = 'S';
             placedShips.add(x + "," + y);
-            if (placedShips.size() == 5) {
-                if (player.equals(player1)) setupComplete1 = true;
-                else setupComplete2 = true;
+
+            if (placedShips1.size() == 5 && placedShips2.size() == 5) {
+                gameState = GameState.IN_PROGRESS;
             }
             return true;
         }
@@ -56,15 +56,17 @@ public class BattleshipGame {
     }
 
     public boolean isSetupComplete() {
-        return setupComplete1 && setupComplete2;
+        return gameState == GameState.IN_PROGRESS;
     }
 
     public void processMove(String player, String move, PrintWriter out) {
-        if (gameFinished) return;
+        if (gameState == GameState.FINISHED) return;
+
         if (!isSetupComplete()) {
             out.println("⏳ You must place all ships before starting the game!");
             return;
         }
+
         if (!player.equals(currentTurn)) {
             out.println("⏳ Not your turn!");
             return;
@@ -80,7 +82,6 @@ public class BattleshipGame {
             int x = Integer.parseInt(parts[0].trim());
             int y = Integer.parseInt(parts[1].trim());
 
-            // Oprava: Validace souřadnic
             if (x < 0 || x >= 10 || y < 0 || y >= 10) {
                 out.println("❌ Invalid coordinates! Use numbers between 0-9.");
                 return;
@@ -95,7 +96,6 @@ public class BattleshipGame {
 
                 out.println("🎯 Hit at " + x + "," + y + "!");
 
-                // Oprava: Kontrola výhry před změnou tahu
                 if (checkWin(out)) return;
 
             } else if (enemyGrid[x][y] == '~') {
@@ -114,19 +114,24 @@ public class BattleshipGame {
     private boolean checkWin(PrintWriter out) {
         if (ships1 == 0) {
             out.println("🏆 " + player2 + " won!");
-            gameFinished = true;
+            gameState = GameState.FINISHED;
             return true;
         } else if (ships2 == 0) {
             out.println("🏆 " + player1 + " won!");
-            gameFinished = true;
+            gameState = GameState.FINISHED;
             return true;
         }
         return false;
     }
 
     public void forfeit(String player) {
-        if (gameFinished) return;
+        if (gameState == GameState.FINISHED) return;
+
         String winner = getOpponent(player);
-        gameFinished = true;
+        gameState = GameState.FINISHED;
+
+        System.out.println("🏆 " + winner + " wins by default!");
     }
+
+
 }
