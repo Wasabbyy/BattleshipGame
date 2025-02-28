@@ -1,9 +1,6 @@
 package cz.vse.server;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 
 class ClientHandler implements Runnable {
@@ -35,7 +32,6 @@ class ClientHandler implements Runnable {
                         Server.activeUsers.add(username);
                         GameManager.addPlayerToQueue(username);
                         out.println("Welcome, " + username + "! Waiting for an opponent...");
-                        System.out.println("🔑 User logged in: " + username);
                         break;
                     }
                 } else {
@@ -43,18 +39,16 @@ class ClientHandler implements Runnable {
                 }
             }
 
-            // ✅ Získání hry před fází umisťování lodí
             BattleshipGame game;
             while ((game = GameManager.getGame(username)) == null) {
                 Thread.sleep(500);
             }
 
-            // ⚓ Fáze umisťování lodí
             out.println("⚓ Place your ships using 'PLACE x,y' (5 ships total)");
             out.flush();
 
             int shipsPlaced = 0;
-            while (shipsPlaced < 2) {
+            while (shipsPlaced < 5) { // Oprava: 5 lodí místo 2
                 message = in.readLine();
                 if (message.startsWith("PLACE ")) {
                     String[] parts = message.substring(6).trim().split(",");
@@ -69,7 +63,7 @@ class ClientHandler implements Runnable {
                                 out.println("⚠ Invalid position or already occupied!");
                                 out.flush();
                             }
-                        } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                        } catch (NumberFormatException e) {
                             out.println("❌ Invalid coordinates! Use numbers between 0-9.");
                         }
                     } else {
@@ -78,41 +72,18 @@ class ClientHandler implements Runnable {
                 }
             }
 
-            // ✅ Po umístění lodí čekáme na druhého hráče
             out.println("🎮 All ships placed! Waiting for opponent...");
             while (!game.isSetupComplete()) {
                 Thread.sleep(500);
             }
 
-            // ✅ Hra začíná
             out.println("🎮 Game started! Your opponent is " + game.getOpponent(username));
             out.flush();
-
-            while ((message = in.readLine()) != null) {
-                if ("EXIT".equalsIgnoreCase(message)) {
-                    out.println("Goodbye, " + username + "!");
-                    break;
-                }
-                System.out.println("📩 [" + username + "] Sent: " + message);
-                game.processMove(username, message, out);
-            }
         } catch (IOException | InterruptedException e) {
-            System.out.println("❌ Connection lost with client.");
-            if (username != null) {
-                Server.activeUsers.remove(username);
-                GameManager.removePlayer(username);
-                BattleshipGame game = GameManager.getGame(username);
-                if (game != null) {
-                    String opponent = game.getOpponent(username);
-                    System.out.println("🏆 " + opponent + " wins by default!");
-                    GameManager.removePlayer(opponent);
-                }
-            }
-        } finally {
-            try {
-                clientSocket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
+            GameManager.removePlayer(username);
+            BattleshipGame game = GameManager.getGame(username);
+            if (game != null) {
+                game.forfeit(username);
             }
         }
     }
