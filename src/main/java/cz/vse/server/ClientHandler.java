@@ -98,6 +98,7 @@ class ClientHandler implements Runnable {
                 if (message.startsWith("FIRE ")) {
                     String move = message.substring(5).trim();
                     game.processMove(username, move, out); // 🔥 Volání processMove()!
+                    System.out.println("zabiju se fr");
                 } else {
                     out.println("❌ Invalid command! Use 'FIRE x,y' to shoot.");
                 }

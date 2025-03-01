@@ -16,6 +16,7 @@ public class GameManager {
             activeGames.put(username, game);
             activeGames.put(opponent, game);
             System.out.println("🎮 Game started: " + username + " vs " + opponent);
+
         } else {
             waitingPlayers.add(username);
             System.out.println("⌛ " + username + " is waiting for an opponent...");

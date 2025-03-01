@@ -58,10 +58,7 @@ public class BattleshipGame {
     public boolean isSetupComplete() {
         return gameState == GameState.IN_PROGRESS;
     }
-
     public void processMove(String player, String move, PrintWriter out) {
-        if (gameState == GameState.FINISHED) return;
-
         if (!isSetupComplete()) {
             out.println("⏳ You must place all ships before starting the game!");
             return;
@@ -82,33 +79,32 @@ public class BattleshipGame {
             int x = Integer.parseInt(parts[0].trim());
             int y = Integer.parseInt(parts[1].trim());
 
-            if (x < 0 || x >= 10 || y < 0 || y >= 10) {
-                out.println("❌ Invalid coordinates! Use numbers between 0-9.");
-                return;
-            }
-
             char[][] enemyGrid = player.equals(player1) ? grid2 : grid1;
+            PrintWriter opponentOut = Server.getPlayerOutput(getOpponent(player));
 
             if (enemyGrid[x][y] == 'S') {
                 enemyGrid[x][y] = 'X';
-                if (player.equals(player1)) ships2--;
-                else ships1--;
-
-                out.println("🎯 Hit at " + x + "," + y + "!");
-
-                if (checkWin()) return;
-            } else if (enemyGrid[x][y] == '~') {
-                enemyGrid[x][y] = 'O';
-                out.println("💦 Miss at " + x + "," + y + "!");
+                out.println("HIT:" + x + "," + y);
+                if (opponentOut != null) opponentOut.println("HIT:" + x + "," + y);
             } else {
-                out.println("⚠ Already shot here!");
+                enemyGrid[x][y] = 'O';
+                out.println("MISS:" + x + "," + y);
+                if (opponentOut != null) opponentOut.println("MISS:" + x + "," + y);
             }
 
+            // ✅ Přepnutí tahu a poslání zpráv o tom, kdo hraje
             currentTurn = getOpponent(player);
+            System.out.println("🔄 Switching turn to: " + currentTurn);  // Debug výpis na serveru
+
+            if (opponentOut != null) opponentOut.println("Your turn");
+            out.println("Opponent's turn");
+
         } catch (NumberFormatException e) {
             out.println("❌ Invalid coordinates! Use numbers between 0-9.");
         }
     }
+
+
 
     private boolean checkWin() {
         if (ships1 == 0 || ships2 == 0) {
@@ -123,12 +119,13 @@ public class BattleshipGame {
                 winnerOut.println("🏆 You won!");
             }
             if (loserOut != null) {
-                loserOut.println("💀 You lost!");
+                loserOut.println("💀 You lost!"); // ✅ Přidáno
             }
             return true;
         }
         return false;
     }
+
 
     public void forfeit(String player) {
         if (gameState == GameState.FINISHED) return;
