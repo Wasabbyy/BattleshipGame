@@ -24,8 +24,14 @@ public class GameManager {
 
     public static synchronized void removePlayer(String username) {
         waitingPlayers.remove(username);
-        activeGames.remove(username);
+
+        BattleshipGame game = activeGames.remove(username);
+        if (game != null) {
+            String opponent = game.getOpponent(username);
+            activeGames.remove(opponent);
+        }
     }
+
 
     public static BattleshipGame getGame(String username) {
         return activeGames.get(username);

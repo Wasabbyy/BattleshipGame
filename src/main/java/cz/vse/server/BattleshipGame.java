@@ -15,7 +15,7 @@ public class BattleshipGame {
     private int ships2 = 5;
     private Set<String> placedShips1 = new HashSet<>();
     private Set<String> placedShips2 = new HashSet<>();
-    private GameState gameState; // Použití enumu místo boolean proměnných
+    private GameState gameState;
 
     public BattleshipGame(String player1, String player2) {
         this.player1 = player1;
@@ -96,8 +96,7 @@ public class BattleshipGame {
 
                 out.println("🎯 Hit at " + x + "," + y + "!");
 
-                if (checkWin(out)) return;
-
+                if (checkWin()) return;
             } else if (enemyGrid[x][y] == '~') {
                 enemyGrid[x][y] = 'O';
                 out.println("💦 Miss at " + x + "," + y + "!");
@@ -111,14 +110,21 @@ public class BattleshipGame {
         }
     }
 
-    private boolean checkWin(PrintWriter out) {
-        if (ships1 == 0) {
-            out.println("🏆 " + player2 + " won!");
+    private boolean checkWin() {
+        if (ships1 == 0 || ships2 == 0) {
+            String winner = (ships1 == 0) ? player2 : player1;
+            String loser = (ships1 == 0) ? player1 : player2;
             gameState = GameState.FINISHED;
-            return true;
-        } else if (ships2 == 0) {
-            out.println("🏆 " + player1 + " won!");
-            gameState = GameState.FINISHED;
+
+            PrintWriter winnerOut = Server.getPlayerOutput(winner);
+            PrintWriter loserOut = Server.getPlayerOutput(loser);
+
+            if (winnerOut != null) {
+                winnerOut.println("🏆 You won!");
+            }
+            if (loserOut != null) {
+                loserOut.println("💀 You lost!");
+            }
             return true;
         }
         return false;
@@ -131,7 +137,15 @@ public class BattleshipGame {
         gameState = GameState.FINISHED;
 
         System.out.println("🏆 " + winner + " wins by default!");
+
+        PrintWriter winnerOut = Server.getPlayerOutput(winner);
+        PrintWriter loserOut = Server.getPlayerOutput(player);
+
+        if (winnerOut != null) {
+            winnerOut.println("🏆 Your opponent forfeited! You win!");
+        }
+        if (loserOut != null) {
+            loserOut.println("💀 You forfeited the game!");
+        }
     }
-
-
 }

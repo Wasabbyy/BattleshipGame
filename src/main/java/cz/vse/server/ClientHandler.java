@@ -50,6 +50,11 @@ class ClientHandler implements Runnable {
             int shipsPlaced = 0;
             while (shipsPlaced < 5) {
                 message = in.readLine();
+                if (message == null) {
+                    System.out.println("❌ Player " + username + " disconnected during setup.");
+                    throw new IOException("Client disconnected.");
+                }
+
                 if (message.startsWith("PLACE ")) {
                     String[] parts = message.substring(6).trim().split(",");
                     if (parts.length == 2) {
@@ -98,25 +103,26 @@ class ClientHandler implements Runnable {
                 }
             }
 
-        } catch (IOException | InterruptedException e) {
-            System.out.println("❌ Connection lost with client.");
-            if (username != null) {
-                Server.activeUsers.remove(username);
+        }catch (IOException | InterruptedException e) {
+        System.out.println("❌ Connection lost with client: " + username);
+        if (username != null) {
+            Server.activeUsers.remove(username);
+            BattleshipGame game = GameManager.getGame(username);
+
+            if (game != null) {
+                String opponent = game.getOpponent(username);
+                game.forfeit(username); // ✅ Ukončí hru a oznámí výhru soupeři
                 GameManager.removePlayer(username);
-                BattleshipGame game = GameManager.getGame(username);
-                if (game != null) {
-                    game.forfeit(username); // ✅ Označí hru jako ukončenou
 
-                    // 🔹 Získání soupeře
-                    String opponent = game.getOpponent(username);
-                    PrintWriter opponentOut = Server.getPlayerOutput(opponent);
-
-                    if (opponentOut != null) {
-                        opponentOut.println("🏆 Your opponent forfeited! You win!");
-                    }
+                // ✅ Informuj soupeře, že vyhrál
+                PrintWriter opponentOut = Server.getPlayerOutput(opponent);
+                if (opponentOut != null) {
+                    opponentOut.println("🏆 Your opponent disconnected! You win by default.");
                 }
             }
-        } finally {
+        }
+
+    } finally {
             Server.removePlayerOutput(username); // ✅ Odebrání hráče při odchodu
             try {
                 clientSocket.close();
