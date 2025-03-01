@@ -1,9 +1,7 @@
 package cz.vse.server;
 
 import java.io.PrintWriter;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class BattleshipGame {
     private String player1;
@@ -16,6 +14,10 @@ public class BattleshipGame {
     private Set<String> placedShips1 = new HashSet<>();
     private Set<String> placedShips2 = new HashSet<>();
     private GameState gameState;
+    private List<Ship> fleet1 = new ArrayList<>();
+    private List<Ship> fleet2 = new ArrayList<>();
+    private Set<String> placedShipTypes1 = new HashSet<>();
+    private Set<String> placedShipTypes2 = new HashSet<>();
 
     public BattleshipGame(String player1, String player2) {
         this.player1 = player1;
@@ -36,79 +38,133 @@ public class BattleshipGame {
         return player.equals(player1) ? player2 : player1;
     }
 
-    public boolean placeShip(String player, String positions, PrintWriter out) {
-        char[][] grid = player.equals(player1) ? grid1 : grid2;
-        Set<String> placedShips = player.equals(player1) ? placedShips1 : placedShips2;
+    public boolean placeShip(String player, String shipType, String positions, PrintWriter out) {
+        // ✅ Odstraníme případné mezery a čísla v názvu
+        shipType = shipType.replaceAll("\\(\\d+\\)", "").trim();
 
+        char[][] grid = player.equals(player1) ? grid1 : grid2;
+        List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
+        Set<String> placedShipTypes = player.equals(player1) ? placedShipTypes1 : placedShipTypes2;
+
+        if (placedShipTypes.contains(shipType)) {
+            out.println("ERROR: You have already placed a " + shipType);
+            return false;
+        }
+
+        Set<String> shipCoords = new HashSet<>();
         for (String coord : positions.split(" ")) {
             String[] parts = coord.split(",");
             int x = Integer.parseInt(parts[0].trim());
             int y = Integer.parseInt(parts[1].trim());
+
             if (grid[x][y] == 'S') {
                 out.println("ERROR: Ship overlaps at: " + coord);
                 return false;
             }
+            shipCoords.add(coord);
         }
 
-        for (String coord : positions.split(" ")) {
+        Ship newShip = new Ship(shipCoords);
+        fleet.add(newShip);
+        placedShipTypes.add(shipType); // ✅ Uložíme správný typ lodi
+
+        for (String coord : shipCoords) {
             String[] parts = coord.split(",");
             int x = Integer.parseInt(parts[0].trim());
             int y = Integer.parseInt(parts[1].trim());
             grid[x][y] = 'S';
-            placedShips.add(coord);
         }
 
-        // ✅ Pošleme úspěšnou odpověď včetně souřadnic
-        out.println("SUCCESS: " + positions);
+        if (player.equals(player1)) ships1++;
+        else ships2++;
+
+        if (isSetupComplete()) {
+            out.println("All ships placed! Game is starting.");
+        }
+
+        out.println("SUCCESS: " + shipType + " " + positions);
         return true;
     }
 
+
+
+
     public boolean isSetupComplete() {
-        return gameState == GameState.IN_PROGRESS;
+        if (fleet1.size() == 5 && fleet2.size() == 5) {
+            gameState = GameState.IN_PROGRESS;  // ✅ Nastavíme, že hra začala
+
+            // ✅ Oznámíme hráčům, že hra začala!
+            PrintWriter p1 = Server.getPlayerOutput(player1);
+            PrintWriter p2 = Server.getPlayerOutput(player2);
+
+            if (p1 != null) {
+                p1.println("GAME START");
+                p1.println("Your turn");  // ✅ První tah patří player1
+            }
+            if (p2 != null) {
+                p2.println("GAME START");
+                p2.println("Opponent's turn");
+            }
+
+            return true;
+        }
+        return false;
     }
+
     public void processMove(String player, String move, PrintWriter out) {
         if (!isSetupComplete()) {
-            out.println("⏳ You must place all ships before starting the game!");
+            out.println("You must place all ships before starting the game!");
             return;
         }
 
         if (!player.equals(currentTurn)) {
-            out.println("⏳ Not your turn!");
+            out.println("Not your turn!");
             return;
         }
 
         String[] parts = move.split(",");
         if (parts.length != 2) {
-            out.println("❌ Invalid move format! Use: x,y");
+            out.println("Invalid move format! Use: x,y");
             return;
         }
 
         try {
             int x = Integer.parseInt(parts[0].trim());
             int y = Integer.parseInt(parts[1].trim());
+            String coord = x + "," + y;
 
             char[][] enemyGrid = player.equals(player1) ? grid2 : grid1;
+            List<Ship> enemyFleet = player.equals(player1) ? fleet2 : fleet1;
             PrintWriter opponentOut = Server.getPlayerOutput(getOpponent(player));
 
-            if (enemyGrid[x][y] == 'S') {
-                enemyGrid[x][y] = 'X';
-                out.println("HIT:" + x + "," + y);
-                if (opponentOut != null) opponentOut.println("HIT:" + x + "," + y);
-            } else {
-                enemyGrid[x][y] = 'O';
-                out.println("MISS:" + x + "," + y);
-                if (opponentOut != null) opponentOut.println("MISS:" + x + "," + y);
+            boolean hit = false;
+            for (Ship ship : enemyFleet) {
+                if (ship.registerHit(coord)) {
+                    hit = true;
+                    if (ship.isSunk()) {
+                        out.println("SUNK: " + coord);
+                        if (opponentOut != null) opponentOut.println("SUNK: " + coord);
+                    } else {
+                        out.println("HIT: " + coord);
+                        if (opponentOut != null) opponentOut.println("HIT: " + coord);
+                    }
+                    break;
+                }
             }
 
-            // ✅ Přepnutí tahu a poslání zpráv o tom, kdo hraje
-            currentTurn = getOpponent(player);
-            System.out.println("🔄 Switching turn to: " + currentTurn);  // Debug výpis na serveru
+            if (!hit) {
+                enemyGrid[x][y] = 'O';
+                out.println("MISS: " + coord);
+                if (opponentOut != null) opponentOut.println("MISS: " + coord);
+            }
 
+            // Přepnutí tahu
+            currentTurn = getOpponent(player);
             if (opponentOut != null) opponentOut.println("Your turn");
             out.println("Opponent's turn");
 
         } catch (NumberFormatException e) {
-            out.println("❌ Invalid coordinates! Use numbers between 0-9.");
+            out.println("Invalid coordinates! Use numbers between 0-9.");
         }
     }
 
@@ -124,10 +180,10 @@ public class BattleshipGame {
             PrintWriter loserOut = Server.getPlayerOutput(loser);
 
             if (winnerOut != null) {
-                winnerOut.println("🏆 You won!");
+                winnerOut.println("You won!");
             }
             if (loserOut != null) {
-                loserOut.println("💀 You lost!"); // ✅ Přidáno
+                loserOut.println("You lost!"); // ✅ Přidáno
             }
             return true;
         }
@@ -141,16 +197,16 @@ public class BattleshipGame {
         String winner = getOpponent(player);
         gameState = GameState.FINISHED;
 
-        System.out.println("🏆 " + winner + " wins by default!");
+        System.out.println( winner + " wins by default!");
 
         PrintWriter winnerOut = Server.getPlayerOutput(winner);
         PrintWriter loserOut = Server.getPlayerOutput(player);
 
         if (winnerOut != null) {
-            winnerOut.println("🏆 Your opponent forfeited! You win!");
+            winnerOut.println("Your opponent forfeited! You win!");
         }
         if (loserOut != null) {
-            loserOut.println("💀 You forfeited the game!");
+            loserOut.println("You forfeited the game!");
         }
     }
 }
