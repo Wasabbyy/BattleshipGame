@@ -36,23 +36,31 @@ public class BattleshipGame {
         return player.equals(player1) ? player2 : player1;
     }
 
-    public boolean placeShip(String player, int x, int y) {
-        if (gameState == GameState.FINISHED) return false;
-
+    public boolean placeShip(String player, String positions, PrintWriter out) {
         char[][] grid = player.equals(player1) ? grid1 : grid2;
         Set<String> placedShips = player.equals(player1) ? placedShips1 : placedShips2;
 
-        if (x < 0 || x >= 10 || y < 0 || y >= 10) return false;
-        if (grid[x][y] == '~' && placedShips.size() < 5) {
-            grid[x][y] = 'S';
-            placedShips.add(x + "," + y);
-
-            if (placedShips1.size() == 5 && placedShips2.size() == 5) {
-                gameState = GameState.IN_PROGRESS;
+        for (String coord : positions.split(" ")) {
+            String[] parts = coord.split(",");
+            int x = Integer.parseInt(parts[0].trim());
+            int y = Integer.parseInt(parts[1].trim());
+            if (grid[x][y] == 'S') {
+                out.println("ERROR: Ship overlaps at: " + coord);
+                return false;
             }
-            return true;
         }
-        return false;
+
+        for (String coord : positions.split(" ")) {
+            String[] parts = coord.split(",");
+            int x = Integer.parseInt(parts[0].trim());
+            int y = Integer.parseInt(parts[1].trim());
+            grid[x][y] = 'S';
+            placedShips.add(coord);
+        }
+
+        // ✅ Pošleme úspěšnou odpověď včetně souřadnic
+        out.println("SUCCESS: " + positions);
+        return true;
     }
 
     public boolean isSetupComplete() {

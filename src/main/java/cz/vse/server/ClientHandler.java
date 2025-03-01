@@ -56,26 +56,18 @@ class ClientHandler implements Runnable {
                 }
 
                 if (message.startsWith("PLACE ")) {
-                    String[] parts = message.substring(6).trim().split(",");
-                    if (parts.length == 2) {
-                        try {
-                            int x = Integer.parseInt(parts[0].trim());
-                            int y = Integer.parseInt(parts[1].trim());
-                            if (game.placeShip(username, x, y)) {
-                                shipsPlaced++;
-                                out.println("✅ Ship placed at " + x + "," + y + " (" + shipsPlaced + "/5)");
-                            } else {
-                                out.println("⚠ Invalid position or already occupied!");
-                                out.flush();
-                            }
-                        } catch (NumberFormatException e) {
-                            out.println("❌ Invalid coordinates! Use numbers between 0-9.");
-                        }
+                    String positions = message.substring(6).trim();
+                    boolean success = game.placeShip(username, positions, out); // 🔥 Volání placeShip()!
+
+                    if (success) {
+                        shipsPlaced++; // ✅ Započítání umístěné lodi
+                        out.println("✅ Ship placed at " + positions + " (" + shipsPlaced + "/5)");
                     } else {
-                        out.println("❌ Invalid command! Use 'PLACE x,y'");
+                        out.println("⚠ Invalid position or already occupied!");
                     }
                 }
             }
+
 
             out.println("🎮 All ships placed! Waiting for opponent...");
             while (!game.isSetupComplete()) {
