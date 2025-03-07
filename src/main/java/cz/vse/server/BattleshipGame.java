@@ -106,20 +106,20 @@ public class BattleshipGame {
         logger.info("Player '{}' attempting move '{}'", player, move);
 
         if (!isSetupComplete()) {
-            out.println("You must place all ships before starting the game!");
+            out.println("ERROR: You must place all ships before starting the game!");
             logger.warn("Player '{}' attempted a move before setup completion", player);
             return;
         }
 
         if (!player.equals(currentTurn)) {
-            out.println("Not your turn!");
+            out.println("ERROR: Not your turn!");
             logger.warn("Player '{}' attempted a move out of turn", player);
             return;
         }
 
         String[] parts = move.split(",");
         if (parts.length != 2) {
-            out.println("Invalid move format! Use: x,y");
+            out.println("ERROR: Invalid move format! Use: x,y");
             logger.warn("Player '{}' entered invalid move format: '{}'", player, move);
             return;
         }
@@ -138,11 +138,11 @@ public class BattleshipGame {
                 if (ship.registerHit(coord)) {
                     hit = true;
                     if (ship.isSunk()) {
-                        out.println("SUNK: " + coord);
+                        out.println("SUCCESS: SUNK: " + coord);
                         if (opponentOut != null) opponentOut.println("SUNK: " + coord);
                         logger.info("Player '{}' sunk a ship at '{}'", player, coord);
                     } else {
-                        out.println("HIT: " + coord);
+                        out.println("SUCCESS: HIT: " + coord);
                         if (opponentOut != null) opponentOut.println("HIT: " + coord);
                         logger.info("Player '{}' hit a ship at '{}'", player, coord);
                     }
@@ -152,7 +152,7 @@ public class BattleshipGame {
 
             if (!hit) {
                 enemyGrid[x][y] = 'O';
-                out.println("MISS: " + coord);
+                out.println("SUCCESS: MISS: " + coord);
                 if (opponentOut != null) opponentOut.println("MISS: " + coord);
                 logger.info("Player '{}' missed at '{}'", player, coord);
             }
@@ -162,7 +162,7 @@ public class BattleshipGame {
             out.println("Opponent's turn");
 
         } catch (NumberFormatException e) {
-            out.println("Invalid coordinates! Use numbers between 0-9.");
+            out.println("ERROR: Invalid coordinates! Use numbers between 0-9.");
             logger.error("Invalid coordinate format entered by player '{}': '{}'", player, move, e);
         }
     }

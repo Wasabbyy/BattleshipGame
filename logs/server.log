@@ -155,3 +155,583 @@ java.net.SocketException: Connection reset
 2025-03-06 17:57:03 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' forfeited, 'asdasd' wins by default.
 2025-03-06 17:57:03 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' forfeited, 'asdasdasd' wins by default.
 2025-03-06 17:57:03 [pool-1-thread-1] INFO  GameManager - Game between asdasdasd and asdasd ended due to disconnection
+2025-03-07 08:22:58 [main] INFO  Server - Server is starting on port 12345
+2025-03-07 08:24:07 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:24:07 [pool-1-thread-1] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-07 08:24:07 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-07 08:24:13 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:24:13 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'adadas' and 'asdasd'
+2025-03-07 08:24:13 [pool-1-thread-2] INFO  GameManager - Game started: adadas vs asdasd
+2025-03-07 08:24:13 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' logged in and added to queue
+2025-03-07 08:24:27 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Destroyer' at '1,1 2,1 3,1'
+2025-03-07 08:24:27 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1]
+2025-03-07 08:24:27 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Destroyer'
+2025-03-07 08:24:27 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' placed ship 'Destroyer' at 1,1 2,1 3,1
+2025-03-07 08:27:54 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '2,5 2,6 2,7 3,6'
+2025-03-07 08:27:54 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,5, 2,6, 2,7, 3,6]
+2025-03-07 08:27:54 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-07 08:27:54 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' placed ship 'T-Ship' at 2,5 2,6 2,7 3,6
+2025-03-07 08:28:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Battleship' at '5,3 6,3 7,3 8,3'
+2025-03-07 08:28:02 [pool-1-thread-1] INFO  Ship - New ship created at positions: [5,3, 6,3, 7,3, 8,3]
+2025-03-07 08:28:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Battleship'
+2025-03-07 08:28:02 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' placed ship 'Battleship' at 5,3 6,3 7,3 8,3
+2025-03-07 08:28:04 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '6,7 7,7 7,8'
+2025-03-07 08:28:04 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,7, 7,7, 7,8]
+2025-03-07 08:28:04 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'L-Ship'
+2025-03-07 08:28:04 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' placed ship 'L-Ship' at 6,7 7,7 7,8
+2025-03-07 08:28:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'PatrolBoat' at '1,9 2,9'
+2025-03-07 08:28:09 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,9, 2,9]
+2025-03-07 08:28:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'PatrolBoat'
+2025-03-07 08:28:09 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' placed ship 'PatrolBoat' at 1,9 2,9
+2025-03-07 08:29:50 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-07 08:29:50 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-07 08:29:50 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' successfully placed ship 'Battleship'
+2025-03-07 08:29:50 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' placed ship 'Battleship' at 1,1 2,1 3,1 4,1
+2025-03-07 08:29:52 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' is placing ship 'T-Ship' at '2,4 2,5 2,6 3,5'
+2025-03-07 08:29:52 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,4, 2,5, 2,6, 3,5]
+2025-03-07 08:29:52 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' successfully placed ship 'T-Ship'
+2025-03-07 08:29:52 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' placed ship 'T-Ship' at 2,4 2,5 2,6 3,5
+2025-03-07 08:29:53 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' is placing ship 'PatrolBoat' at '1,9 2,9'
+2025-03-07 08:29:53 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,9, 2,9]
+2025-03-07 08:29:53 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' successfully placed ship 'PatrolBoat'
+2025-03-07 08:29:53 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' placed ship 'PatrolBoat' at 1,9 2,9
+2025-03-07 08:29:55 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' is placing ship 'Destroyer' at '5,7 6,7 7,7'
+2025-03-07 08:29:55 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,7, 6,7, 7,7]
+2025-03-07 08:29:55 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' successfully placed ship 'Destroyer'
+2025-03-07 08:29:55 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' placed ship 'Destroyer' at 5,7 6,7 7,7
+2025-03-07 08:29:58 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' is placing ship 'L-Ship' at '7,1 8,1 8,2'
+2025-03-07 08:29:58 [pool-1-thread-2] INFO  Ship - New ship created at positions: [7,1, 8,1, 8,2]
+2025-03-07 08:29:58 [pool-1-thread-2] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:29:58 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' successfully placed ship 'L-Ship'
+2025-03-07 08:29:58 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' placed ship 'L-Ship' at 7,1 8,1 8,2
+2025-03-07 08:29:58 [pool-1-thread-2] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:29:58 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:30:24 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' attempting move '3,2'
+2025-03-07 08:30:24 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:30:24 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' attempted a move out of turn
+2025-03-07 08:30:24 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' fired at 3,2
+2025-03-07 08:30:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' attempting move '2,5'
+2025-03-07 08:30:27 [pool-1-thread-2] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:30:27 [pool-1-thread-2] INFO  Ship - Shot at '2,5' missed
+2025-03-07 08:30:27 [pool-1-thread-2] INFO  Ship - Ship hit at position '2,5'
+2025-03-07 08:30:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' hit a ship at '2,5'
+2025-03-07 08:30:27 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' fired at 2,5
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' attempting move '4,3'
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  Ship - Shot at '4,3' missed
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  Ship - Shot at '4,3' missed
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  Ship - Shot at '4,3' missed
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  Ship - Shot at '4,3' missed
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  Ship - Shot at '4,3' missed
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' missed at '4,3'
+2025-03-07 08:30:31 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' fired at 4,3
+2025-03-07 08:30:35 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' attempting move '4,3'
+2025-03-07 08:30:35 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:30:35 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' attempted a move out of turn
+2025-03-07 08:30:35 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' fired at 4,3
+2025-03-07 08:30:40 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' attempting move '2,1'
+2025-03-07 08:30:40 [pool-1-thread-2] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:30:40 [pool-1-thread-2] INFO  Ship - Ship hit at position '2,1'
+2025-03-07 08:30:40 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' hit a ship at '2,1'
+2025-03-07 08:30:40 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' fired at 2,1
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' attempting move '6,6'
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  Ship - Shot at '6,6' missed
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  Ship - Shot at '6,6' missed
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  Ship - Shot at '6,6' missed
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  Ship - Shot at '6,6' missed
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  Ship - Shot at '6,6' missed
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' missed at '6,6'
+2025-03-07 08:30:48 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' fired at 6,6
+2025-03-07 08:31:11 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' attempting move '7,2'
+2025-03-07 08:31:11 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:31:11 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' attempted a move out of turn
+2025-03-07 08:31:11 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' fired at 7,2
+2025-03-07 08:31:23 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' attempting move '6,2'
+2025-03-07 08:31:23 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:31:23 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' attempted a move out of turn
+2025-03-07 08:31:23 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' fired at 6,2
+2025-03-07 08:31:28 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' attempting move '5,3'
+2025-03-07 08:31:28 [pool-1-thread-1] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:31:28 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' attempted a move out of turn
+2025-03-07 08:31:28 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' fired at 5,3
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' attempting move '6,1'
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  BattleshipGame - Game between 'adadas' and 'asdasd' is now in progress
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  Ship - Shot at '6,1' missed
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  Ship - Shot at '6,1' missed
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  Ship - Shot at '6,1' missed
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  Ship - Shot at '6,1' missed
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  Ship - Shot at '6,1' missed
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' missed at '6,1'
+2025-03-07 08:31:31 [pool-1-thread-2] INFO  ClientHandler - User 'adadas' fired at 6,1
+2025-03-07 08:37:44 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: adadas
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:95) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:37:44 [pool-1-thread-2] INFO  BattleshipGame - Player 'adadas' forfeited, 'asdasd' wins by default.
+2025-03-07 08:37:44 [pool-1-thread-2] INFO  GameManager - Game between adadas and asdasd ended due to disconnection
+2025-03-07 08:37:54 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:37:54 [pool-1-thread-2] INFO  GameManager - dasdas is waiting for an opponent...
+2025-03-07 08:37:54 [pool-1-thread-2] INFO  ClientHandler - User 'dasdas' logged in and added to queue
+2025-03-07 08:37:58 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:37:58 [pool-1-thread-3] WARN  ClientHandler - Login attempt with already used username: asdasd
+2025-03-07 08:39:01 [pool-1-thread-3] ERROR ClientHandler - Connection lost with client: asdasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:31) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:39:09 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:39:09 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'sdadasd' and 'dasdas'
+2025-03-07 08:39:09 [pool-1-thread-3] INFO  GameManager - Game started: sdadasd vs dasdas
+2025-03-07 08:39:09 [pool-1-thread-3] INFO  ClientHandler - User 'sdadasd' logged in and added to queue
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '2,2 3,2 4,2'
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2]
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' successfully placed ship 'Destroyer'
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  ClientHandler - User 'dasdas' placed ship 'Destroyer' at 2,2 3,2 4,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '3,2 4,2 5,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 3,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 3,2 4,2 5,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '3,2 4,2 5,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 3,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 3,2 4,2 5,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '3,2 4,2 5,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 3,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 3,2 4,2 5,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '3,2 4,2 5,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 3,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 3,2 4,2 5,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '3,2 4,2 5,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 3,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 3,2 4,2 5,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '3,2 4,2 5,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 3,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 3,2 4,2 5,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '3,2 4,2 5,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 3,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 3,2 4,2 5,2
+2025-03-07 08:39:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dasdas' is placing ship 'Destroyer' at '4,2 5,2 6,2'
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'dasdas' attempted to place a ship at an occupied location: 4,2
+2025-03-07 08:39:09 [pool-1-thread-2] WARN  ClientHandler - Failed to place ship for 'dasdas': PLACE Destroyer (3) 4,2 5,2 6,2
+2025-03-07 08:39:12 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:39:12 [pool-1-thread-4] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-07 08:39:12 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-07 08:39:38 [pool-1-thread-3] INFO  BattleshipGame - Player 'sdadasd' is placing ship 'Destroyer' at '1,3 2,3 3,3'
+2025-03-07 08:39:38 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3]
+2025-03-07 08:39:38 [pool-1-thread-3] INFO  BattleshipGame - Player 'sdadasd' successfully placed ship 'Destroyer'
+2025-03-07 08:39:38 [pool-1-thread-3] INFO  ClientHandler - User 'sdadasd' placed ship 'Destroyer' at 1,3 2,3 3,3
+2025-03-07 08:39:38 [pool-1-thread-3] INFO  BattleshipGame - Player 'sdadasd' is placing ship 'Destroyer' at '1,3 2,3 3,3'
+2025-03-07 08:39:38 [pool-1-thread-3] WARN  BattleshipGame - Player 'sdadasd' attempted to place a ship at an occupied location: 1,3
+2025-03-07 08:39:38 [pool-1-thread-3] WARN  ClientHandler - Failed to place ship for 'sdadasd': PLACE Destroyer (3) 1,3 2,3 3,3
+2025-03-07 08:39:47 [pool-1-thread-3] INFO  BattleshipGame - Player 'sdadasd' is placing ship 'T-Ship' at '3,5 3,6 3,7 4,6'
+2025-03-07 08:39:47 [pool-1-thread-3] INFO  Ship - New ship created at positions: [3,5, 3,6, 3,7, 4,6]
+2025-03-07 08:39:47 [pool-1-thread-3] INFO  BattleshipGame - Player 'sdadasd' successfully placed ship 'T-Ship'
+2025-03-07 08:39:47 [pool-1-thread-3] INFO  ClientHandler - User 'sdadasd' placed ship 'T-Ship' at 3,5 3,6 3,7 4,6
+2025-03-07 08:40:39 [pool-1-thread-3] ERROR ClientHandler - Connection lost with client: sdadasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:40:39 [pool-1-thread-3] INFO  BattleshipGame - Player 'sdadasd' forfeited, 'dasdas' wins by default.
+2025-03-07 08:40:39 [pool-1-thread-3] INFO  GameManager - Game between sdadasd and dasdas ended due to disconnection
+2025-03-07 08:40:45 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:40:45 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'sadasd' and 'asdasd'
+2025-03-07 08:40:45 [pool-1-thread-3] INFO  GameManager - Game started: sadasd vs asdasd
+2025-03-07 08:40:45 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' logged in and added to queue
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '4,2 4,3 4,4 5,3'
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  Ship - New ship created at positions: [4,2, 4,3, 4,4, 5,3]
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' placed ship 'T-Ship' at 4,2 4,3 4,4 5,3
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '4,2 4,3 4,4 5,3'
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,2
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 4,2 4,3 4,4 5,3
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '4,2 4,3 4,4 5,3'
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,2
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 4,2 4,3 4,4 5,3
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '3,4 4,4 4,5'
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,4
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE L-Ship (3) 3,4 4,4 4,5
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '3,4 4,4 4,5'
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,4
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE L-Ship (3) 3,4 4,4 4,5
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '3,4 4,4 4,5'
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,4
+2025-03-07 08:40:45 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE L-Ship (3) 3,4 4,4 4,5
+2025-03-07 08:40:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '3,8 4,8 4,9'
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  Ship - New ship created at positions: [4,8, 4,9, 3,8]
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'L-Ship'
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' placed ship 'L-Ship' at 3,8 4,8 4,9
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '3,8 4,8 4,9'
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 3,8
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE L-Ship (3) 3,8 4,8 4,9
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '3,1 3,2 3,3 4,2'
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 3,1 3,2 3,3 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '3,1 3,2 3,3 4,2'
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 3,1 3,2 3,3 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '3,1 3,2 3,3 4,2'
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 3,1 3,2 3,3 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '3,1 3,2 3,3 4,2'
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 3,1 3,2 3,3 4,2
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '2,2 2,3 2,4 3,3'
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,2, 2,3, 2,4, 3,3]
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' placed ship 'T-Ship' at 2,2 2,3 2,4 3,3
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '2,2 2,3 2,4 3,3'
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 2,2
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 2,2 2,3 2,4 3,3
+2025-03-07 08:40:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '2,2 2,3 2,4 3,3'
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdasd' attempted to place a ship at an occupied location: 2,2
+2025-03-07 08:40:46 [pool-1-thread-4] WARN  ClientHandler - Failed to place ship for 'asdasd': PLACE T-Ship (3) 2,2 2,3 2,4 3,3
+2025-03-07 08:40:49 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'Battleship' at '1,6 2,6 3,6 4,6'
+2025-03-07 08:40:49 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,6, 2,6, 3,6, 4,6]
+2025-03-07 08:40:49 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'Battleship'
+2025-03-07 08:40:49 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' placed ship 'Battleship' at 1,6 2,6 3,6 4,6
+2025-03-07 08:41:16 [pool-1-thread-3] ERROR ClientHandler - Connection lost with client: sadasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:41:16 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' forfeited, 'asdasd' wins by default.
+2025-03-07 08:41:16 [pool-1-thread-3] INFO  GameManager - Game between sadasd and asdasd ended due to disconnection
+2025-03-07 08:41:20 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:41:20 [pool-1-thread-3] WARN  ClientHandler - Login attempt with already used username: asdasd
+2025-03-07 08:41:32 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '7,7 8,7 8,8'
+2025-03-07 08:41:32 [pool-1-thread-4] INFO  Ship - New ship created at positions: [7,7, 8,7, 8,8]
+2025-03-07 08:41:32 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'L-Ship'
+2025-03-07 08:41:32 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' placed ship 'L-Ship' at 7,7 8,7 8,8
+2025-03-07 08:41:55 [main] INFO  Server - Server is starting on port 12345
+2025-03-07 08:42:04 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:42:04 [pool-1-thread-1] INFO  GameManager - 56645456 is waiting for an opponent...
+2025-03-07 08:42:04 [pool-1-thread-1] INFO  ClientHandler - User '56645456' logged in and added to queue
+2025-03-07 08:42:11 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:42:11 [pool-1-thread-2] INFO  BattleshipGame - New game created between '4145' and '56645456'
+2025-03-07 08:42:11 [pool-1-thread-2] INFO  GameManager - Game started: 4145 vs 56645456
+2025-03-07 08:42:11 [pool-1-thread-2] INFO  ClientHandler - User '4145' logged in and added to queue
+2025-03-07 08:42:14 [pool-1-thread-2] INFO  BattleshipGame - Player '4145' is placing ship 'Destroyer' at '2,2 3,2 4,2'
+2025-03-07 08:42:14 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2]
+2025-03-07 08:42:14 [pool-1-thread-2] INFO  BattleshipGame - Player '4145' successfully placed ship 'Destroyer'
+2025-03-07 08:42:14 [pool-1-thread-2] INFO  ClientHandler - User '4145' placed ship 'Destroyer' at 2,2 3,2 4,2
+2025-03-07 08:42:16 [pool-1-thread-2] INFO  BattleshipGame - Player '4145' is placing ship 'Destroyer' at '4,3 5,3 6,3'
+2025-03-07 08:42:16 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,3, 5,3, 6,3]
+2025-03-07 08:42:16 [pool-1-thread-2] INFO  BattleshipGame - Player '4145' successfully placed ship 'Destroyer'
+2025-03-07 08:42:16 [pool-1-thread-2] INFO  ClientHandler - User '4145' placed ship 'Destroyer' at 4,3 5,3 6,3
+2025-03-07 08:42:55 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: 56645456
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:42:55 [pool-1-thread-1] INFO  BattleshipGame - Player '56645456' forfeited, '4145' wins by default.
+2025-03-07 08:42:55 [pool-1-thread-1] INFO  GameManager - Game between 56645456 and 4145 ended due to disconnection
+2025-03-07 08:49:04 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:49:04 [pool-1-thread-3] INFO  GameManager - sadasd is waiting for an opponent...
+2025-03-07 08:49:04 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' logged in and added to queue
+2025-03-07 08:49:20 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:49:20 [pool-1-thread-4] INFO  BattleshipGame - New game created between 'asdasd' and 'sadasd'
+2025-03-07 08:49:20 [pool-1-thread-4] INFO  GameManager - Game started: asdasd vs sadasd
+2025-03-07 08:49:20 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-07 08:49:20 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-07 08:49:20 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-07 08:49:20 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'Battleship'
+2025-03-07 08:49:20 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' placed ship 'Battleship' at 1,2 2,2 3,2 4,2
+2025-03-07 08:49:25 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'Destroyer' at '2,7 3,7 4,7'
+2025-03-07 08:49:25 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,7, 3,7, 4,7]
+2025-03-07 08:49:25 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'Destroyer'
+2025-03-07 08:49:25 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' placed ship 'Destroyer' at 2,7 3,7 4,7
+2025-03-07 08:49:28 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Destroyer' at '2,3 3,3 4,3'
+2025-03-07 08:49:28 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,3, 3,3, 4,3]
+2025-03-07 08:49:28 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Destroyer'
+2025-03-07 08:49:28 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' placed ship 'Destroyer' at 2,3 3,3 4,3
+2025-03-07 08:51:01 [pool-1-thread-3] ERROR ClientHandler - Connection lost with client: sadasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:51:01 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' forfeited, 'asdasd' wins by default.
+2025-03-07 08:51:01 [pool-1-thread-3] INFO  GameManager - Game between sadasd and asdasd ended due to disconnection
+2025-03-07 08:51:19 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:51:19 [pool-1-thread-3] INFO  GameManager - sadasd is waiting for an opponent...
+2025-03-07 08:51:19 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' logged in and added to queue
+2025-03-07 08:51:25 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:51:25 [pool-1-thread-5] WARN  ClientHandler - Login attempt with already used username: asdasd
+2025-03-07 08:51:50 [main] INFO  Server - Server is starting on port 12345
+2025-03-07 08:51:57 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:51:57 [pool-1-thread-1] INFO  GameManager - asda is waiting for an opponent...
+2025-03-07 08:51:57 [pool-1-thread-1] INFO  ClientHandler - User 'asda' logged in and added to queue
+2025-03-07 08:52:01 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:52:01 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdas' and 'asda'
+2025-03-07 08:52:01 [pool-1-thread-2] INFO  GameManager - Game started: asdas vs asda
+2025-03-07 08:52:01 [pool-1-thread-2] INFO  ClientHandler - User 'asdas' logged in and added to queue
+2025-03-07 08:52:04 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdas' is placing ship 'T-Ship' at '2,0 2,1 2,2 3,1'
+2025-03-07 08:52:04 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,0, 2,1, 2,2, 3,1]
+2025-03-07 08:52:04 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdas' successfully placed ship 'T-Ship'
+2025-03-07 08:52:04 [pool-1-thread-2] INFO  ClientHandler - User 'asdas' placed ship 'T-Ship' at 2,0 2,1 2,2 3,1
+2025-03-07 08:52:36 [pool-1-thread-1] INFO  BattleshipGame - Player 'asda' is placing ship 'L-Ship' at '4,2 5,2 5,3'
+2025-03-07 08:52:36 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,2, 5,2, 5,3]
+2025-03-07 08:52:36 [pool-1-thread-1] INFO  BattleshipGame - Player 'asda' successfully placed ship 'L-Ship'
+2025-03-07 08:52:36 [pool-1-thread-1] INFO  ClientHandler - User 'asda' placed ship 'L-Ship' at 4,2 5,2 5,3
+2025-03-07 08:53:36 [main] INFO  Server - Server is starting on port 12345
+2025-03-07 08:53:49 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:53:49 [pool-1-thread-1] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-07 08:53:49 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-07 08:53:52 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:53:52 [pool-1-thread-2] WARN  ClientHandler - Login attempt with already used username: asdasd
+2025-03-07 08:54:13 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:54:13 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'assas' and 'asdasd'
+2025-03-07 08:54:13 [pool-1-thread-3] INFO  GameManager - Game started: assas vs asdasd
+2025-03-07 08:54:13 [pool-1-thread-3] INFO  ClientHandler - User 'assas' logged in and added to queue
+2025-03-07 08:54:13 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: asdasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:54:13 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' forfeited, 'assas' wins by default.
+2025-03-07 08:54:13 [pool-1-thread-1] INFO  GameManager - Game between asdasd and assas ended due to disconnection
+2025-03-07 08:54:18 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:54:18 [pool-1-thread-1] INFO  GameManager - asdddd is waiting for an opponent...
+2025-03-07 08:54:18 [pool-1-thread-1] INFO  ClientHandler - User 'asdddd' logged in and added to queue
+2025-03-07 08:54:20 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' is placing ship 'Battleship' at '2,4 3,4 4,4 5,4'
+2025-03-07 08:54:20 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,4, 3,4, 4,4, 5,4]
+2025-03-07 08:54:20 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' successfully placed ship 'Battleship'
+2025-03-07 08:54:20 [pool-1-thread-3] INFO  ClientHandler - User 'assas' placed ship 'Battleship' at 2,4 3,4 4,4 5,4
+2025-03-07 08:54:39 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' is placing ship 'PatrolBoat' at '1,6 2,6'
+2025-03-07 08:54:39 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,6, 2,6]
+2025-03-07 08:54:39 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' successfully placed ship 'PatrolBoat'
+2025-03-07 08:54:39 [pool-1-thread-3] INFO  ClientHandler - User 'assas' placed ship 'PatrolBoat' at 1,6 2,6
+2025-03-07 08:54:40 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' is placing ship 'Destroyer' at '4,7 5,7 6,7'
+2025-03-07 08:54:40 [pool-1-thread-3] INFO  Ship - New ship created at positions: [5,7, 6,7, 4,7]
+2025-03-07 08:54:40 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' successfully placed ship 'Destroyer'
+2025-03-07 08:54:40 [pool-1-thread-3] INFO  ClientHandler - User 'assas' placed ship 'Destroyer' at 4,7 5,7 6,7
+2025-03-07 08:54:42 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' is placing ship 'L-Ship' at '7,1 8,1 8,2'
+2025-03-07 08:54:42 [pool-1-thread-3] INFO  Ship - New ship created at positions: [7,1, 8,1, 8,2]
+2025-03-07 08:54:42 [pool-1-thread-3] INFO  BattleshipGame - Player 'assas' successfully placed ship 'L-Ship'
+2025-03-07 08:54:42 [pool-1-thread-3] INFO  ClientHandler - User 'assas' placed ship 'L-Ship' at 7,1 8,1 8,2
+2025-03-07 08:54:48 [pool-1-thread-3] ERROR ClientHandler - Connection lost with client: assas
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:55:11 [main] INFO  Server - Server is starting on port 12345
+2025-03-07 08:55:35 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:55:35 [pool-1-thread-1] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-07 08:55:35 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-07 08:55:37 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:55:37 [pool-1-thread-2] WARN  ClientHandler - Login attempt with already used username: asdasd
+2025-03-07 08:56:04 [main] INFO  Server - Server is starting on port 12345
+2025-03-07 08:56:10 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:56:10 [pool-1-thread-1] INFO  GameManager - sadasd is waiting for an opponent...
+2025-03-07 08:56:10 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' logged in and added to queue
+2025-03-07 08:56:21 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-07 08:56:21 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdasd' and 'sadasd'
+2025-03-07 08:56:21 [pool-1-thread-2] INFO  GameManager - Game started: asdasd vs sadasd
+2025-03-07 08:56:21 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-07 08:56:25 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' is placing ship 'Battleship' at '2,2 3,2 4,2 5,2'
+2025-03-07 08:56:25 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2, 5,2]
+2025-03-07 08:56:25 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'Battleship'
+2025-03-07 08:56:25 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' placed ship 'Battleship' at 2,2 3,2 4,2 5,2
+2025-03-07 08:56:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Destroyer' at '2,3 3,3 4,3'
+2025-03-07 08:56:27 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,3, 3,3, 4,3]
+2025-03-07 08:56:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Destroyer'
+2025-03-07 08:56:27 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'Destroyer' at 2,3 3,3 4,3
+2025-03-07 08:56:29 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' is placing ship 'PatrolBoat' at '0,4 1,4'
+2025-03-07 08:56:29 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,4, 1,4]
+2025-03-07 08:56:29 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'PatrolBoat'
+2025-03-07 08:56:29 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' placed ship 'PatrolBoat' at 0,4 1,4
+2025-03-07 08:56:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' is placing ship 'Destroyer' at '0,7 1,7 2,7'
+2025-03-07 08:56:31 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,7, 1,7, 2,7]
+2025-03-07 08:56:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'Destroyer'
+2025-03-07 08:56:31 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' placed ship 'Destroyer' at 0,7 1,7 2,7
+2025-03-07 08:56:34 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' is placing ship 'L-Ship' at '5,8 6,8 6,9'
+2025-03-07 08:56:34 [pool-1-thread-1] INFO  Ship - New ship created at positions: [5,8, 6,8, 6,9]
+2025-03-07 08:56:34 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'L-Ship'
+2025-03-07 08:56:34 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' placed ship 'L-Ship' at 5,8 6,8 6,9
+2025-03-07 08:56:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' is placing ship 'T-Ship' at '8,3 8,4 8,5 9,4'
+2025-03-07 08:56:39 [pool-1-thread-1] INFO  Ship - New ship created at positions: [8,4, 8,5, 9,4, 8,3]
+2025-03-07 08:56:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'T-Ship'
+2025-03-07 08:56:39 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' placed ship 'T-Ship' at 8,3 8,4 8,5 9,4
+2025-03-07 08:56:43 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '1,5 1,6 1,7 2,6'
+2025-03-07 08:56:43 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,5, 1,6, 1,7, 2,6]
+2025-03-07 08:56:43 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-07 08:56:43 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'T-Ship' at 1,5 1,6 1,7 2,6
+2025-03-07 08:56:45 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Battleship' at '4,9 5,9 6,9 7,9'
+2025-03-07 08:56:45 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,9, 5,9, 6,9, 7,9]
+2025-03-07 08:56:45 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Battleship'
+2025-03-07 08:56:45 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'Battleship' at 4,9 5,9 6,9 7,9
+2025-03-07 08:56:47 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '7,1 8,1 8,2'
+2025-03-07 08:56:47 [pool-1-thread-2] INFO  Ship - New ship created at positions: [7,1, 8,1, 8,2]
+2025-03-07 08:56:47 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'L-Ship'
+2025-03-07 08:56:47 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'L-Ship' at 7,1 8,1 8,2
+2025-03-07 08:56:50 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'PatrolBoat' at '6,5 7,5'
+2025-03-07 08:56:50 [pool-1-thread-2] INFO  Ship - New ship created at positions: [7,5, 6,5]
+2025-03-07 08:56:50 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'sadasd' is now in progress
+2025-03-07 08:56:50 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'PatrolBoat'
+2025-03-07 08:56:50 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'PatrolBoat' at 6,5 7,5
+2025-03-07 08:56:50 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'sadasd' is now in progress
+2025-03-07 08:56:50 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'sadasd' is now in progress
+2025-03-07 08:56:52 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' attempting move '2,3'
+2025-03-07 08:56:52 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'sadasd' is now in progress
+2025-03-07 08:56:52 [pool-1-thread-1] WARN  BattleshipGame - Player 'sadasd' attempted a move out of turn
+2025-03-07 08:56:52 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' fired at 2,3
+2025-03-07 08:56:54 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' attempting move '2,3'
+2025-03-07 08:56:54 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'sadasd' is now in progress
+2025-03-07 08:56:54 [pool-1-thread-1] WARN  BattleshipGame - Player 'sadasd' attempted a move out of turn
+2025-03-07 08:56:54 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' fired at 2,3
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' attempting move '3,1'
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'sadasd' is now in progress
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' missed at '3,1'
+2025-03-07 08:56:56 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' fired at 3,1
+2025-03-07 08:56:59 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' attempting move '2,3'
+2025-03-07 08:56:59 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'sadasd' is now in progress
+2025-03-07 08:56:59 [pool-1-thread-1] INFO  Ship - Ship hit at position '2,3'
+2025-03-07 08:56:59 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' hit a ship at '2,3'
+2025-03-07 08:56:59 [pool-1-thread-1] INFO  ClientHandler - User 'sadasd' fired at 2,3
+2025-03-07 08:57:22 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: sadasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:95) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-07 08:57:22 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadasd' forfeited, 'asdasd' wins by default.
+2025-03-07 08:57:22 [pool-1-thread-1] INFO  GameManager - Game between sadasd and asdasd ended due to disconnection

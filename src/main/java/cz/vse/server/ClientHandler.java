@@ -24,7 +24,7 @@ class ClientHandler implements Runnable {
             in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             out = new PrintWriter(clientSocket.getOutputStream(), true);
 
-            out.println("Welcome to Battleships Server! Please log in using 'LOGIN: username'");
+            out.println("INFO: Welcome to Battleships Server! Please log in using 'LOGIN: username'");
             out.flush();
 
             String message;
@@ -32,13 +32,13 @@ class ClientHandler implements Runnable {
                 if (message.startsWith("LOGIN: ")) {
                     username = message.substring(7).trim();
                     if (Server.activeUsers.contains(username)) {
-                        out.println("Username already in use. Try another one.");
+                        out.println("ERROR: Username already in use. Try another one.");
                         logger.warn("Login attempt with already used username: {}", username);
                     } else {
                         Server.activeUsers.add(username);
                         Server.registerPlayerOutput(username, out);
                         GameManager.addPlayerToQueue(username);
-                        out.println("Welcome, " + username + "! Waiting for an opponent...");
+                        out.println("INFO: Welcome, " + username + "! Waiting for an opponent...");
                         logger.info("User '{}' logged in and added to queue", username);
                         break;
                     }
@@ -50,7 +50,7 @@ class ClientHandler implements Runnable {
                 Thread.sleep(500);
             }
 
-            out.println("⚓ Place your ships using 'PLACE shipType x,y x,y' (5 ships total)");
+            out.println("INFO: Place your ships using 'PLACE shipType x,y x,y' (5 ships total)");
 
             int shipsPlaced = 0;
             while (shipsPlaced < 5) {
@@ -74,21 +74,21 @@ class ClientHandler implements Runnable {
 
                     if (success) {
                         shipsPlaced++;
-                        out.println("Ship placed at " + positions + " (" + shipsPlaced + "/5)");
+                        out.println("SUCCESS: Ship " + positions);
                         logger.info("User '{}' placed ship '{}' at {}", username, shipType, positions);
                     } else {
-                        out.println("Invalid position or already occupied!");
+                        out.println("ERROR: Invalid position or already occupied!");
                         logger.warn("Failed to place ship for '{}': {}", username, message);
                     }
                 }
             }
 
-            out.println("All ships placed! Waiting for opponent...");
+            out.println("INFO: All ships placed! Waiting for opponent...");
             while (!game.isSetupComplete()) {
                 Thread.sleep(500);
             }
 
-            out.println("Game started! Your opponent is " + game.getOpponent(username));
+            out.println("INFO: Game started! Your opponent is " + game.getOpponent(username));
             out.flush();
 
             while (true) {
@@ -123,7 +123,7 @@ class ClientHandler implements Runnable {
 
                     PrintWriter opponentOut = Server.getPlayerOutput(opponent);
                     if (opponentOut != null) {
-                        opponentOut.println("🏆 Your opponent disconnected! You win by default.");
+                        opponentOut.println("Your opponent disconnected! You win by default.");
                     }
                 }
             }
