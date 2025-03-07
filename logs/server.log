@@ -1,1 +1,157 @@
 2025-03-04 18:53:56 [main] INFO  Server - Server is starting on port 12345
+2025-03-06 17:51:35 [main] INFO  Server - Server is starting on port 12345
+2025-03-06 17:55:13 [main] INFO  Server - Server is starting on port 12345
+2025-03-06 17:56:11 [pool-1-thread-1] INFO  GameManager - asdasdasd is waiting for an opponent...
+2025-03-06 17:56:11 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' logged in and added to queue
+2025-03-06 17:56:12 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdasd' and 'asdasdasd'
+2025-03-06 17:56:12 [pool-1-thread-2] INFO  GameManager - Game started: asdasd vs asdasdasd
+2025-03-06 17:56:12 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-06 17:56:15 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Battleship' at '3,2 4,2 5,2 6,2'
+2025-03-06 17:56:15 [pool-1-thread-2] INFO  Ship - New ship created at positions: [3,2, 4,2, 5,2, 6,2]
+2025-03-06 17:56:15 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Battleship'
+2025-03-06 17:56:15 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'Battleship' at 3,2 4,2 5,2 6,2
+2025-03-06 17:56:17 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Destroyer' at '2,4 3,4 4,4'
+2025-03-06 17:56:17 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,4, 3,4, 4,4]
+2025-03-06 17:56:17 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Destroyer'
+2025-03-06 17:56:17 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'Destroyer' at 2,4 3,4 4,4
+2025-03-06 17:56:19 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '3,7 4,7 4,8'
+2025-03-06 17:56:19 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,8, 3,7, 4,7]
+2025-03-06 17:56:19 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'L-Ship'
+2025-03-06 17:56:19 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'L-Ship' at 3,7 4,7 4,8
+2025-03-06 17:56:21 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '1,6 1,7 1,8 2,7'
+2025-03-06 17:56:21 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,6, 1,7, 1,8, 2,7]
+2025-03-06 17:56:21 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-06 17:56:21 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'T-Ship' at 1,6 1,7 1,8 2,7
+2025-03-06 17:56:24 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'PatrolBoat' at '8,5 9,5'
+2025-03-06 17:56:24 [pool-1-thread-2] INFO  Ship - New ship created at positions: [8,5, 9,5]
+2025-03-06 17:56:24 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'PatrolBoat'
+2025-03-06 17:56:24 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' placed ship 'PatrolBoat' at 8,5 9,5
+2025-03-06 17:56:27 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' is placing ship 'Battleship' at '2,1 3,1 4,1 5,1'
+2025-03-06 17:56:27 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,1, 3,1, 4,1, 5,1]
+2025-03-06 17:56:27 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' successfully placed ship 'Battleship'
+2025-03-06 17:56:27 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' placed ship 'Battleship' at 2,1 3,1 4,1 5,1
+2025-03-06 17:56:29 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' is placing ship 'PatrolBoat' at '1,3 2,3'
+2025-03-06 17:56:29 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,3, 2,3]
+2025-03-06 17:56:29 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' successfully placed ship 'PatrolBoat'
+2025-03-06 17:56:29 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' placed ship 'PatrolBoat' at 1,3 2,3
+2025-03-06 17:56:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' is placing ship 'Destroyer' at '1,5 2,5 3,5'
+2025-03-06 17:56:31 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,5, 2,5, 3,5]
+2025-03-06 17:56:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' successfully placed ship 'Destroyer'
+2025-03-06 17:56:31 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' placed ship 'Destroyer' at 1,5 2,5 3,5
+2025-03-06 17:56:34 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' is placing ship 'T-Ship' at '1,7 1,8 1,9 2,8'
+2025-03-06 17:56:34 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,7, 1,8, 1,9, 2,8]
+2025-03-06 17:56:34 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' successfully placed ship 'T-Ship'
+2025-03-06 17:56:34 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' placed ship 'T-Ship' at 1,7 1,8 1,9 2,8
+2025-03-06 17:56:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' is placing ship 'L-Ship' at '6,5 7,5 7,6'
+2025-03-06 17:56:39 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,5, 7,6, 6,5]
+2025-03-06 17:56:39 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' successfully placed ship 'L-Ship'
+2025-03-06 17:56:39 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' placed ship 'L-Ship' at 6,5 7,5 7,6
+2025-03-06 17:56:39 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:39 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:41 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' attempting move '5,1'
+2025-03-06 17:56:41 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:41 [pool-1-thread-2] INFO  Ship - Ship hit at position '5,1'
+2025-03-06 17:56:41 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' hit a ship at '5,1'
+2025-03-06 17:56:41 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' fired at 5,1
+2025-03-06 17:56:42 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' attempting move '6,2'
+2025-03-06 17:56:42 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:42 [pool-1-thread-2] WARN  BattleshipGame - Player 'asdasd' attempted a move out of turn
+2025-03-06 17:56:42 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' fired at 6,2
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' attempting move '6,3'
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  Ship - Shot at '6,3' missed
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  Ship - Shot at '6,3' missed
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  Ship - Shot at '6,3' missed
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  Ship - Shot at '6,3' missed
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  Ship - Shot at '6,3' missed
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' missed at '6,3'
+2025-03-06 17:56:43 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' fired at 6,3
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' attempting move '4,8'
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' missed at '4,8'
+2025-03-06 17:56:44 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' fired at 4,8
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' attempting move '3,3'
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  Ship - Shot at '3,3' missed
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  Ship - Shot at '3,3' missed
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  Ship - Shot at '3,3' missed
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  Ship - Shot at '3,3' missed
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  Ship - Shot at '3,3' missed
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' missed at '3,3'
+2025-03-06 17:56:45 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' fired at 3,3
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' attempting move '1,4'
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  Ship - Shot at '1,4' missed
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  Ship - Shot at '1,4' missed
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  Ship - Shot at '1,4' missed
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  Ship - Shot at '1,4' missed
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  Ship - Shot at '1,4' missed
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' missed at '1,4'
+2025-03-06 17:56:46 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' fired at 1,4
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' attempting move '3,6'
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  Ship - Shot at '3,6' missed
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  Ship - Shot at '3,6' missed
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  Ship - Shot at '3,6' missed
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  Ship - Shot at '3,6' missed
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  Ship - Shot at '3,6' missed
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' missed at '3,6'
+2025-03-06 17:56:46 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' fired at 3,6
+2025-03-06 17:56:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' attempting move '2,1'
+2025-03-06 17:56:50 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:50 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasdasd' attempted a move out of turn
+2025-03-06 17:56:50 [pool-1-thread-1] INFO  ClientHandler - User 'asdasdasd' fired at 2,1
+2025-03-06 17:56:54 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' attempting move '2,1'
+2025-03-06 17:56:54 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdasd' and 'asdasdasd' is now in progress
+2025-03-06 17:56:54 [pool-1-thread-2] INFO  Ship - Ship hit at position '2,1'
+2025-03-06 17:56:54 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' hit a ship at '2,1'
+2025-03-06 17:56:54 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' fired at 2,1
+2025-03-06 17:57:03 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: asdasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:95) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-06 17:57:03 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: asdasdasd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:95) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-06 17:57:03 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasdasd' forfeited, 'asdasd' wins by default.
+2025-03-06 17:57:03 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' forfeited, 'asdasdasd' wins by default.
+2025-03-06 17:57:03 [pool-1-thread-1] INFO  GameManager - Game between asdasdasd and asdasd ended due to disconnection
