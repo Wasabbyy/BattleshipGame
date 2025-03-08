@@ -74,12 +74,7 @@ class ClientHandler implements Runnable {
 
                     if (success) {
                         shipsPlaced++;
-                        out.println("SUCCESS: Ship " + positions);
-                        logger.info("User '{}' placed ship '{}' at {}", username, shipType, positions);
-                    } else {
-                        out.println("ERROR: Invalid position or already occupied!");
-                        logger.warn("Failed to place ship for '{}': {}", username, message);
-                    }
+                  }
                 }
             }
 

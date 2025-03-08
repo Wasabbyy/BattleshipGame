@@ -47,6 +47,15 @@ public class BattleshipGame {
         char[][] grid = player.equals(player1) ? grid1 : grid2;
         List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
 
+        // ❌ Kontrola, jestli už hráč tento typ lodi umístil
+        for (Ship ship : fleet) {
+            if (ship.getType().equalsIgnoreCase(shipType)) {
+                out.println("ERROR: You have already placed a " + shipType + "!");
+                logger.warn("Player '{}' tried to place multiple '{}' ships.", player, shipType);
+                return false;
+            }
+        }
+
         Set<String> shipCoords = new HashSet<>();
         for (String coord : positions.split(" ")) {
             String[] parts = coord.split(",");
@@ -61,7 +70,7 @@ public class BattleshipGame {
             shipCoords.add(coord);
         }
 
-        Ship newShip = new Ship(shipCoords);
+        Ship newShip = new Ship(shipType, shipCoords); // Přidáno uložení typu lodi
         fleet.add(newShip);
 
         for (String coord : shipCoords) {
@@ -75,10 +84,11 @@ public class BattleshipGame {
             out.println("All ships placed! Game is starting.");
         }
 
-        out.println("SUCCESS: " + shipType + " " + positions);
+        out.println("SUCCESS: PLACE: " + shipType + " " + positions);
         logger.info("Player '{}' successfully placed ship '{}'", player, shipType);
         return true;
     }
+
 
     public boolean isSetupComplete() {
         if (fleet1.size() == 5 && fleet2.size() == 5) {
@@ -90,11 +100,11 @@ public class BattleshipGame {
 
             if (p1 != null) {
                 p1.println("GAME START");
-                p1.println("Your turn");
+                p1.println("SUCCESS: Your turn");
             }
             if (p2 != null) {
                 p2.println("GAME START");
-                p2.println("Opponent's turn");
+                p2.println("SUCCESS: Opponent's turn");
             }
 
             return true;
@@ -158,8 +168,8 @@ public class BattleshipGame {
             }
 
             currentTurn = getOpponent(player);
-            if (opponentOut != null) opponentOut.println("Your turn");
-            out.println("Opponent's turn");
+            if (opponentOut != null) opponentOut.println("SUCCESS: Your turn");
+            out.println("SUCCESS: Opponent's turn");
 
         } catch (NumberFormatException e) {
             out.println("ERROR: Invalid coordinates! Use numbers between 0-9.");

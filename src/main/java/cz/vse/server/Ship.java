@@ -11,8 +11,10 @@ public class Ship {
 
     private Set<String> positions; // Souřadnice lodi
     private Set<String> hits; // Zásahy
+    private String shipType; // Typ lodi
 
-    public Ship(Set<String> positions) {
+    public Ship(String shipType,Set<String> positions) {
+        this.shipType = shipType;
         this.positions = new HashSet<>(positions);
         this.hits = new HashSet<>();
         logger.info("New ship created at positions: {}", positions);
@@ -24,6 +26,9 @@ public class Ship {
             logger.info("Ship at positions '{}' has been sunk!", positions);
         }
         return sunk;
+    }
+    public String getType() {
+        return shipType;
     }
 
     public boolean registerHit(String position) {
