@@ -42,4 +42,19 @@ public class Server {
             e.printStackTrace();
         }
     }
+    public static void checkAndShutdown() {
+        System.out.println("Checking if server should shut down...");
+
+        if (activeUsers.isEmpty()) {
+            System.out.println("No active users remaining. Shutting down server...");
+            logger.info("No active users remaining. Server is shutting down.");
+            System.exit(0); // Vypne server
+        } else {
+            System.out.println("Active users still connected: " + activeUsers);
+            logger.info("Active users remaining: {}", activeUsers.size());
+        }
+    }
+
+
+
 }

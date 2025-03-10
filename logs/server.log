@@ -1360,3 +1360,555 @@ java.net.SocketException: Connection reset
 	at java.lang.Thread.run(Thread.java:1570) [?:?]
 2025-03-08 14:15:21 [pool-1-thread-2] INFO  BattleshipGame - Player 'gfdgdfg' forfeited, 'sadasd' wins by default.
 2025-03-08 14:15:21 [pool-1-thread-2] INFO  GameManager - Game between gfdgdfg and sadasd ended due to disconnection
+2025-03-10 17:23:14 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 17:25:22 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:25:22 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 17:25:22 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 17:26:07 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:26:07 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asddd' and 'as'
+2025-03-10 17:26:07 [pool-1-thread-2] INFO  GameManager - Game started: asddd vs as
+2025-03-10 17:26:07 [pool-1-thread-2] INFO  ClientHandler - User 'asddd' logged in and added to queue
+2025-03-10 17:26:08 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: as
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:26:08 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' forfeited, 'asddd' wins by default.
+2025-03-10 17:26:08 [pool-1-thread-1] INFO  GameManager - Game between as and asddd ended due to disconnection
+2025-03-10 17:26:15 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: asddd
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:26:39 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:26:39 [pool-1-thread-2] INFO  GameManager - ad is waiting for an opponent...
+2025-03-10 17:26:39 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 17:26:39 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:26:39 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'as' and 'ad'
+2025-03-10 17:26:39 [pool-1-thread-1] INFO  GameManager - Game started: as vs ad
+2025-03-10 17:26:39 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 17:26:42 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '0,2 1,2 2,2 3,2'
+2025-03-10 17:26:42 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,2, 1,2, 2,2, 3,2]
+2025-03-10 17:26:42 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'Battleship'
+2025-03-10 17:26:43 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'Battleship' at '0,3 1,3 2,3 3,3'
+2025-03-10 17:26:43 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,3, 1,3, 2,3, 3,3]
+2025-03-10 17:26:43 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Battleship'
+2025-03-10 17:26:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '1,5 2,5 3,5 4,5'
+2025-03-10 17:26:50 [pool-1-thread-1] WARN  BattleshipGame - Player 'as' tried to place multiple 'Battleship' ships.
+2025-03-10 17:26:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '2,7 3,7 4,7 5,7'
+2025-03-10 17:26:53 [pool-1-thread-1] WARN  BattleshipGame - Player 'as' tried to place multiple 'Battleship' ships.
+2025-03-10 17:26:55 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Destroyer' at '1,6 2,6 3,6'
+2025-03-10 17:26:55 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,6, 2,6, 3,6]
+2025-03-10 17:26:55 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'Destroyer'
+2025-03-10 17:26:56 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'PatrolBoat' at '2,4 3,4'
+2025-03-10 17:26:56 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,4, 3,4]
+2025-03-10 17:26:56 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'PatrolBoat'
+2025-03-10 17:26:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'L-Ship' at '6,4 7,4 7,5'
+2025-03-10 17:26:58 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,5, 6,4, 7,4]
+2025-03-10 17:26:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'L-Ship'
+2025-03-10 17:27:01 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '6,1 7,1 8,1 9,1'
+2025-03-10 17:27:01 [pool-1-thread-1] WARN  BattleshipGame - Player 'as' tried to place multiple 'Battleship' ships.
+2025-03-10 17:27:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'T-Ship' at '6,0 6,1 6,2 7,1'
+2025-03-10 17:27:02 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,0, 6,1, 6,2, 7,1]
+2025-03-10 17:27:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'T-Ship'
+2025-03-10 17:27:07 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'T-Ship' at '1,0 1,1 1,2 2,1'
+2025-03-10 17:27:07 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,0, 1,1, 1,2, 2,1]
+2025-03-10 17:27:07 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'T-Ship'
+2025-03-10 17:27:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'PatrolBoat' at '1,7 2,7'
+2025-03-10 17:27:09 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,7, 2,7]
+2025-03-10 17:27:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'PatrolBoat'
+2025-03-10 17:27:10 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'T-Ship' at '5,5 5,6 5,7 6,6'
+2025-03-10 17:27:10 [pool-1-thread-2] WARN  BattleshipGame - Player 'ad' tried to place multiple 'T-Ship' ships.
+2025-03-10 17:27:11 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'Battleship' at '5,4 6,4 7,4 8,4'
+2025-03-10 17:27:11 [pool-1-thread-2] WARN  BattleshipGame - Player 'ad' tried to place multiple 'Battleship' ships.
+2025-03-10 17:27:13 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'L-Ship' at '5,7 6,7 6,8'
+2025-03-10 17:27:13 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,7, 6,7, 6,8]
+2025-03-10 17:27:13 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'L-Ship'
+2025-03-10 17:27:14 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'PatrolBoat' at '6,4 7,4'
+2025-03-10 17:27:14 [pool-1-thread-2] WARN  BattleshipGame - Player 'ad' tried to place multiple 'PatrolBoat' ships.
+2025-03-10 17:27:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'Destroyer' at '3,1 4,1 5,1'
+2025-03-10 17:27:16 [pool-1-thread-2] INFO  Ship - New ship created at positions: [3,1, 4,1, 5,1]
+2025-03-10 17:27:16 [pool-1-thread-2] INFO  BattleshipGame - Game between 'as' and 'ad' is now in progress
+2025-03-10 17:27:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Destroyer'
+2025-03-10 17:27:16 [pool-1-thread-2] INFO  BattleshipGame - Game between 'as' and 'ad' is now in progress
+2025-03-10 17:27:16 [pool-1-thread-1] INFO  BattleshipGame - Game between 'as' and 'ad' is now in progress
+2025-03-10 17:27:25 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' attempting move '3,3'
+2025-03-10 17:27:25 [pool-1-thread-2] INFO  BattleshipGame - Game between 'as' and 'ad' is now in progress
+2025-03-10 17:27:25 [pool-1-thread-2] WARN  BattleshipGame - Player 'ad' attempted a move out of turn
+2025-03-10 17:27:25 [pool-1-thread-2] INFO  ClientHandler - User 'ad' fired at 3,3
+2025-03-10 17:27:28 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' attempting move '1,2'
+2025-03-10 17:27:28 [pool-1-thread-1] INFO  BattleshipGame - Game between 'as' and 'ad' is now in progress
+2025-03-10 17:27:28 [pool-1-thread-1] INFO  Ship - Shot at '1,2' missed
+2025-03-10 17:27:28 [pool-1-thread-1] INFO  Ship - Ship hit at position '1,2'
+2025-03-10 17:27:28 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' hit a ship at '1,2'
+2025-03-10 17:27:28 [pool-1-thread-1] INFO  ClientHandler - User 'as' fired at 1,2
+2025-03-10 17:27:38 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: ad
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:90) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:27:38 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' forfeited, 'as' wins by default.
+2025-03-10 17:27:38 [pool-1-thread-2] INFO  GameManager - Game between ad and as ended due to disconnection
+2025-03-10 17:39:55 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 17:40:15 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:40:15 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 17:40:15 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 17:40:17 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:40:17 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 17:40:17 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 17:40:17 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 17:42:49 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 17:42:55 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 17:43:13 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:43:13 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 17:43:13 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 17:43:15 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:43:15 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 17:43:15 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 17:43:15 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 17:44:14 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: as
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:44:14 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' forfeited, 'ad' wins by default.
+2025-03-10 17:44:14 [pool-1-thread-1] INFO  GameManager - Game between as and ad ended due to disconnection
+2025-03-10 17:47:42 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 17:47:55 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:47:55 [pool-1-thread-1] INFO  GameManager - ad is waiting for an opponent...
+2025-03-10 17:47:55 [pool-1-thread-1] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 17:47:55 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:47:55 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'as' and 'ad'
+2025-03-10 17:47:55 [pool-1-thread-2] INFO  GameManager - Game started: as vs ad
+2025-03-10 17:47:55 [pool-1-thread-2] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 17:48:02 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: ad
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:48:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' forfeited, 'as' wins by default.
+2025-03-10 17:48:02 [pool-1-thread-1] INFO  GameManager - Game between ad and as ended due to disconnection
+2025-03-10 17:48:15 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: as
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:56:09 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 17:56:27 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:56:27 [pool-1-thread-1] INFO  GameManager - ad is waiting for an opponent...
+2025-03-10 17:56:27 [pool-1-thread-1] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 17:56:28 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:56:28 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'as' and 'ad'
+2025-03-10 17:56:28 [pool-1-thread-2] INFO  GameManager - Game started: as vs ad
+2025-03-10 17:56:28 [pool-1-thread-2] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 17:56:33 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: as
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:56:33 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' forfeited, 'ad' wins by default.
+2025-03-10 17:56:33 [pool-1-thread-2] INFO  GameManager - Game between as and ad ended due to disconnection
+2025-03-10 17:56:40 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: ad
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:59:12 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 17:59:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:59:36 [pool-1-thread-1] INFO  GameManager - a1 is waiting for an opponent...
+2025-03-10 17:59:36 [pool-1-thread-1] INFO  ClientHandler - User 'a1' logged in and added to queue
+2025-03-10 17:59:39 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 17:59:39 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'a2' and 'a1'
+2025-03-10 17:59:39 [pool-1-thread-2] INFO  GameManager - Game started: a2 vs a1
+2025-03-10 17:59:39 [pool-1-thread-2] INFO  ClientHandler - User 'a2' logged in and added to queue
+2025-03-10 17:59:43 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: a2
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 17:59:43 [pool-1-thread-2] INFO  BattleshipGame - Player 'a2' forfeited, 'a1' wins by default.
+2025-03-10 17:59:43 [pool-1-thread-2] INFO  GameManager - Game between a2 and a1 ended due to disconnection
+2025-03-10 17:59:43 [pool-1-thread-2] INFO  Server - Active users remaining: 1
+2025-03-10 18:00:10 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: a1
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:00:10 [pool-1-thread-1] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:02:03 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:02:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:02:16 [pool-1-thread-1] INFO  GameManager - bbb is waiting for an opponent...
+2025-03-10 18:02:16 [pool-1-thread-1] INFO  ClientHandler - User 'bbb' logged in and added to queue
+2025-03-10 18:02:17 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:02:17 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'aaa' and 'bbb'
+2025-03-10 18:02:17 [pool-1-thread-2] INFO  GameManager - Game started: aaa vs bbb
+2025-03-10 18:02:17 [pool-1-thread-2] INFO  ClientHandler - User 'aaa' logged in and added to queue
+2025-03-10 18:02:20 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: bbb
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:02:20 [pool-1-thread-1] INFO  BattleshipGame - Player 'bbb' forfeited, 'aaa' wins by default.
+2025-03-10 18:02:20 [pool-1-thread-1] INFO  GameManager - Game between bbb and aaa ended due to disconnection
+2025-03-10 18:02:20 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:03:12 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: aaa
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:03:12 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:03:51 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:04:01 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:04:01 [pool-1-thread-1] INFO  GameManager - aa is waiting for an opponent...
+2025-03-10 18:04:01 [pool-1-thread-1] INFO  ClientHandler - User 'aa' logged in and added to queue
+2025-03-10 18:04:04 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:04:04 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'bb' and 'aa'
+2025-03-10 18:04:04 [pool-1-thread-2] INFO  GameManager - Game started: bb vs aa
+2025-03-10 18:04:04 [pool-1-thread-2] INFO  ClientHandler - User 'bb' logged in and added to queue
+2025-03-10 18:04:07 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: aa
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:04:07 [pool-1-thread-1] INFO  BattleshipGame - Player 'aa' forfeited, 'bb' wins by default.
+2025-03-10 18:04:07 [pool-1-thread-1] INFO  GameManager - Game between aa and bb ended due to disconnection
+2025-03-10 18:04:07 [pool-1-thread-1] INFO  ClientHandler - User 'aa' disconnected voluntarily.
+2025-03-10 18:04:07 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:04:21 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: bb
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:04:21 [pool-1-thread-2] INFO  ClientHandler - User 'bb' disconnected voluntarily.
+2025-03-10 18:04:21 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:05:45 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:06:04 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:06:04 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:06:04 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:06:06 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:06:06 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 18:06:06 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 18:06:06 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:06:18 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: ad
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:06:18 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' forfeited, 'as' wins by default.
+2025-03-10 18:06:18 [pool-1-thread-2] INFO  GameManager - Game between ad and as ended due to disconnection
+2025-03-10 18:06:18 [pool-1-thread-2] INFO  ClientHandler - User 'ad' disconnected voluntarily.
+2025-03-10 18:06:18 [pool-1-thread-2] INFO  Server - Active users remaining: 1
+2025-03-10 18:07:01 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: as
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:57) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:07:01 [pool-1-thread-1] INFO  ClientHandler - User 'as' disconnected voluntarily.
+2025-03-10 18:07:01 [pool-1-thread-1] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:07:06 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:07:19 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:07:19 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:07:19 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:07:21 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:07:21 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 18:07:21 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 18:07:21 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:07:30 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '0,0 1,0 2,0 3,0'
+2025-03-10 18:07:30 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,0, 1,0, 2,0, 3,0]
+2025-03-10 18:07:30 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'Battleship'
+2025-03-10 18:07:32 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'PatrolBoat' at '0,3 1,3'
+2025-03-10 18:07:32 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,3, 1,3]
+2025-03-10 18:07:32 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'PatrolBoat'
+2025-03-10 18:07:33 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Destroyer' at '0,7 1,7 2,7'
+2025-03-10 18:07:33 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,7, 1,7, 2,7]
+2025-03-10 18:07:33 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'Destroyer'
+2025-03-10 18:07:35 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '4,6 5,6 6,6 7,6'
+2025-03-10 18:07:35 [pool-1-thread-1] WARN  BattleshipGame - Player 'as' tried to place multiple 'Battleship' ships.
+2025-03-10 18:07:36 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'L-Ship' at '4,4 5,4 5,5'
+2025-03-10 18:07:36 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,4, 5,4, 5,5]
+2025-03-10 18:07:36 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'L-Ship'
+2025-03-10 18:07:38 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'T-Ship' at '4,6 4,7 4,8 5,7'
+2025-03-10 18:07:38 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,8, 5,7, 4,6, 4,7]
+2025-03-10 18:07:38 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'T-Ship'
+2025-03-10 18:07:41 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'Battleship' at '0,0 1,0 2,0 3,0'
+2025-03-10 18:07:41 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,0, 1,0, 2,0, 3,0]
+2025-03-10 18:07:41 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Battleship'
+2025-03-10 18:07:42 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'T-Ship' at '1,3 1,4 1,5 2,4'
+2025-03-10 18:07:42 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,3, 1,4, 1,5, 2,4]
+2025-03-10 18:07:42 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'T-Ship'
+2025-03-10 18:07:44 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'L-Ship' at '4,3 5,3 5,4'
+2025-03-10 18:07:44 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,3, 5,3, 5,4]
+2025-03-10 18:07:44 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'L-Ship'
+2025-03-10 18:07:45 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'Destroyer' at '3,7 4,7 5,7'
+2025-03-10 18:07:45 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,7, 3,7, 4,7]
+2025-03-10 18:07:45 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Destroyer'
+2025-03-10 18:07:47 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'PatrolBoat' at '7,1 8,1'
+2025-03-10 18:07:47 [pool-1-thread-2] INFO  Ship - New ship created at positions: [7,1, 8,1]
+2025-03-10 18:07:47 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:07:47 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'PatrolBoat'
+2025-03-10 18:07:47 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:07:47 [pool-1-thread-1] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:07:52 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' attempting move '0,7'
+2025-03-10 18:07:52 [pool-1-thread-1] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:07:52 [pool-1-thread-1] WARN  BattleshipGame - Player 'as' attempted a move out of turn
+2025-03-10 18:07:52 [pool-1-thread-1] INFO  ClientHandler - User 'as' fired at 0,7
+2025-03-10 18:07:53 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' attempting move '0,7'
+2025-03-10 18:07:53 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:07:53 [pool-1-thread-2] INFO  Ship - Shot at '0,7' missed
+2025-03-10 18:07:53 [pool-1-thread-2] INFO  Ship - Shot at '0,7' missed
+2025-03-10 18:07:53 [pool-1-thread-2] INFO  Ship - Ship hit at position '0,7'
+2025-03-10 18:07:53 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' hit a ship at '0,7'
+2025-03-10 18:07:53 [pool-1-thread-2] INFO  ClientHandler - User 'ad' fired at 0,7
+2025-03-10 18:07:56 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' attempting move '2,6'
+2025-03-10 18:07:56 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:07:56 [pool-1-thread-2] WARN  BattleshipGame - Player 'ad' attempted a move out of turn
+2025-03-10 18:07:56 [pool-1-thread-2] INFO  ClientHandler - User 'ad' fired at 2,6
+2025-03-10 18:07:58 [pool-1-thread-2] INFO  ClientHandler - User 'ad' disconnected voluntarily.
+2025-03-10 18:07:58 [pool-1-thread-2] INFO  ClientHandler - Removed user 'ad' from active users list.
+2025-03-10 18:07:58 [pool-1-thread-2] INFO  Server - Active users remaining: 1
+2025-03-10 18:07:58 [pool-1-thread-2] INFO  ClientHandler - User 'ad' disconnected voluntarily.
+2025-03-10 18:07:58 [pool-1-thread-2] INFO  Server - Active users remaining: 1
+2025-03-10 18:08:36 [pool-1-thread-1] INFO  ClientHandler - User 'as' disconnected voluntarily.
+2025-03-10 18:08:36 [pool-1-thread-1] INFO  ClientHandler - Removed user 'as' from active users list.
+2025-03-10 18:08:36 [pool-1-thread-1] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:09:31 [main] INFO  Server - Server is starting on port 12345

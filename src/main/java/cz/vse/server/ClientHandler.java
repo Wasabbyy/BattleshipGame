@@ -74,7 +74,7 @@ class ClientHandler implements Runnable {
 
                     if (success) {
                         shipsPlaced++;
-                  }
+                    }
                 }
             }
 
@@ -93,6 +93,21 @@ class ClientHandler implements Runnable {
                 if ("EXIT".equalsIgnoreCase(message)) {
                     out.println("Goodbye, " + username + "!");
                     logger.info("User '{}' disconnected voluntarily.", username);
+
+                    System.out.println("Client " + username + " disconnected.");
+
+                    if (username != null) {
+                        Server.activeUsers.remove(username);
+                        System.out.println("Removed user from activeUsers: " + username);
+                        logger.info("Removed user '{}' from active users list.", username);
+                    } else {
+                        System.out.println("ERROR: Username is null when trying to remove user.");
+                    }
+
+                    Server.removePlayerOutput(username);
+
+                    System.out.println("Active users remaining: " + Server.activeUsers.size());
+                    Server.checkAndShutdown();
                     break;
                 }
 
@@ -124,7 +139,12 @@ class ClientHandler implements Runnable {
             }
 
         } finally {
-            Server.removePlayerOutput(username);
+            if (username != null) {
+                logger.info("User '{}' disconnected voluntarily.", username);
+                Server.activeUsers.remove(username);
+                Server.removePlayerOutput(username);
+                Server.checkAndShutdown();
+            }
             try {
                 clientSocket.close();
             } catch (IOException e) {
