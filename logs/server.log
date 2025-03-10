@@ -1912,3 +1912,79 @@ java.net.SocketException: Connection reset
 2025-03-10 18:08:36 [pool-1-thread-1] INFO  ClientHandler - Removed user 'as' from active users list.
 2025-03-10 18:08:36 [pool-1-thread-1] INFO  Server - No active users remaining. Server is shutting down.
 2025-03-10 18:09:31 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:17:22 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:17:57 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:17:57 [pool-1-thread-1] INFO  GameManager - ad is waiting for an opponent...
+2025-03-10 18:17:57 [pool-1-thread-1] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:17:57 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:17:57 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'as' and 'ad'
+2025-03-10 18:17:57 [pool-1-thread-2] INFO  GameManager - Game started: as vs ad
+2025-03-10 18:17:57 [pool-1-thread-2] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:18:04 [pool-1-thread-2] ERROR ClientHandler - Connection lost with client: as
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:58) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:18:04 [pool-1-thread-2] INFO  Server - Active users remaining: 1
+2025-03-10 18:18:22 [pool-1-thread-1] ERROR ClientHandler - Connection lost with client: ad
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at cz.vse.server.ClientHandler.run(ClientHandler.java:58) ~[classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-10 18:18:22 [pool-1-thread-1] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:21:50 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:22:27 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:22:27 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:22:27 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:22:29 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:22:29 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 18:22:29 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 18:22:29 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:22:33 [pool-1-thread-1] INFO  ClientHandler - User 'as' disconnected.
+2025-03-10 18:22:33 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:22:33 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:22:39 [pool-1-thread-2] INFO  ClientHandler - User 'ad' disconnected.
+2025-03-10 18:22:39 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:23:19 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:24:44 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:24:44 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:24:44 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:24:46 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:24:46 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 18:24:46 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 18:24:46 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:25:12 [pool-1-thread-1] INFO  ClientHandler - User 'as' disconnected.
+2025-03-10 18:25:12 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:25:12 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:25:16 [pool-1-thread-2] INFO  ClientHandler - User 'ad' disconnected.
+2025-03-10 18:25:16 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.

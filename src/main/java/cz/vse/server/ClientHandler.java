@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.net.Socket;
+import java.net.SocketException;
 
 class ClientHandler implements Runnable {
     private static final Logger logger = LogManager.getLogger(ClientHandler.class);
@@ -56,8 +57,8 @@ class ClientHandler implements Runnable {
             while (shipsPlaced < 5) {
                 message = in.readLine();
                 if (message == null) {
-                    logger.warn("Player '{}' disconnected during setup.", username);
-                    throw new IOException("Client disconnected.");
+                    handleDisconnection();
+                    return;
                 }
 
                 if (message.startsWith("PLACE ")) {
@@ -88,27 +89,16 @@ class ClientHandler implements Runnable {
 
             while (true) {
                 message = in.readLine();
-                if (message == null) break;
+                if (message == null) {
+                    handleDisconnection();
+                    return;
+                }
 
                 if ("EXIT".equalsIgnoreCase(message)) {
                     out.println("Goodbye, " + username + "!");
                     logger.info("User '{}' disconnected voluntarily.", username);
-
-                    System.out.println("Client " + username + " disconnected.");
-
-                    if (username != null) {
-                        Server.activeUsers.remove(username);
-                        System.out.println("Removed user from activeUsers: " + username);
-                        logger.info("Removed user '{}' from active users list.", username);
-                    } else {
-                        System.out.println("ERROR: Username is null when trying to remove user.");
-                    }
-
-                    Server.removePlayerOutput(username);
-
-                    System.out.println("Active users remaining: " + Server.activeUsers.size());
-                    Server.checkAndShutdown();
-                    break;
+                    handleDisconnection();
+                    return;
                 }
 
                 if (message.startsWith("FIRE ")) {
@@ -120,36 +110,30 @@ class ClientHandler implements Runnable {
                 }
             }
 
+        } catch (SocketException e) {
+            handleDisconnection();
         } catch (IOException | InterruptedException e) {
             logger.error("Connection lost with client: {}", username, e);
-            if (username != null) {
-                Server.activeUsers.remove(username);
-                BattleshipGame game = GameManager.getGame(username);
-
-                if (game != null) {
-                    String opponent = game.getOpponent(username);
-                    game.forfeit(username);
-                    GameManager.removePlayer(username);
-
-                    PrintWriter opponentOut = Server.getPlayerOutput(opponent);
-                    if (opponentOut != null) {
-                        opponentOut.println("Your opponent disconnected! You win by default.");
-                    }
-                }
-            }
-
         } finally {
-            if (username != null) {
-                logger.info("User '{}' disconnected voluntarily.", username);
-                Server.activeUsers.remove(username);
-                Server.removePlayerOutput(username);
-                Server.checkAndShutdown();
-            }
-            try {
-                clientSocket.close();
-            } catch (IOException e) {
-                logger.error("Error closing client socket for '{}'", username, e);
-            }
+            cleanup();
+        }
+    }
+
+    private void handleDisconnection() {
+        logger.info("User '{}' disconnected.", username);
+        cleanup();
+    }
+
+    private void cleanup() {
+        if (username != null) {
+            Server.activeUsers.remove(username);
+            Server.removePlayerOutput(username);
+            Server.checkAndShutdown();
+        }
+        try {
+            clientSocket.close();
+        } catch (IOException e) {
+            logger.error("Error closing client socket for '{}'", username, e);
         }
     }
 }
