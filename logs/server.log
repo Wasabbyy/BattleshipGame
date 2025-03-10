@@ -1988,3 +1988,227 @@ java.net.SocketException: Connection reset
 2025-03-10 18:25:12 [pool-1-thread-1] INFO  Server - Active users remaining: 1
 2025-03-10 18:25:16 [pool-1-thread-2] INFO  ClientHandler - User 'ad' disconnected.
 2025-03-10 18:25:16 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:27:17 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:27:33 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:27:33 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:27:33 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:27:35 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:27:35 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 18:27:35 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 18:27:35 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:29:54 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '1,3 2,3 3,3 4,3'
+2025-03-10 18:29:54 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3, 4,3]
+2025-03-10 18:29:54 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'Battleship'
+2025-03-10 18:30:51 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-10 18:30:51 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-10 18:30:51 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Battleship'
+2025-03-10 18:30:54 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'T-Ship' at '1,5 1,6 1,7 2,6'
+2025-03-10 18:30:54 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,5, 1,6, 1,7, 2,6]
+2025-03-10 18:30:54 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'T-Ship'
+2025-03-10 18:30:57 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'T-Ship' at '1,6 1,7 1,8 2,7'
+2025-03-10 18:30:57 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,6, 1,7, 1,8, 2,7]
+2025-03-10 18:30:57 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'T-Ship'
+2025-03-10 18:30:59 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' is placing ship 'Destroyer' at '5,6 6,6 7,6'
+2025-03-10 18:30:59 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,6, 7,6, 5,6]
+2025-03-10 18:30:59 [pool-1-thread-1] INFO  BattleshipGame - Player 'as' successfully placed ship 'Destroyer'
+2025-03-10 18:31:02 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' is placing ship 'Destroyer' at '5,5 6,5 7,5'
+2025-03-10 18:31:02 [pool-1-thread-2] INFO  Ship - New ship created at positions: [7,5, 5,5, 6,5]
+2025-03-10 18:31:02 [pool-1-thread-2] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Destroyer'
+2025-03-10 18:31:10 [pool-1-thread-1] INFO  ClientHandler - User 'as' disconnected.
+2025-03-10 18:31:10 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:31:10 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:31:12 [pool-1-thread-2] INFO  ClientHandler - User 'ad' disconnected.
+2025-03-10 18:31:12 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:33:20 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:34:29 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:34:29 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:34:29 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:34:29 [pool-1-thread-1] INFO  ClientHandler - Client 'as' has started the game
+2025-03-10 18:38:30 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:40:33 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:43:08 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:47:34 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:47:39 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:47:39 [pool-1-thread-1] INFO  GameManager - defaultUser is waiting for an opponent...
+2025-03-10 18:47:39 [pool-1-thread-1] INFO  ClientHandler - User 'defaultUser' logged in and added to queue
+2025-03-10 18:47:39 [pool-1-thread-1] INFO  ClientHandler - Client 'defaultUser' is ready
+2025-03-10 18:48:25 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:48:25 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'as' and 'defaultUser'
+2025-03-10 18:48:25 [pool-1-thread-2] INFO  GameManager - Game started: as vs defaultUser
+2025-03-10 18:48:25 [pool-1-thread-2] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:48:25 [pool-1-thread-2] INFO  ClientHandler - Client 'as' is ready
+2025-03-10 18:48:58 [pool-1-thread-1] INFO  ClientHandler - User 'defaultUser' disconnected.
+2025-03-10 18:48:58 [pool-1-thread-2] INFO  ClientHandler - User 'as' disconnected.
+2025-03-10 18:48:58 [pool-1-thread-1] INFO  Server - Active users remaining: 0
+2025-03-10 18:48:58 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:48:58 [pool-1-thread-1] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 18:54:15 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:54:22 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:54:28 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:54:28 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:54:46 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:54:50 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 18:54:50 [pool-1-thread-2] INFO  GameManager - Game started: ad vs as
+2025-03-10 18:54:50 [pool-1-thread-2] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:55:51 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:55:56 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:55:58 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:56:01 [pool-1-thread-2] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:56:01 [pool-1-thread-2] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:56:12 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'addddd' and 'as'
+2025-03-10 18:56:12 [pool-1-thread-1] INFO  GameManager - Game started: addddd vs as
+2025-03-10 18:56:12 [pool-1-thread-1] INFO  ClientHandler - User 'addddd' logged in and added to queue
+2025-03-10 18:56:25 [pool-1-thread-1] INFO  ClientHandler - User 'addddd' disconnected.
+2025-03-10 18:56:25 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:56:25 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 18:56:29 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:56:32 [pool-1-thread-1] WARN  ClientHandler - Login attempt with already used username: as
+2025-03-10 18:56:38 [pool-1-thread-1] INFO  GameManager - affg is waiting for an opponent...
+2025-03-10 18:56:38 [pool-1-thread-1] INFO  ClientHandler - User 'affg' logged in and added to queue
+2025-03-10 18:57:26 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:57:30 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:57:36 [pool-1-thread-1] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:57:36 [pool-1-thread-1] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:58:53 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 18:59:00 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:59:05 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 18:59:11 [pool-1-thread-2] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 18:59:11 [pool-1-thread-2] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 18:59:11 [pool-1-thread-2] INFO  ClientHandler - Client 'as' is ready
+2025-03-10 18:59:14 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 18:59:14 [pool-1-thread-1] INFO  GameManager - Game started: ad vs as
+2025-03-10 18:59:14 [pool-1-thread-1] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 18:59:14 [pool-1-thread-1] INFO  ClientHandler - Client 'ad' is ready
+2025-03-10 18:59:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' is placing ship 'Battleship' at '0,3 1,3 2,3 3,3'
+2025-03-10 18:59:16 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,3, 1,3, 2,3, 3,3]
+2025-03-10 18:59:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' successfully placed ship 'Battleship'
+2025-03-10 18:59:18 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' is placing ship 'T-Ship' at '1,5 1,6 1,7 2,6'
+2025-03-10 18:59:18 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,5, 1,6, 1,7, 2,6]
+2025-03-10 18:59:18 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' successfully placed ship 'T-Ship'
+2025-03-10 18:59:20 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' is placing ship 'L-Ship' at '6,1 7,1 7,2'
+2025-03-10 18:59:20 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,1, 7,1, 7,2]
+2025-03-10 18:59:20 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' successfully placed ship 'L-Ship'
+2025-03-10 18:59:22 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' is placing ship 'PatrolBoat' at '5,4 6,4'
+2025-03-10 18:59:22 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,4, 6,4]
+2025-03-10 18:59:22 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' successfully placed ship 'PatrolBoat'
+2025-03-10 18:59:24 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' is placing ship 'Destroyer' at '4,8 5,8 6,8'
+2025-03-10 18:59:24 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,8, 5,8, 6,8]
+2025-03-10 18:59:24 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' successfully placed ship 'Destroyer'
+2025-03-10 18:59:44 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' is placing ship 'L-Ship' at '0,0 1,0 1,1'
+2025-03-10 18:59:44 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,0, 1,0, 1,1]
+2025-03-10 18:59:44 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' successfully placed ship 'L-Ship'
+2025-03-10 18:59:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' is placing ship 'Battleship' at '2,4 3,4 4,4 5,4'
+2025-03-10 18:59:45 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,4, 3,4, 4,4, 5,4]
+2025-03-10 18:59:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Battleship'
+2025-03-10 18:59:47 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' is placing ship 'T-Ship' at '2,7 2,8 2,9 3,8'
+2025-03-10 18:59:47 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,7, 2,8, 2,9, 3,8]
+2025-03-10 18:59:47 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' successfully placed ship 'T-Ship'
+2025-03-10 18:59:49 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' is placing ship 'Destroyer' at '5,1 6,1 7,1'
+2025-03-10 18:59:49 [pool-1-thread-1] INFO  Ship - New ship created at positions: [5,1, 6,1, 7,1]
+2025-03-10 18:59:49 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' successfully placed ship 'Destroyer'
+2025-03-10 18:59:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' is placing ship 'PatrolBoat' at '0,9 1,9'
+2025-03-10 18:59:50 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,9, 1,9]
+2025-03-10 18:59:50 [pool-1-thread-1] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:59:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' successfully placed ship 'PatrolBoat'
+2025-03-10 18:59:50 [pool-1-thread-1] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 18:59:51 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 19:00:08 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' attempting move '1,2'
+2025-03-10 19:00:08 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 19:00:08 [pool-1-thread-2] WARN  BattleshipGame - Player 'as' attempted a move out of turn
+2025-03-10 19:00:08 [pool-1-thread-2] INFO  ClientHandler - User 'as' fired at 1,2
+2025-03-10 19:00:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' attempting move '0,3'
+2025-03-10 19:00:09 [pool-1-thread-1] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 19:00:09 [pool-1-thread-1] INFO  Ship - Ship hit at position '0,3'
+2025-03-10 19:00:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' hit a ship at '0,3'
+2025-03-10 19:00:09 [pool-1-thread-1] INFO  ClientHandler - User 'ad' fired at 0,3
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' attempting move '0,1'
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' missed at '0,1'
+2025-03-10 19:00:13 [pool-1-thread-2] INFO  ClientHandler - User 'as' fired at 0,1
+2025-03-10 19:00:15 [pool-1-thread-2] INFO  BattleshipGame - Player 'as' attempting move '0,5'
+2025-03-10 19:00:15 [pool-1-thread-2] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 19:00:15 [pool-1-thread-2] WARN  BattleshipGame - Player 'as' attempted a move out of turn
+2025-03-10 19:00:15 [pool-1-thread-2] INFO  ClientHandler - User 'as' fired at 0,5
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' attempting move '0,1'
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  BattleshipGame - Game between 'ad' and 'as' is now in progress
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  Ship - Shot at '0,1' missed
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  BattleshipGame - Player 'ad' missed at '0,1'
+2025-03-10 19:00:16 [pool-1-thread-1] INFO  ClientHandler - User 'ad' fired at 0,1
+2025-03-10 19:00:19 [pool-1-thread-2] INFO  ClientHandler - User 'as' disconnected voluntarily.
+2025-03-10 19:00:19 [pool-1-thread-2] INFO  ClientHandler - User 'as' disconnected.
+2025-03-10 19:00:19 [pool-1-thread-2] INFO  Server - Active users remaining: 1
+2025-03-10 19:00:19 [pool-1-thread-2] INFO  Server - Active users remaining: 1
+2025-03-10 19:00:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 19:00:39 [pool-1-thread-2] INFO  GameManager - affg is waiting for an opponent...
+2025-03-10 19:00:39 [pool-1-thread-2] INFO  ClientHandler - User 'affg' logged in and added to queue
+2025-03-10 19:00:39 [pool-1-thread-2] INFO  ClientHandler - Client 'affg' is ready
+2025-03-10 19:00:46 [pool-1-thread-1] INFO  ClientHandler - User 'ad' disconnected voluntarily.
+2025-03-10 19:00:46 [pool-1-thread-1] INFO  ClientHandler - User 'ad' disconnected.
+2025-03-10 19:00:46 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 19:00:46 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 19:01:24 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 19:01:27 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 19:01:32 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 19:01:35 [pool-1-thread-2] INFO  GameManager - as is waiting for an opponent...
+2025-03-10 19:01:35 [pool-1-thread-2] INFO  ClientHandler - User 'as' logged in and added to queue
+2025-03-10 19:01:35 [pool-1-thread-2] INFO  ClientHandler - Client 'as' is ready
+2025-03-10 19:01:36 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'ad' and 'as'
+2025-03-10 19:01:36 [pool-1-thread-1] INFO  GameManager - Game started: ad vs as
+2025-03-10 19:01:36 [pool-1-thread-1] INFO  ClientHandler - User 'ad' logged in and added to queue
+2025-03-10 19:01:36 [pool-1-thread-1] INFO  ClientHandler - Client 'ad' is ready
+2025-03-10 19:01:39 [pool-1-thread-1] INFO  ClientHandler - User 'ad' disconnected.
+2025-03-10 19:01:39 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 19:01:39 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 19:01:40 [pool-1-thread-2] INFO  ClientHandler - User 'as' disconnected.
+2025-03-10 19:01:40 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-10 19:01:52 [main] INFO  Server - Server is starting on port 12345
+2025-03-10 19:01:54 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 19:03:58 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 19:04:11 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 19:04:24 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-10 19:04:38 [pool-1-thread-1] INFO  GameManager - a1 is waiting for an opponent...
+2025-03-10 19:04:38 [pool-1-thread-1] INFO  ClientHandler - User 'a1' logged in and added to queue
+2025-03-10 19:04:38 [pool-1-thread-1] INFO  ClientHandler - Client 'a1' is ready
+2025-03-10 19:04:39 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'a2' and 'a1'
+2025-03-10 19:04:39 [pool-1-thread-2] INFO  GameManager - Game started: a2 vs a1
+2025-03-10 19:04:39 [pool-1-thread-2] INFO  ClientHandler - User 'a2' logged in and added to queue
+2025-03-10 19:04:39 [pool-1-thread-2] INFO  ClientHandler - Client 'a2' is ready
+2025-03-10 19:04:45 [pool-1-thread-4] INFO  GameManager - b1 is waiting for an opponent...
+2025-03-10 19:04:45 [pool-1-thread-4] INFO  ClientHandler - User 'b1' logged in and added to queue
+2025-03-10 19:04:45 [pool-1-thread-4] INFO  ClientHandler - Client 'b1' is ready
+2025-03-10 19:04:48 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'b2' and 'b1'
+2025-03-10 19:04:48 [pool-1-thread-3] INFO  GameManager - Game started: b2 vs b1
+2025-03-10 19:04:48 [pool-1-thread-3] INFO  ClientHandler - User 'b2' logged in and added to queue
+2025-03-10 19:04:48 [pool-1-thread-3] INFO  ClientHandler - Client 'b2' is ready
+2025-03-10 19:05:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'a1' is placing ship 'Battleship' at '0,1 1,1 2,1 3,1'
+2025-03-10 19:05:02 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,1, 1,1, 2,1, 3,1]
+2025-03-10 19:05:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'a1' successfully placed ship 'Battleship'
+2025-03-10 19:05:02 [pool-1-thread-4] INFO  BattleshipGame - Player 'b1' is placing ship 'Battleship' at '0,2 1,2 2,2 3,2'
+2025-03-10 19:05:02 [pool-1-thread-4] INFO  Ship - New ship created at positions: [0,2, 1,2, 2,2, 3,2]
+2025-03-10 19:05:02 [pool-1-thread-4] INFO  BattleshipGame - Player 'b1' successfully placed ship 'Battleship'
+2025-03-10 19:05:04 [pool-1-thread-3] INFO  BattleshipGame - Player 'b2' is placing ship 'Battleship' at '0,1 1,1 2,1 3,1'
+2025-03-10 19:05:04 [pool-1-thread-3] INFO  Ship - New ship created at positions: [0,1, 1,1, 2,1, 3,1]
+2025-03-10 19:05:04 [pool-1-thread-3] INFO  BattleshipGame - Player 'b2' successfully placed ship 'Battleship'
+2025-03-10 19:05:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'a2' is placing ship 'Battleship' at '0,1 1,1 2,1 3,1'
+2025-03-10 19:05:06 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,1, 1,1, 2,1, 3,1]
+2025-03-10 19:05:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'a2' successfully placed ship 'Battleship'
+2025-03-10 19:05:19 [pool-1-thread-4] INFO  ClientHandler - User 'b1' disconnected.
+2025-03-10 19:05:19 [pool-1-thread-4] INFO  Server - Active users remaining: 3
+2025-03-10 19:05:19 [pool-1-thread-4] INFO  Server - Active users remaining: 3
+2025-03-10 19:05:20 [pool-1-thread-3] INFO  ClientHandler - User 'b2' disconnected.
+2025-03-10 19:05:20 [pool-1-thread-3] INFO  Server - Active users remaining: 2
+2025-03-10 19:05:20 [pool-1-thread-3] INFO  Server - Active users remaining: 2
+2025-03-10 19:05:31 [pool-1-thread-1] INFO  ClientHandler - User 'a1' disconnected.
+2025-03-10 19:05:31 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 19:05:31 [pool-1-thread-1] INFO  Server - Active users remaining: 1
+2025-03-10 19:05:31 [pool-1-thread-2] INFO  ClientHandler - User 'a2' disconnected.
+2025-03-10 19:05:31 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.

@@ -46,6 +46,12 @@ class ClientHandler implements Runnable {
                 }
             }
 
+            // Process READY message
+            message = in.readLine();
+            if ("READY".equalsIgnoreCase(message)) {
+                logger.info("Client '{}' is ready", username);
+            }
+
             BattleshipGame game;
             while ((game = GameManager.getGame(username)) == null) {
                 Thread.sleep(500);
