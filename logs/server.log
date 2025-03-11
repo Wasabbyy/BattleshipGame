@@ -2212,3 +2212,8 @@ java.net.SocketException: Connection reset
 2025-03-10 19:05:31 [pool-1-thread-1] INFO  Server - Active users remaining: 1
 2025-03-10 19:05:31 [pool-1-thread-2] INFO  ClientHandler - User 'a2' disconnected.
 2025-03-10 19:05:31 [pool-1-thread-2] INFO  Server - No active users remaining. Server is shutting down.
+2025-03-11 11:06:06 [main] INFO  Server - Server is starting on port 12345
+2025-03-11 11:06:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-11 11:06:21 [pool-1-thread-1] INFO  GameManager - sada is waiting for an opponent...
+2025-03-11 11:06:21 [pool-1-thread-1] INFO  ClientHandler - User 'sada' logged in and added to queue
+2025-03-11 11:06:21 [pool-1-thread-1] INFO  ClientHandler - Client 'sada' is ready

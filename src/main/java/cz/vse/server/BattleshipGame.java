@@ -91,21 +91,14 @@ public class BattleshipGame {
 
 
     public boolean isSetupComplete() {
+        if (gameState == GameState.IN_PROGRESS) {
+            return true;
+        }
+
         if (fleet1.size() == 5 && fleet2.size() == 5) {
             gameState = GameState.IN_PROGRESS;
             logger.info("Game between '{}' and '{}' is now in progress", player1, player2);
 
-            PrintWriter p1 = Server.getPlayerOutput(player1);
-            PrintWriter p2 = Server.getPlayerOutput(player2);
-
-            if (p1 != null) {
-                p1.println("GAME START");
-                p1.println("SUCCESS: Your turn");
-            }
-            if (p2 != null) {
-                p2.println("GAME START");
-                p2.println("SUCCESS: Opponent's turn");
-            }
 
             return true;
         }
@@ -176,7 +169,6 @@ public class BattleshipGame {
             logger.error("Invalid coordinate format entered by player '{}': '{}'", player, move, e);
         }
     }
-
     public void forfeit(String player) {
         if (gameState == GameState.FINISHED) return;
 
