@@ -115,6 +115,7 @@ public class BattleshipGame {
     }
 
     // In BattleshipGame.java
+// In BattleshipGame.java
     public void processMove(String player, String move, PrintWriter out) {
         logger.info("Player '{}' attempting move '{}'", player, move);
 
@@ -159,6 +160,13 @@ public class BattleshipGame {
                         out.println("SUCCESS: SUNK: " + sunkCoords);
                         if (opponentOut != null) opponentOut.println("SUNK: " + sunkCoords);
                         logger.info("Player '{}' sunk a ship at '{}'", player, sunkCoords);
+
+                        if (allShipsSunk(enemyFleet)) {
+                            out.println("INFO: You win! All enemy ships have been sunk.");
+                            if (opponentOut != null) opponentOut.println("INFO: You lose! All your ships have been sunk.");
+                            logger.info("Player '{}' wins the game by sinking all enemy ships.", player);
+                            gameState = GameState.FINISHED;
+                        }
                     }
                     break;
                 }
@@ -180,6 +188,7 @@ public class BattleshipGame {
             logger.error("Invalid coordinate format entered by player '{}': '{}'", player, move, e);
         }
     }
+
     public void forfeit(String player) {
         if (gameState == GameState.FINISHED) return;
 
@@ -219,5 +228,13 @@ public class BattleshipGame {
             }
         }
         return false;
+    }
+    private boolean allShipsSunk(List<Ship> fleet) {
+        for (Ship ship : fleet) {
+            if (!ship.isSunk()) {
+                return false;
+            }
+        }
+        return true;
     }
 }

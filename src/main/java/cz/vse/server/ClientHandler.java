@@ -132,7 +132,7 @@ class ClientHandler implements Runnable {
         if (username != null) {
             Server.activeUsers.remove(username);
             Server.removePlayerOutput(username);
-            Server.checkAndShutdown();
+            //Server.checkAndShutdown();
         }
         try {
             clientSocket.close();
