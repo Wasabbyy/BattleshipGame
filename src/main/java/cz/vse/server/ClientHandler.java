@@ -110,9 +110,7 @@ class ClientHandler implements Runnable {
                 if (message.startsWith("FIRE ")) {
                     String move = message.substring(5).trim();
                     game.processMove(username, move, out);
-                    logger.info("User '{}' fired at {}", username, move);
-                } else {
-                    out.println("Invalid command! Use 'FIRE x,y' to shoot.");
+
                 }
             }
 

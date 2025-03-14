@@ -47,7 +47,6 @@ public class BattleshipGame {
         char[][] grid = player.equals(player1) ? grid1 : grid2;
         List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
 
-        // ❌ Kontrola, jestli už hráč tento typ lodi umístil
         for (Ship ship : fleet) {
             if (ship.getType().equalsIgnoreCase(shipType)) {
                 out.println("ERROR: You have already placed a " + shipType + "!");
@@ -55,6 +54,16 @@ public class BattleshipGame {
                 return false;
             }
         }
+        // In BattleshipGame.java
+            Set<String> newShipPositions = new HashSet<>(Arrays.asList(positions.split(" ")));
+            if (isAdjacent(player, newShipPositions)) {
+                out.println("ERROR: Ships cannot be placed adjacent to each other!");
+                logger.warn("Player '{}' tried to place a ship adjacent to another ship: {}", player, positions);
+                return false;
+            }
+
+
+
 
         Set<String> shipCoords = new HashSet<>();
         for (String coord : positions.split(" ")) {
@@ -105,6 +114,7 @@ public class BattleshipGame {
         return false;
     }
 
+    // In BattleshipGame.java
     public void processMove(String player, String move, PrintWriter out) {
         logger.info("Player '{}' attempting move '{}'", player, move);
 
@@ -140,14 +150,15 @@ public class BattleshipGame {
             for (Ship ship : enemyFleet) {
                 if (ship.registerHit(coord)) {
                     hit = true;
+                    out.println("SUCCESS: HIT: " + coord);
+                    if (opponentOut != null) opponentOut.println("HIT: " + coord);
+                    logger.info("Player '{}' hit a ship at '{}'", player, coord);
+
                     if (ship.isSunk()) {
-                        out.println("SUCCESS: SUNK: " + coord);
-                        if (opponentOut != null) opponentOut.println("SUNK: " + coord);
-                        logger.info("Player '{}' sunk a ship at '{}'", player, coord);
-                    } else {
-                        out.println("SUCCESS: HIT: " + coord);
-                        if (opponentOut != null) opponentOut.println("HIT: " + coord);
-                        logger.info("Player '{}' hit a ship at '{}'", player, coord);
+                        String sunkCoords = String.join(" ", ship.getPositions());
+                        out.println("SUCCESS: SUNK: " + sunkCoords);
+                        if (opponentOut != null) opponentOut.println("SUNK: " + sunkCoords);
+                        logger.info("Player '{}' sunk a ship at '{}'", player, sunkCoords);
                     }
                     break;
                 }
@@ -185,5 +196,28 @@ public class BattleshipGame {
         if (loserOut != null) {
             loserOut.println("You forfeited the game!");
         }
+    }
+    // In BattleshipGame.java
+    public boolean isAdjacent(String player, Set<String> newShipPositions) {
+        List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
+        Set<String> allPositions = new HashSet<>();
+        for (Ship ship : fleet) {
+            allPositions.addAll(ship.getPositions());
+        }
+
+        for (String pos : newShipPositions) {
+            int x = Integer.parseInt(pos.split(",")[0]);
+            int y = Integer.parseInt(pos.split(",")[1]);
+            String[] adjacentPositions = {
+                    (x-1) + "," + y, (x+1) + "," + y,
+                    x + "," + (y-1), x + "," + (y+1)
+            };
+            for (String adjPos : adjacentPositions) {
+                if (allPositions.contains(adjPos)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

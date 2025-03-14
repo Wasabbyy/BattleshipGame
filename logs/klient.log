@@ -407,3 +407,610 @@
 2025-03-11 14:56:33 [pool-1-thread-1] INFO  GameManager - sfsdsfs is waiting for an opponent...
 2025-03-11 14:56:33 [pool-1-thread-1] INFO  ClientHandler - User 'sfsdsfs' logged in and added to queue
 2025-03-11 14:56:33 [pool-1-thread-1] INFO  ClientHandler - Client 'sfsdsfs' is ready
+2025-03-14 10:15:06 [main] INFO  Server - Server is starting on port 12345
+2025-03-14 10:15:18 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:15:22 [pool-1-thread-1] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-14 10:15:22 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-14 10:15:22 [pool-1-thread-1] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-14 10:15:31 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:15:34 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'sdadasd' and 'asdasd'
+2025-03-14 10:15:34 [pool-1-thread-2] INFO  GameManager - Game started: sdadasd vs asdasd
+2025-03-14 10:15:34 [pool-1-thread-2] INFO  ClientHandler - User 'sdadasd' logged in and added to queue
+2025-03-14 10:15:34 [pool-1-thread-2] INFO  ClientHandler - Client 'sdadasd' is ready
+2025-03-14 10:15:34 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Battleship' at '0,2 1,2 2,2 3,2'
+2025-03-14 10:15:34 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,2, 1,2, 2,2, 3,2]
+2025-03-14 10:15:34 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Battleship'
+2025-03-14 10:15:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '1,2 1,3 1,4 2,3'
+2025-03-14 10:15:39 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' tried to place a ship adjacent to another ship: 1,2 1,3 1,4 2,3
+2025-03-14 10:15:40 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '1,3 1,4 1,5 2,4'
+2025-03-14 10:15:40 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' tried to place a ship adjacent to another ship: 1,3 1,4 1,5 2,4
+2025-03-14 10:15:41 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '1,4 1,5 1,6 2,5'
+2025-03-14 10:15:41 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,4, 1,5, 1,6, 2,5]
+2025-03-14 10:15:41 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-14 10:15:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Battleship' at '6,4 7,4 8,4 9,4'
+2025-03-14 10:15:48 [pool-1-thread-1] WARN  BattleshipGame - Player 'asdasd' tried to place multiple 'Battleship' ships.
+2025-03-14 10:17:06 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:17:09 [pool-1-thread-3] INFO  GameManager - sadasd is waiting for an opponent...
+2025-03-14 10:17:09 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' logged in and added to queue
+2025-03-14 10:17:09 [pool-1-thread-3] INFO  ClientHandler - Client 'sadasd' is ready
+2025-03-14 10:17:25 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:17:29 [pool-1-thread-4] INFO  BattleshipGame - New game created between 'sdasdas' and 'sadasd'
+2025-03-14 10:17:29 [pool-1-thread-4] INFO  GameManager - Game started: sdasdas vs sadasd
+2025-03-14 10:17:29 [pool-1-thread-4] INFO  ClientHandler - User 'sdasdas' logged in and added to queue
+2025-03-14 10:17:29 [pool-1-thread-4] INFO  ClientHandler - Client 'sdasdas' is ready
+2025-03-14 10:17:29 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'Battleship' at '2,2 3,2 4,2 5,2'
+2025-03-14 10:17:29 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2, 5,2]
+2025-03-14 10:17:29 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'Battleship'
+2025-03-14 10:17:37 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'Destroyer' at '2,6 3,6 4,6'
+2025-03-14 10:17:37 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,6, 3,6, 4,6]
+2025-03-14 10:17:37 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'Destroyer'
+2025-03-14 10:17:38 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'PatrolBoat' at '2,8 3,8'
+2025-03-14 10:17:38 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,8, 3,8]
+2025-03-14 10:17:38 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'PatrolBoat'
+2025-03-14 10:17:41 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'L-Ship' at '8,1 9,1 9,2'
+2025-03-14 10:17:41 [pool-1-thread-3] INFO  Ship - New ship created at positions: [8,1, 9,1, 9,2]
+2025-03-14 10:17:41 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'L-Ship'
+2025-03-14 10:17:43 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' is placing ship 'T-Ship' at '7,4 7,5 7,6 8,5'
+2025-03-14 10:17:43 [pool-1-thread-3] INFO  Ship - New ship created at positions: [7,5, 7,6, 8,5, 7,4]
+2025-03-14 10:17:43 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' successfully placed ship 'T-Ship'
+2025-03-14 10:17:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-14 10:17:45 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-14 10:17:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' successfully placed ship 'Battleship'
+2025-03-14 10:17:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' is placing ship 'PatrolBoat' at '2,4 3,4'
+2025-03-14 10:17:46 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,4, 3,4]
+2025-03-14 10:17:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' successfully placed ship 'PatrolBoat'
+2025-03-14 10:17:49 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' is placing ship 'Destroyer' at '1,7 2,7 3,7'
+2025-03-14 10:17:49 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,7, 2,7, 3,7]
+2025-03-14 10:17:49 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' successfully placed ship 'Destroyer'
+2025-03-14 10:17:52 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' is placing ship 'L-Ship' at '7,2 8,2 8,3'
+2025-03-14 10:17:52 [pool-1-thread-4] INFO  Ship - New ship created at positions: [7,2, 8,2, 8,3]
+2025-03-14 10:17:52 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' successfully placed ship 'L-Ship'
+2025-03-14 10:17:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' is placing ship 'T-Ship' at '7,6 7,7 7,8 8,7'
+2025-03-14 10:17:54 [pool-1-thread-4] INFO  Ship - New ship created at positions: [7,6, 7,7, 7,8, 8,7]
+2025-03-14 10:17:54 [pool-1-thread-4] INFO  BattleshipGame - Game between 'sdasdas' and 'sadasd' is now in progress
+2025-03-14 10:17:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' successfully placed ship 'T-Ship'
+2025-03-14 10:18:05 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' attempting move '3,1'
+2025-03-14 10:18:05 [pool-1-thread-3] WARN  BattleshipGame - Player 'sadasd' attempted a move out of turn
+2025-03-14 10:18:05 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' fired at 3,1
+2025-03-14 10:19:22 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' attempting move '4,2'
+2025-03-14 10:19:22 [pool-1-thread-4] INFO  Ship - Ship hit at position '4,2'
+2025-03-14 10:19:22 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' hit a ship at '4,2'
+2025-03-14 10:19:22 [pool-1-thread-4] INFO  ClientHandler - User 'sdasdas' fired at 4,2
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' attempting move '2,2'
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' missed at '2,2'
+2025-03-14 10:19:30 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' fired at 2,2
+2025-03-14 10:19:34 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' attempting move '2,8'
+2025-03-14 10:19:34 [pool-1-thread-4] INFO  Ship - Shot at '2,8' missed
+2025-03-14 10:19:34 [pool-1-thread-4] INFO  Ship - Shot at '2,8' missed
+2025-03-14 10:19:34 [pool-1-thread-4] INFO  Ship - Ship hit at position '2,8'
+2025-03-14 10:19:34 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' hit a ship at '2,8'
+2025-03-14 10:19:34 [pool-1-thread-4] INFO  ClientHandler - User 'sdasdas' fired at 2,8
+2025-03-14 10:19:35 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' attempting move '3,3'
+2025-03-14 10:19:35 [pool-1-thread-4] WARN  BattleshipGame - Player 'sdasdas' attempted a move out of turn
+2025-03-14 10:19:35 [pool-1-thread-4] INFO  ClientHandler - User 'sdasdas' fired at 3,3
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' attempting move '4,8'
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  BattleshipGame - Player 'sadasd' missed at '4,8'
+2025-03-14 10:19:37 [pool-1-thread-3] INFO  ClientHandler - User 'sadasd' fired at 4,8
+2025-03-14 10:19:38 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' attempting move '3,8'
+2025-03-14 10:19:38 [pool-1-thread-4] INFO  Ship - Shot at '3,8' missed
+2025-03-14 10:19:38 [pool-1-thread-4] INFO  Ship - Shot at '3,8' missed
+2025-03-14 10:19:38 [pool-1-thread-4] INFO  Ship - Ship hit at position '3,8'
+2025-03-14 10:19:38 [pool-1-thread-4] INFO  Ship - Ship at positions '[2,8, 3,8]' has been sunk!
+2025-03-14 10:19:38 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' sunk a ship at '3,8'
+2025-03-14 10:19:38 [pool-1-thread-4] INFO  ClientHandler - User 'sdasdas' fired at 3,8
+2025-03-14 10:19:42 [pool-1-thread-4] INFO  BattleshipGame - Player 'sdasdas' attempting move '3,8'
+2025-03-14 10:19:42 [pool-1-thread-4] WARN  BattleshipGame - Player 'sdasdas' attempted a move out of turn
+2025-03-14 10:19:42 [pool-1-thread-4] INFO  ClientHandler - User 'sdasdas' fired at 3,8
+2025-03-14 10:24:34 [main] INFO  Server - Server is starting on port 12345
+2025-03-14 10:24:41 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:24:42 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:24:46 [pool-1-thread-2] INFO  GameManager - sadad is waiting for an opponent...
+2025-03-14 10:24:46 [pool-1-thread-2] INFO  ClientHandler - User 'sadad' logged in and added to queue
+2025-03-14 10:24:46 [pool-1-thread-2] INFO  ClientHandler - Client 'sadad' is ready
+2025-03-14 10:24:50 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'asdad' and 'sadad'
+2025-03-14 10:24:50 [pool-1-thread-1] INFO  GameManager - Game started: asdad vs sadad
+2025-03-14 10:24:50 [pool-1-thread-1] INFO  ClientHandler - User 'asdad' logged in and added to queue
+2025-03-14 10:24:50 [pool-1-thread-1] INFO  ClientHandler - Client 'asdad' is ready
+2025-03-14 10:24:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'PatrolBoat' at '1,2 2,2'
+2025-03-14 10:24:53 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,2, 2,2]
+2025-03-14 10:24:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'PatrolBoat'
+2025-03-14 10:24:55 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'Destroyer' at '1,5 2,5 3,5'
+2025-03-14 10:24:55 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,5, 2,5, 3,5]
+2025-03-14 10:24:55 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'Destroyer'
+2025-03-14 10:24:56 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'Battleship' at '4,1 5,1 6,1 7,1'
+2025-03-14 10:24:56 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,1, 5,1, 6,1, 7,1]
+2025-03-14 10:24:56 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'Battleship'
+2025-03-14 10:24:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'L-Ship' at '7,4 8,4 8,5'
+2025-03-14 10:24:58 [pool-1-thread-1] INFO  Ship - New ship created at positions: [8,4, 8,5, 7,4]
+2025-03-14 10:24:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'L-Ship'
+2025-03-14 10:25:00 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'T-Ship' at '4,7 4,8 4,9 5,8'
+2025-03-14 10:25:00 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,8, 4,9, 5,8, 4,7]
+2025-03-14 10:25:00 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'T-Ship'
+2025-03-14 10:25:07 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' is placing ship 'Battleship' at '3,1 4,1 5,1 6,1'
+2025-03-14 10:25:07 [pool-1-thread-2] INFO  Ship - New ship created at positions: [3,1, 4,1, 5,1, 6,1]
+2025-03-14 10:25:07 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' successfully placed ship 'Battleship'
+2025-03-14 10:25:08 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' is placing ship 'Destroyer' at '1,6 2,6 3,6'
+2025-03-14 10:25:08 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,6, 2,6, 3,6]
+2025-03-14 10:25:08 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' successfully placed ship 'Destroyer'
+2025-03-14 10:25:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' is placing ship 'T-Ship' at '1,1 1,2 1,3 2,2'
+2025-03-14 10:25:09 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,1, 1,2, 1,3, 2,2]
+2025-03-14 10:25:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' successfully placed ship 'T-Ship'
+2025-03-14 10:25:14 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' is placing ship 'L-Ship' at '7,3 8,3 8,4'
+2025-03-14 10:25:14 [pool-1-thread-2] INFO  Ship - New ship created at positions: [8,4, 7,3, 8,3]
+2025-03-14 10:25:14 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' successfully placed ship 'L-Ship'
+2025-03-14 10:25:20 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' is placing ship 'Battleship' at '6,8 7,8 8,8 9,8'
+2025-03-14 10:25:20 [pool-1-thread-2] WARN  BattleshipGame - Player 'sadad' tried to place multiple 'Battleship' ships.
+2025-03-14 10:25:26 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' is placing ship 'PatrolBoat' at '6,8 7,8'
+2025-03-14 10:25:26 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,8, 7,8]
+2025-03-14 10:25:26 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdad' and 'sadad' is now in progress
+2025-03-14 10:25:26 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' successfully placed ship 'PatrolBoat'
+2025-03-14 10:25:28 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' attempting move '4,1'
+2025-03-14 10:25:28 [pool-1-thread-2] WARN  BattleshipGame - Player 'sadad' attempted a move out of turn
+2025-03-14 10:25:38 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' attempting move '6,5'
+2025-03-14 10:25:38 [pool-1-thread-2] WARN  BattleshipGame - Player 'sadad' attempted a move out of turn
+2025-03-14 10:25:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' attempting move '7,8'
+2025-03-14 10:25:45 [pool-1-thread-1] INFO  Ship - Shot at '7,8' missed
+2025-03-14 10:25:45 [pool-1-thread-1] INFO  Ship - Shot at '7,8' missed
+2025-03-14 10:25:45 [pool-1-thread-1] INFO  Ship - Shot at '7,8' missed
+2025-03-14 10:25:45 [pool-1-thread-1] INFO  Ship - Shot at '7,8' missed
+2025-03-14 10:25:45 [pool-1-thread-1] INFO  Ship - Ship hit at position '7,8'
+2025-03-14 10:25:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' hit a ship at '7,8'
+2025-03-14 10:25:47 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' attempting move '6,4'
+2025-03-14 10:25:47 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:25:47 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:25:47 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:25:47 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:25:47 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:25:47 [pool-1-thread-2] INFO  BattleshipGame - Player 'sadad' missed at '6,4'
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' attempting move '6,8'
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  Ship - Shot at '6,8' missed
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  Ship - Shot at '6,8' missed
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  Ship - Shot at '6,8' missed
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  Ship - Shot at '6,8' missed
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  Ship - Ship hit at position '6,8'
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' hit a ship at '6,8'
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  Ship - Ship at positions '[6,8, 7,8]' has been sunk!
+2025-03-14 10:25:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' sunk a ship at '6,8'
+2025-03-14 10:28:28 [main] INFO  Server - Server is starting on port 12345
+2025-03-14 10:28:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:28:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:28:40 [pool-1-thread-2] INFO  GameManager - asasd is waiting for an opponent...
+2025-03-14 10:28:40 [pool-1-thread-2] INFO  ClientHandler - User 'asasd' logged in and added to queue
+2025-03-14 10:28:40 [pool-1-thread-2] INFO  ClientHandler - Client 'asasd' is ready
+2025-03-14 10:28:43 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'dfgdfg' and 'asasd'
+2025-03-14 10:28:43 [pool-1-thread-1] INFO  GameManager - Game started: dfgdfg vs asasd
+2025-03-14 10:28:43 [pool-1-thread-1] INFO  ClientHandler - User 'dfgdfg' logged in and added to queue
+2025-03-14 10:28:43 [pool-1-thread-1] INFO  ClientHandler - Client 'dfgdfg' is ready
+2025-03-14 10:28:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-14 10:28:45 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-14 10:28:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' successfully placed ship 'Battleship'
+2025-03-14 10:28:46 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' is placing ship 'Destroyer' at '1,6 2,6 3,6'
+2025-03-14 10:28:46 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,6, 2,6, 3,6]
+2025-03-14 10:28:46 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' successfully placed ship 'Destroyer'
+2025-03-14 10:28:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' is placing ship 'L-Ship' at '6,4 7,4 7,5'
+2025-03-14 10:28:48 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,5, 6,4, 7,4]
+2025-03-14 10:28:48 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' successfully placed ship 'L-Ship'
+2025-03-14 10:28:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' is placing ship 'PatrolBoat' at '3,8 4,8'
+2025-03-14 10:28:50 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,8, 3,8]
+2025-03-14 10:28:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' successfully placed ship 'PatrolBoat'
+2025-03-14 10:28:52 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' is placing ship 'T-Ship' at '7,6 7,7 7,8 8,7'
+2025-03-14 10:28:52 [pool-1-thread-1] WARN  BattleshipGame - Player 'dfgdfg' tried to place a ship adjacent to another ship: 7,6 7,7 7,8 8,7
+2025-03-14 10:28:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' is placing ship 'T-Ship' at '7,7 7,8 7,9 8,8'
+2025-03-14 10:28:53 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,7, 7,8, 7,9, 8,8]
+2025-03-14 10:28:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' successfully placed ship 'T-Ship'
+2025-03-14 10:28:56 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' is placing ship 'Destroyer' at '0,0 1,0 2,0'
+2025-03-14 10:28:56 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,0, 1,0, 2,0]
+2025-03-14 10:28:56 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' successfully placed ship 'Destroyer'
+2025-03-14 10:28:57 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' is placing ship 'PatrolBoat' at '0,5 1,5'
+2025-03-14 10:28:57 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,5, 1,5]
+2025-03-14 10:28:57 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' successfully placed ship 'PatrolBoat'
+2025-03-14 10:29:00 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' is placing ship 'L-Ship' at '2,8 3,8 3,9'
+2025-03-14 10:29:00 [pool-1-thread-2] INFO  Ship - New ship created at positions: [3,9, 2,8, 3,8]
+2025-03-14 10:29:00 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' successfully placed ship 'L-Ship'
+2025-03-14 10:29:03 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' is placing ship 'Battleship' at '6,2 7,2 8,2 9,2'
+2025-03-14 10:29:03 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,2, 7,2, 8,2, 9,2]
+2025-03-14 10:29:03 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' successfully placed ship 'Battleship'
+2025-03-14 10:29:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' is placing ship 'T-Ship' at '6,5 6,6 6,7 7,6'
+2025-03-14 10:29:06 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,6, 6,7, 7,6, 6,5]
+2025-03-14 10:29:06 [pool-1-thread-2] INFO  BattleshipGame - Game between 'dfgdfg' and 'asasd' is now in progress
+2025-03-14 10:29:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' successfully placed ship 'T-Ship'
+2025-03-14 10:29:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' attempting move '3,1'
+2025-03-14 10:29:09 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-14 10:29:09 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-14 10:29:09 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-14 10:29:09 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-14 10:29:09 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-14 10:29:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' missed at '3,1'
+2025-03-14 10:29:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' attempting move '3,8'
+2025-03-14 10:29:16 [pool-1-thread-2] INFO  Ship - Shot at '3,8' missed
+2025-03-14 10:29:16 [pool-1-thread-2] INFO  Ship - Shot at '3,8' missed
+2025-03-14 10:29:16 [pool-1-thread-2] INFO  Ship - Shot at '3,8' missed
+2025-03-14 10:29:16 [pool-1-thread-2] INFO  Ship - Ship hit at position '3,8'
+2025-03-14 10:29:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' hit a ship at '3,8'
+2025-03-14 10:29:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' attempting move '5,4'
+2025-03-14 10:29:17 [pool-1-thread-1] INFO  Ship - Shot at '5,4' missed
+2025-03-14 10:29:17 [pool-1-thread-1] INFO  Ship - Shot at '5,4' missed
+2025-03-14 10:29:17 [pool-1-thread-1] INFO  Ship - Shot at '5,4' missed
+2025-03-14 10:29:17 [pool-1-thread-1] INFO  Ship - Shot at '5,4' missed
+2025-03-14 10:29:17 [pool-1-thread-1] INFO  Ship - Shot at '5,4' missed
+2025-03-14 10:29:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfgdfg' missed at '5,4'
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' attempting move '4,8'
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  Ship - Shot at '4,8' missed
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  Ship - Ship hit at position '4,8'
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' hit a ship at '4,8'
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  Ship - Ship at positions '[4,8, 3,8]' has been sunk!
+2025-03-14 10:29:19 [pool-1-thread-2] INFO  BattleshipGame - Player 'asasd' sunk a ship at '4,8 3,8'
+2025-03-14 10:33:47 [main] INFO  Server - Server is starting on port 12345
+2025-03-14 10:34:17 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:34:20 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:34:23 [pool-1-thread-1] INFO  GameManager - dsad is waiting for an opponent...
+2025-03-14 10:34:23 [pool-1-thread-1] INFO  ClientHandler - User 'dsad' logged in and added to queue
+2025-03-14 10:34:23 [pool-1-thread-1] INFO  ClientHandler - Client 'dsad' is ready
+2025-03-14 10:34:26 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'hjghj' and 'dsad'
+2025-03-14 10:34:26 [pool-1-thread-2] INFO  GameManager - Game started: hjghj vs dsad
+2025-03-14 10:34:26 [pool-1-thread-2] INFO  ClientHandler - User 'hjghj' logged in and added to queue
+2025-03-14 10:34:26 [pool-1-thread-2] INFO  ClientHandler - Client 'hjghj' is ready
+2025-03-14 10:34:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' is placing ship 'Battleship' at '2,2 3,2 4,2 5,2'
+2025-03-14 10:34:29 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2, 5,2]
+2025-03-14 10:34:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' successfully placed ship 'Battleship'
+2025-03-14 10:34:30 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' is placing ship 'Destroyer' at '1,5 2,5 3,5'
+2025-03-14 10:34:30 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,5, 2,5, 3,5]
+2025-03-14 10:34:30 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' successfully placed ship 'Destroyer'
+2025-03-14 10:34:31 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' is placing ship 'PatrolBoat' at '1,7 2,7'
+2025-03-14 10:34:31 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,7, 2,7]
+2025-03-14 10:34:31 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' successfully placed ship 'PatrolBoat'
+2025-03-14 10:34:33 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' is placing ship 'Battleship' at '6,4 7,4 8,4 9,4'
+2025-03-14 10:34:33 [pool-1-thread-2] WARN  BattleshipGame - Player 'hjghj' tried to place multiple 'Battleship' ships.
+2025-03-14 10:34:35 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' is placing ship 'L-Ship' at '7,4 8,4 8,5'
+2025-03-14 10:34:35 [pool-1-thread-2] INFO  Ship - New ship created at positions: [8,4, 8,5, 7,4]
+2025-03-14 10:34:35 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' successfully placed ship 'L-Ship'
+2025-03-14 10:34:37 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' is placing ship 'T-Ship' at '5,6 5,7 5,8 6,7'
+2025-03-14 10:34:37 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,7, 5,8, 6,7, 5,6]
+2025-03-14 10:34:37 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' successfully placed ship 'T-Ship'
+2025-03-14 10:34:38 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-14 10:34:38 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-14 10:34:38 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' successfully placed ship 'Battleship'
+2025-03-14 10:34:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' is placing ship 'PatrolBoat' at '1,5 2,5'
+2025-03-14 10:34:39 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,5, 2,5]
+2025-03-14 10:34:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' successfully placed ship 'PatrolBoat'
+2025-03-14 10:34:41 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' is placing ship 'Destroyer' at '2,7 3,7 4,7'
+2025-03-14 10:34:41 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,7, 3,7, 4,7]
+2025-03-14 10:34:41 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' successfully placed ship 'Destroyer'
+2025-03-14 10:34:43 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' is placing ship 'T-Ship' at '6,1 6,2 6,3 7,2'
+2025-03-14 10:34:43 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,1, 6,2, 6,3, 7,2]
+2025-03-14 10:34:43 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' successfully placed ship 'T-Ship'
+2025-03-14 10:34:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' is placing ship 'L-Ship' at '7,5 8,5 8,6'
+2025-03-14 10:34:45 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,5, 8,5, 8,6]
+2025-03-14 10:34:45 [pool-1-thread-1] INFO  BattleshipGame - Game between 'hjghj' and 'dsad' is now in progress
+2025-03-14 10:34:45 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' successfully placed ship 'L-Ship'
+2025-03-14 10:34:46 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' attempting move '2,2'
+2025-03-14 10:34:46 [pool-1-thread-2] INFO  Ship - Ship hit at position '2,2'
+2025-03-14 10:34:46 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' hit a ship at '2,2'
+2025-03-14 10:34:51 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' attempting move '1,7'
+2025-03-14 10:34:51 [pool-1-thread-1] INFO  Ship - Shot at '1,7' missed
+2025-03-14 10:34:51 [pool-1-thread-1] INFO  Ship - Shot at '1,7' missed
+2025-03-14 10:34:51 [pool-1-thread-1] INFO  Ship - Ship hit at position '1,7'
+2025-03-14 10:34:51 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' hit a ship at '1,7'
+2025-03-14 10:34:52 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' attempting move '4,6'
+2025-03-14 10:34:52 [pool-1-thread-2] INFO  Ship - Shot at '4,6' missed
+2025-03-14 10:34:52 [pool-1-thread-2] INFO  Ship - Shot at '4,6' missed
+2025-03-14 10:34:52 [pool-1-thread-2] INFO  Ship - Shot at '4,6' missed
+2025-03-14 10:34:52 [pool-1-thread-2] INFO  Ship - Shot at '4,6' missed
+2025-03-14 10:34:52 [pool-1-thread-2] INFO  Ship - Shot at '4,6' missed
+2025-03-14 10:34:52 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' missed at '4,6'
+2025-03-14 10:34:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' attempting move '2,7'
+2025-03-14 10:34:53 [pool-1-thread-1] INFO  Ship - Shot at '2,7' missed
+2025-03-14 10:34:53 [pool-1-thread-1] INFO  Ship - Shot at '2,7' missed
+2025-03-14 10:34:53 [pool-1-thread-1] INFO  Ship - Ship hit at position '2,7'
+2025-03-14 10:34:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' hit a ship at '2,7'
+2025-03-14 10:34:53 [pool-1-thread-1] INFO  Ship - Ship at positions '[1,7, 2,7]' has been sunk!
+2025-03-14 10:34:53 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' sunk a ship at '1,7 2,7'
+2025-03-14 10:34:57 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' attempting move '6,4'
+2025-03-14 10:34:57 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:34:57 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:34:57 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:34:57 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:34:57 [pool-1-thread-2] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:34:57 [pool-1-thread-2] INFO  BattleshipGame - Player 'hjghj' missed at '6,4'
+2025-03-14 10:34:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' attempting move '4,5'
+2025-03-14 10:34:58 [pool-1-thread-1] INFO  Ship - Shot at '4,5' missed
+2025-03-14 10:34:58 [pool-1-thread-1] INFO  Ship - Shot at '4,5' missed
+2025-03-14 10:34:58 [pool-1-thread-1] INFO  Ship - Shot at '4,5' missed
+2025-03-14 10:34:58 [pool-1-thread-1] INFO  Ship - Shot at '4,5' missed
+2025-03-14 10:34:58 [pool-1-thread-1] INFO  Ship - Shot at '4,5' missed
+2025-03-14 10:34:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'dsad' missed at '4,5'
+2025-03-14 10:35:26 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:35:32 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-14 10:35:37 [pool-1-thread-4] INFO  GameManager - adadad is waiting for an opponent...
+2025-03-14 10:35:37 [pool-1-thread-4] INFO  ClientHandler - User 'adadad' logged in and added to queue
+2025-03-14 10:35:37 [pool-1-thread-4] INFO  ClientHandler - Client 'adadad' is ready
+2025-03-14 10:35:42 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'fdgdfgdf' and 'adadad'
+2025-03-14 10:35:42 [pool-1-thread-3] INFO  GameManager - Game started: fdgdfgdf vs adadad
+2025-03-14 10:35:42 [pool-1-thread-3] INFO  ClientHandler - User 'fdgdfgdf' logged in and added to queue
+2025-03-14 10:35:42 [pool-1-thread-3] INFO  ClientHandler - Client 'fdgdfgdf' is ready
+2025-03-14 10:35:44 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' is placing ship 'Battleship' at '2,2 3,2 4,2 5,2'
+2025-03-14 10:35:44 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2, 5,2]
+2025-03-14 10:35:44 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' successfully placed ship 'Battleship'
+2025-03-14 10:35:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' is placing ship 'Destroyer' at '1,6 2,6 3,6'
+2025-03-14 10:35:45 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,6, 2,6, 3,6]
+2025-03-14 10:35:45 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' successfully placed ship 'Destroyer'
+2025-03-14 10:35:47 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' is placing ship 'T-Ship' at '6,4 6,5 6,6 7,5'
+2025-03-14 10:35:47 [pool-1-thread-4] INFO  Ship - New ship created at positions: [6,6, 7,5, 6,4, 6,5]
+2025-03-14 10:35:47 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' successfully placed ship 'T-Ship'
+2025-03-14 10:35:49 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' is placing ship 'L-Ship' at '5,8 6,8 6,9'
+2025-03-14 10:35:49 [pool-1-thread-4] INFO  Ship - New ship created at positions: [5,8, 6,8, 6,9]
+2025-03-14 10:35:49 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' successfully placed ship 'L-Ship'
+2025-03-14 10:35:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' is placing ship 'PatrolBoat' at '1,9 2,9'
+2025-03-14 10:35:54 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,9, 2,9]
+2025-03-14 10:35:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' successfully placed ship 'PatrolBoat'
+2025-03-14 10:35:57 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-14 10:35:57 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-14 10:35:57 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' successfully placed ship 'Battleship'
+2025-03-14 10:35:58 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' is placing ship 'Destroyer' at '1,3 2,3 3,3'
+2025-03-14 10:35:58 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3]
+2025-03-14 10:35:58 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' successfully placed ship 'Destroyer'
+2025-03-14 10:36:00 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' is placing ship 'PatrolBoat' at '1,5 2,5'
+2025-03-14 10:36:00 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,5, 2,5]
+2025-03-14 10:36:00 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' successfully placed ship 'PatrolBoat'
+2025-03-14 10:36:02 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' is placing ship 'T-Ship' at '2,7 2,8 2,9 3,8'
+2025-03-14 10:36:02 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,7, 2,8, 2,9, 3,8]
+2025-03-14 10:36:02 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' successfully placed ship 'T-Ship'
+2025-03-14 10:36:05 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' is placing ship 'L-Ship' at '7,1 8,1 8,2'
+2025-03-14 10:36:05 [pool-1-thread-3] INFO  Ship - New ship created at positions: [7,1, 8,1, 8,2]
+2025-03-14 10:36:05 [pool-1-thread-3] INFO  BattleshipGame - Game between 'fdgdfgdf' and 'adadad' is now in progress
+2025-03-14 10:36:05 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' successfully placed ship 'L-Ship'
+2025-03-14 10:36:11 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '3,4'
+2025-03-14 10:36:11 [pool-1-thread-4] WARN  BattleshipGame - Player 'adadad' attempted a move out of turn
+2025-03-14 10:36:17 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '6,9'
+2025-03-14 10:36:17 [pool-1-thread-3] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:17 [pool-1-thread-3] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:17 [pool-1-thread-3] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:17 [pool-1-thread-3] INFO  Ship - Ship hit at position '6,9'
+2025-03-14 10:36:17 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '6,9'
+2025-03-14 10:36:18 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '5,7'
+2025-03-14 10:36:18 [pool-1-thread-4] INFO  Ship - Shot at '5,7' missed
+2025-03-14 10:36:18 [pool-1-thread-4] INFO  Ship - Shot at '5,7' missed
+2025-03-14 10:36:18 [pool-1-thread-4] INFO  Ship - Shot at '5,7' missed
+2025-03-14 10:36:18 [pool-1-thread-4] INFO  Ship - Shot at '5,7' missed
+2025-03-14 10:36:18 [pool-1-thread-4] INFO  Ship - Shot at '5,7' missed
+2025-03-14 10:36:18 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '5,7'
+2025-03-14 10:36:19 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '6,8'
+2025-03-14 10:36:19 [pool-1-thread-3] INFO  Ship - Shot at '6,8' missed
+2025-03-14 10:36:19 [pool-1-thread-3] INFO  Ship - Shot at '6,8' missed
+2025-03-14 10:36:19 [pool-1-thread-3] INFO  Ship - Shot at '6,8' missed
+2025-03-14 10:36:19 [pool-1-thread-3] INFO  Ship - Ship hit at position '6,8'
+2025-03-14 10:36:19 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '6,8'
+2025-03-14 10:36:20 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '2,4'
+2025-03-14 10:36:20 [pool-1-thread-4] INFO  Ship - Shot at '2,4' missed
+2025-03-14 10:36:20 [pool-1-thread-4] INFO  Ship - Shot at '2,4' missed
+2025-03-14 10:36:20 [pool-1-thread-4] INFO  Ship - Shot at '2,4' missed
+2025-03-14 10:36:20 [pool-1-thread-4] INFO  Ship - Shot at '2,4' missed
+2025-03-14 10:36:20 [pool-1-thread-4] INFO  Ship - Shot at '2,4' missed
+2025-03-14 10:36:20 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '2,4'
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '5,8'
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  Ship - Shot at '5,8' missed
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  Ship - Shot at '5,8' missed
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  Ship - Shot at '5,8' missed
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  Ship - Ship hit at position '5,8'
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '5,8'
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  Ship - Ship at positions '[5,8, 6,8, 6,9]' has been sunk!
+2025-03-14 10:36:21 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' sunk a ship at '5,8 6,8 6,9'
+2025-03-14 10:36:23 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '7,5'
+2025-03-14 10:36:23 [pool-1-thread-4] INFO  Ship - Shot at '7,5' missed
+2025-03-14 10:36:23 [pool-1-thread-4] INFO  Ship - Shot at '7,5' missed
+2025-03-14 10:36:23 [pool-1-thread-4] INFO  Ship - Shot at '7,5' missed
+2025-03-14 10:36:23 [pool-1-thread-4] INFO  Ship - Shot at '7,5' missed
+2025-03-14 10:36:23 [pool-1-thread-4] INFO  Ship - Shot at '7,5' missed
+2025-03-14 10:36:23 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '7,5'
+2025-03-14 10:36:26 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '6,6'
+2025-03-14 10:36:26 [pool-1-thread-3] INFO  Ship - Shot at '6,6' missed
+2025-03-14 10:36:26 [pool-1-thread-3] INFO  Ship - Shot at '6,6' missed
+2025-03-14 10:36:26 [pool-1-thread-3] INFO  Ship - Ship hit at position '6,6'
+2025-03-14 10:36:26 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '6,6'
+2025-03-14 10:36:27 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '6,9'
+2025-03-14 10:36:27 [pool-1-thread-4] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:27 [pool-1-thread-4] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:27 [pool-1-thread-4] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:27 [pool-1-thread-4] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:27 [pool-1-thread-4] INFO  Ship - Shot at '6,9' missed
+2025-03-14 10:36:27 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '6,9'
+2025-03-14 10:36:28 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '6,5'
+2025-03-14 10:36:28 [pool-1-thread-3] INFO  Ship - Shot at '6,5' missed
+2025-03-14 10:36:28 [pool-1-thread-3] INFO  Ship - Shot at '6,5' missed
+2025-03-14 10:36:28 [pool-1-thread-3] INFO  Ship - Ship hit at position '6,5'
+2025-03-14 10:36:28 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '6,5'
+2025-03-14 10:36:30 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '5,6'
+2025-03-14 10:36:30 [pool-1-thread-4] INFO  Ship - Shot at '5,6' missed
+2025-03-14 10:36:30 [pool-1-thread-4] INFO  Ship - Shot at '5,6' missed
+2025-03-14 10:36:30 [pool-1-thread-4] INFO  Ship - Shot at '5,6' missed
+2025-03-14 10:36:30 [pool-1-thread-4] INFO  Ship - Shot at '5,6' missed
+2025-03-14 10:36:30 [pool-1-thread-4] INFO  Ship - Shot at '5,6' missed
+2025-03-14 10:36:30 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '5,6'
+2025-03-14 10:36:31 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '6,4'
+2025-03-14 10:36:31 [pool-1-thread-3] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:36:31 [pool-1-thread-3] INFO  Ship - Shot at '6,4' missed
+2025-03-14 10:36:31 [pool-1-thread-3] INFO  Ship - Ship hit at position '6,4'
+2025-03-14 10:36:31 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '6,4'
+2025-03-14 10:36:32 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '3,7'
+2025-03-14 10:36:32 [pool-1-thread-4] INFO  Ship - Shot at '3,7' missed
+2025-03-14 10:36:32 [pool-1-thread-4] INFO  Ship - Shot at '3,7' missed
+2025-03-14 10:36:32 [pool-1-thread-4] INFO  Ship - Shot at '3,7' missed
+2025-03-14 10:36:32 [pool-1-thread-4] INFO  Ship - Shot at '3,7' missed
+2025-03-14 10:36:32 [pool-1-thread-4] INFO  Ship - Shot at '3,7' missed
+2025-03-14 10:36:32 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '3,7'
+2025-03-14 10:36:33 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '7,5'
+2025-03-14 10:36:33 [pool-1-thread-3] INFO  Ship - Shot at '7,5' missed
+2025-03-14 10:36:33 [pool-1-thread-3] INFO  Ship - Shot at '7,5' missed
+2025-03-14 10:36:33 [pool-1-thread-3] INFO  Ship - Ship hit at position '7,5'
+2025-03-14 10:36:33 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '7,5'
+2025-03-14 10:36:33 [pool-1-thread-3] INFO  Ship - Ship at positions '[6,6, 7,5, 6,4, 6,5]' has been sunk!
+2025-03-14 10:36:33 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' sunk a ship at '6,6 7,5 6,4 6,5'
+2025-03-14 10:36:34 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '1,6'
+2025-03-14 10:36:34 [pool-1-thread-4] INFO  Ship - Shot at '1,6' missed
+2025-03-14 10:36:34 [pool-1-thread-4] INFO  Ship - Shot at '1,6' missed
+2025-03-14 10:36:34 [pool-1-thread-4] INFO  Ship - Shot at '1,6' missed
+2025-03-14 10:36:34 [pool-1-thread-4] INFO  Ship - Shot at '1,6' missed
+2025-03-14 10:36:34 [pool-1-thread-4] INFO  Ship - Shot at '1,6' missed
+2025-03-14 10:36:34 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '1,6'
+2025-03-14 10:36:40 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '5,2'
+2025-03-14 10:36:40 [pool-1-thread-3] INFO  Ship - Ship hit at position '5,2'
+2025-03-14 10:36:40 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '5,2'
+2025-03-14 10:36:42 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '4,3'
+2025-03-14 10:36:42 [pool-1-thread-4] INFO  Ship - Shot at '4,3' missed
+2025-03-14 10:36:42 [pool-1-thread-4] INFO  Ship - Shot at '4,3' missed
+2025-03-14 10:36:42 [pool-1-thread-4] INFO  Ship - Shot at '4,3' missed
+2025-03-14 10:36:42 [pool-1-thread-4] INFO  Ship - Shot at '4,3' missed
+2025-03-14 10:36:42 [pool-1-thread-4] INFO  Ship - Shot at '4,3' missed
+2025-03-14 10:36:42 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '4,3'
+2025-03-14 10:36:43 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '4,2'
+2025-03-14 10:36:43 [pool-1-thread-3] INFO  Ship - Ship hit at position '4,2'
+2025-03-14 10:36:43 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '4,2'
+2025-03-14 10:36:43 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '3,4'
+2025-03-14 10:36:43 [pool-1-thread-4] INFO  Ship - Shot at '3,4' missed
+2025-03-14 10:36:43 [pool-1-thread-4] INFO  Ship - Shot at '3,4' missed
+2025-03-14 10:36:43 [pool-1-thread-4] INFO  Ship - Shot at '3,4' missed
+2025-03-14 10:36:43 [pool-1-thread-4] INFO  Ship - Shot at '3,4' missed
+2025-03-14 10:36:43 [pool-1-thread-4] INFO  Ship - Shot at '3,4' missed
+2025-03-14 10:36:44 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '3,4'
+2025-03-14 10:36:45 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '3,2'
+2025-03-14 10:36:45 [pool-1-thread-3] INFO  Ship - Ship hit at position '3,2'
+2025-03-14 10:36:45 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '3,2'
+2025-03-14 10:36:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '2,5'
+2025-03-14 10:36:46 [pool-1-thread-4] INFO  Ship - Shot at '2,5' missed
+2025-03-14 10:36:46 [pool-1-thread-4] INFO  Ship - Shot at '2,5' missed
+2025-03-14 10:36:46 [pool-1-thread-4] INFO  Ship - Ship hit at position '2,5'
+2025-03-14 10:36:46 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' hit a ship at '2,5'
+2025-03-14 10:36:47 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '2,2'
+2025-03-14 10:36:47 [pool-1-thread-3] INFO  Ship - Ship hit at position '2,2'
+2025-03-14 10:36:47 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '2,2'
+2025-03-14 10:36:47 [pool-1-thread-3] INFO  Ship - Ship at positions '[2,2, 3,2, 4,2, 5,2]' has been sunk!
+2025-03-14 10:36:47 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' sunk a ship at '2,2 3,2 4,2 5,2'
+2025-03-14 10:36:48 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '1,2'
+2025-03-14 10:36:48 [pool-1-thread-4] INFO  Ship - Shot at '1,2' missed
+2025-03-14 10:36:48 [pool-1-thread-4] INFO  Ship - Shot at '1,2' missed
+2025-03-14 10:36:48 [pool-1-thread-4] INFO  Ship - Shot at '1,2' missed
+2025-03-14 10:36:48 [pool-1-thread-4] INFO  Ship - Shot at '1,2' missed
+2025-03-14 10:36:48 [pool-1-thread-4] INFO  Ship - Shot at '1,2' missed
+2025-03-14 10:36:48 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '1,2'
+2025-03-14 10:36:50 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '2,9'
+2025-03-14 10:36:50 [pool-1-thread-3] INFO  Ship - Shot at '2,9' missed
+2025-03-14 10:36:50 [pool-1-thread-3] INFO  Ship - Shot at '2,9' missed
+2025-03-14 10:36:50 [pool-1-thread-3] INFO  Ship - Shot at '2,9' missed
+2025-03-14 10:36:50 [pool-1-thread-3] INFO  Ship - Shot at '2,9' missed
+2025-03-14 10:36:50 [pool-1-thread-3] INFO  Ship - Ship hit at position '2,9'
+2025-03-14 10:36:50 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '2,9'
+2025-03-14 10:36:52 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '2,2'
+2025-03-14 10:36:52 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:36:52 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:36:52 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:36:52 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:36:52 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-14 10:36:52 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '2,2'
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '1,9'
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  Ship - Shot at '1,9' missed
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  Ship - Shot at '1,9' missed
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  Ship - Shot at '1,9' missed
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  Ship - Shot at '1,9' missed
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  Ship - Ship hit at position '1,9'
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '1,9'
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  Ship - Ship at positions '[1,9, 2,9]' has been sunk!
+2025-03-14 10:36:54 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' sunk a ship at '1,9 2,9'
+2025-03-14 10:36:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '8,8'
+2025-03-14 10:36:54 [pool-1-thread-4] INFO  Ship - Shot at '8,8' missed
+2025-03-14 10:36:54 [pool-1-thread-4] INFO  Ship - Shot at '8,8' missed
+2025-03-14 10:36:54 [pool-1-thread-4] INFO  Ship - Shot at '8,8' missed
+2025-03-14 10:36:54 [pool-1-thread-4] INFO  Ship - Shot at '8,8' missed
+2025-03-14 10:36:54 [pool-1-thread-4] INFO  Ship - Shot at '8,8' missed
+2025-03-14 10:36:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '8,8'
+2025-03-14 10:36:56 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '1,6'
+2025-03-14 10:36:56 [pool-1-thread-3] INFO  Ship - Shot at '1,6' missed
+2025-03-14 10:36:56 [pool-1-thread-3] INFO  Ship - Ship hit at position '1,6'
+2025-03-14 10:36:56 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '1,6'
+2025-03-14 10:36:57 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '6,3'
+2025-03-14 10:36:57 [pool-1-thread-4] INFO  Ship - Shot at '6,3' missed
+2025-03-14 10:36:57 [pool-1-thread-4] INFO  Ship - Shot at '6,3' missed
+2025-03-14 10:36:57 [pool-1-thread-4] INFO  Ship - Shot at '6,3' missed
+2025-03-14 10:36:57 [pool-1-thread-4] INFO  Ship - Shot at '6,3' missed
+2025-03-14 10:36:57 [pool-1-thread-4] INFO  Ship - Shot at '6,3' missed
+2025-03-14 10:36:57 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '6,3'
+2025-03-14 10:36:58 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '2,6'
+2025-03-14 10:36:58 [pool-1-thread-3] INFO  Ship - Shot at '2,6' missed
+2025-03-14 10:36:58 [pool-1-thread-3] INFO  Ship - Ship hit at position '2,6'
+2025-03-14 10:36:58 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '2,6'
+2025-03-14 10:36:59 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '8,6'
+2025-03-14 10:36:59 [pool-1-thread-4] INFO  Ship - Shot at '8,6' missed
+2025-03-14 10:36:59 [pool-1-thread-4] INFO  Ship - Shot at '8,6' missed
+2025-03-14 10:36:59 [pool-1-thread-4] INFO  Ship - Shot at '8,6' missed
+2025-03-14 10:36:59 [pool-1-thread-4] INFO  Ship - Shot at '8,6' missed
+2025-03-14 10:36:59 [pool-1-thread-4] INFO  Ship - Shot at '8,6' missed
+2025-03-14 10:36:59 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '8,6'
+2025-03-14 10:37:00 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '3,6'
+2025-03-14 10:37:00 [pool-1-thread-3] INFO  Ship - Shot at '3,6' missed
+2025-03-14 10:37:00 [pool-1-thread-3] INFO  Ship - Ship hit at position '3,6'
+2025-03-14 10:37:00 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' hit a ship at '3,6'
+2025-03-14 10:37:00 [pool-1-thread-3] INFO  Ship - Ship at positions '[1,6, 2,6, 3,6]' has been sunk!
+2025-03-14 10:37:00 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' sunk a ship at '1,6 2,6 3,6'
+2025-03-14 10:37:02 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '3,6'
+2025-03-14 10:37:02 [pool-1-thread-3] WARN  BattleshipGame - Player 'fdgdfgdf' attempted a move out of turn
+2025-03-14 10:37:06 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '4,4'
+2025-03-14 10:37:06 [pool-1-thread-4] INFO  Ship - Shot at '4,4' missed
+2025-03-14 10:37:06 [pool-1-thread-4] INFO  Ship - Shot at '4,4' missed
+2025-03-14 10:37:06 [pool-1-thread-4] INFO  Ship - Shot at '4,4' missed
+2025-03-14 10:37:06 [pool-1-thread-4] INFO  Ship - Shot at '4,4' missed
+2025-03-14 10:37:06 [pool-1-thread-4] INFO  Ship - Shot at '4,4' missed
+2025-03-14 10:37:06 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '4,4'
+2025-03-14 10:37:08 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '3,5'
+2025-03-14 10:37:08 [pool-1-thread-3] INFO  Ship - Shot at '3,5' missed
+2025-03-14 10:37:08 [pool-1-thread-3] INFO  Ship - Shot at '3,5' missed
+2025-03-14 10:37:08 [pool-1-thread-3] INFO  Ship - Shot at '3,5' missed
+2025-03-14 10:37:08 [pool-1-thread-3] INFO  Ship - Shot at '3,5' missed
+2025-03-14 10:37:08 [pool-1-thread-3] INFO  Ship - Shot at '3,5' missed
+2025-03-14 10:37:08 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' missed at '3,5'
+2025-03-14 10:37:38 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '8,0'
+2025-03-14 10:37:38 [pool-1-thread-3] WARN  BattleshipGame - Player 'fdgdfgdf' attempted a move out of turn
+2025-03-14 10:37:40 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '8,2'
+2025-03-14 10:37:40 [pool-1-thread-4] INFO  Ship - Shot at '8,2' missed
+2025-03-14 10:37:40 [pool-1-thread-4] INFO  Ship - Shot at '8,2' missed
+2025-03-14 10:37:40 [pool-1-thread-4] INFO  Ship - Shot at '8,2' missed
+2025-03-14 10:37:40 [pool-1-thread-4] INFO  Ship - Shot at '8,2' missed
+2025-03-14 10:37:40 [pool-1-thread-4] INFO  Ship - Ship hit at position '8,2'
+2025-03-14 10:37:40 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' hit a ship at '8,2'
+2025-03-14 10:37:41 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '8,3'
+2025-03-14 10:37:41 [pool-1-thread-3] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:37:41 [pool-1-thread-3] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:37:41 [pool-1-thread-3] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:37:41 [pool-1-thread-3] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:37:41 [pool-1-thread-3] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:37:41 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' missed at '8,3'
+2025-03-14 10:37:43 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '3,6'
+2025-03-14 10:37:43 [pool-1-thread-3] WARN  BattleshipGame - Player 'fdgdfgdf' attempted a move out of turn
+2025-03-14 10:38:48 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '0,6'
+2025-03-14 10:38:48 [pool-1-thread-3] WARN  BattleshipGame - Player 'fdgdfgdf' attempted a move out of turn
+2025-03-14 10:38:49 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '2,3'
+2025-03-14 10:38:49 [pool-1-thread-3] WARN  BattleshipGame - Player 'fdgdfgdf' attempted a move out of turn
+2025-03-14 10:38:51 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' attempting move '8,3'
+2025-03-14 10:38:51 [pool-1-thread-4] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:38:51 [pool-1-thread-4] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:38:51 [pool-1-thread-4] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:38:51 [pool-1-thread-4] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:38:51 [pool-1-thread-4] INFO  Ship - Shot at '8,3' missed
+2025-03-14 10:38:51 [pool-1-thread-4] INFO  BattleshipGame - Player 'adadad' missed at '8,3'
+2025-03-14 10:38:52 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' attempting move '0,6'
+2025-03-14 10:38:52 [pool-1-thread-3] INFO  Ship - Shot at '0,6' missed
+2025-03-14 10:38:52 [pool-1-thread-3] INFO  Ship - Shot at '0,6' missed
+2025-03-14 10:38:52 [pool-1-thread-3] INFO  Ship - Shot at '0,6' missed
+2025-03-14 10:38:52 [pool-1-thread-3] INFO  Ship - Shot at '0,6' missed
+2025-03-14 10:38:52 [pool-1-thread-3] INFO  Ship - Shot at '0,6' missed
+2025-03-14 10:38:52 [pool-1-thread-3] INFO  BattleshipGame - Player 'fdgdfgdf' missed at '0,6'
