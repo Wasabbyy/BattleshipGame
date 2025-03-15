@@ -152,7 +152,7 @@ public class BattleshipGame {
                 if (ship.registerHit(coord)) {
                     hit = true;
                     out.println("SUCCESS: HIT: " + coord);
-                    if (opponentOut != null) opponentOut.println("HIT: " + coord);
+                    if (opponentOut != null) opponentOut.println("SUCCESS: Opponent HIT: " + coord);
                     logger.info("Player '{}' hit a ship at '{}'", player, coord);
 
                     if (ship.isSunk()) {
@@ -175,7 +175,7 @@ public class BattleshipGame {
             if (!hit) {
                 enemyGrid[x][y] = 'O';
                 out.println("SUCCESS: MISS: " + coord);
-                if (opponentOut != null) opponentOut.println("MISS: " + coord);
+                if (opponentOut != null) opponentOut.println("SUCCESS: Opponent MISS: " + coord);
                 logger.info("Player '{}' missed at '{}'", player, coord);
             }
 
