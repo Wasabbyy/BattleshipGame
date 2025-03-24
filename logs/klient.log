@@ -3437,3 +3437,315 @@
 2025-03-21 21:35:45 [pool-1-thread-2] INFO  BattleshipGame - Player 'sdfsdf' is placing ship 'T-Ship' at '4,6 4,7 4,8 5,7'
 2025-03-21 21:35:45 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,8, 5,7, 4,6, 4,7]
 2025-03-21 21:35:45 [pool-1-thread-2] INFO  BattleshipGame - Player 'sdfsdf' successfully placed ship 'T-Ship'
+2025-03-24 19:07:38 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 19:07:49 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 19:07:58 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 19:08:07 [pool-1-thread-1] INFO  GameManager - dfhdfh is waiting for an opponent...
+2025-03-24 19:08:07 [pool-1-thread-1] INFO  ClientHandler - User 'dfhdfh' logged in and added to queue
+2025-03-24 19:08:07 [pool-1-thread-1] INFO  ClientHandler - Client 'dfhdfh' is ready
+2025-03-24 19:08:10 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdadas' and 'dfhdfh'
+2025-03-24 19:08:10 [pool-1-thread-2] INFO  GameManager - Game started: asdadas vs dfhdfh
+2025-03-24 19:08:10 [pool-1-thread-2] INFO  ClientHandler - User 'asdadas' logged in and added to queue
+2025-03-24 19:08:10 [pool-1-thread-2] INFO  ClientHandler - Client 'asdadas' is ready
+2025-03-24 19:09:12 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdadas' is placing ship 'Battleship' at '2,2 3,2 4,2 5,2'
+2025-03-24 19:09:12 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2, 5,2]
+2025-03-24 19:09:12 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdadas' successfully placed ship 'Battleship'
+2025-03-24 19:09:15 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfhdfh' is placing ship 'Battleship' at '4,2 5,2 6,2 7,2'
+2025-03-24 19:09:15 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,2, 5,2, 6,2, 7,2]
+2025-03-24 19:09:15 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfhdfh' successfully placed ship 'Battleship'
+2025-03-24 19:09:50 [pool-1-thread-1] INFO  ClientHandler - User 'dfhdfh' disconnected.
+2025-03-24 19:11:05 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 19:11:13 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 19:11:17 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 19:11:32 [pool-1-thread-2] INFO  GameManager - fsdfds is waiting for an opponent...
+2025-03-24 19:11:32 [pool-1-thread-2] INFO  ClientHandler - User 'fsdfds' logged in and added to queue
+2025-03-24 19:11:32 [pool-1-thread-2] INFO  ClientHandler - Client 'fsdfds' is ready
+2025-03-24 19:11:35 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'asdsad' and 'fsdfds'
+2025-03-24 19:11:35 [pool-1-thread-1] INFO  GameManager - Game started: asdsad vs fsdfds
+2025-03-24 19:11:35 [pool-1-thread-1] INFO  ClientHandler - User 'asdsad' logged in and added to queue
+2025-03-24 19:11:35 [pool-1-thread-1] INFO  ClientHandler - Client 'asdsad' is ready
+2025-03-24 20:30:20 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 20:30:24 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:30:52 [pool-1-thread-1] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:30:54 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:30:57 [pool-1-thread-1] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:31:00 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:31:02 [pool-1-thread-1] INFO  GameManager - tdffgd is waiting for an opponent...
+2025-03-24 20:31:02 [pool-1-thread-1] INFO  ClientHandler - User 'tdffgd' logged in and added to queue
+2025-03-24 20:31:03 [pool-1-thread-1] INFO  ClientHandler - Client 'tdffgd' is ready
+2025-03-24 20:33:14 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:33:15 [pool-1-thread-2] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:33:33 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:33:37 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'sas' and 'tdffgd'
+2025-03-24 20:33:37 [pool-1-thread-2] INFO  GameManager - Game started: sas vs tdffgd
+2025-03-24 20:33:37 [pool-1-thread-2] INFO  ClientHandler - User 'sas' logged in and added to queue
+2025-03-24 20:33:37 [pool-1-thread-2] INFO  ClientHandler - Client 'sas' is ready
+2025-03-24 20:33:37 [pool-1-thread-1] INFO  ClientHandler - User 'tdffgd' disconnected.
+2025-03-24 20:33:37 [pool-1-thread-2] INFO  ClientHandler - User 'sas' disconnected.
+2025-03-24 20:35:30 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:35:34 [pool-1-thread-3] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:38:32 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:38:32 [pool-1-thread-4] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:40:06 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:40:08 [pool-1-thread-5] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:40:12 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:40:16 [pool-1-thread-5] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-24 20:40:16 [pool-1-thread-5] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 20:40:16 [pool-1-thread-5] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 20:57:38 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 20:57:42 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:57:44 [pool-1-thread-1] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-24 20:57:44 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 20:57:44 [pool-1-thread-1] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 20:58:03 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:58:06 [pool-1-thread-2] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:58:12 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:58:14 [pool-1-thread-2] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 20:58:18 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:58:19 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'dasdas' and 'asdasd'
+2025-03-24 20:58:19 [pool-1-thread-2] INFO  GameManager - Game started: dasdas vs asdasd
+2025-03-24 20:58:19 [pool-1-thread-2] INFO  ClientHandler - User 'dasdas' logged in and added to queue
+2025-03-24 20:58:19 [pool-1-thread-2] INFO  ClientHandler - Client 'dasdas' is ready
+2025-03-24 20:58:19 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' disconnected.
+2025-03-24 20:58:21 [pool-1-thread-2] INFO  ClientHandler - User 'dasdas' disconnected.
+2025-03-24 20:58:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:58:38 [pool-1-thread-2] INFO  GameManager - adasdada is waiting for an opponent...
+2025-03-24 20:58:38 [pool-1-thread-2] INFO  ClientHandler - User 'adasdada' logged in and added to queue
+2025-03-24 20:58:38 [pool-1-thread-2] INFO  ClientHandler - Client 'adasdada' is ready
+2025-03-24 20:58:55 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 20:58:59 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 20:59:01 [pool-1-thread-1] INFO  GameManager - gfdgd is waiting for an opponent...
+2025-03-24 20:59:01 [pool-1-thread-1] INFO  ClientHandler - User 'gfdgd' logged in and added to queue
+2025-03-24 20:59:01 [pool-1-thread-1] INFO  ClientHandler - Client 'gfdgd' is ready
+2025-03-24 21:03:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:03:21 [pool-1-thread-2] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:03:26 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:03:27 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'sadasd' and 'gfdgd'
+2025-03-24 21:03:27 [pool-1-thread-2] INFO  GameManager - Game started: sadasd vs gfdgd
+2025-03-24 21:03:27 [pool-1-thread-2] INFO  ClientHandler - User 'sadasd' logged in and added to queue
+2025-03-24 21:03:28 [pool-1-thread-2] INFO  ClientHandler - Client 'sadasd' is ready
+2025-03-24 21:03:28 [pool-1-thread-1] INFO  ClientHandler - User 'gfdgd' disconnected.
+2025-03-24 21:03:33 [pool-1-thread-2] INFO  ClientHandler - User 'sadasd' disconnected.
+2025-03-24 21:03:39 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:03:44 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:03:49 [pool-1-thread-1] INFO  GameManager - asda is waiting for an opponent...
+2025-03-24 21:03:49 [pool-1-thread-1] INFO  ClientHandler - User 'asda' logged in and added to queue
+2025-03-24 21:03:49 [pool-1-thread-1] INFO  ClientHandler - Client 'asda' is ready
+2025-03-24 21:04:03 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:04:06 [pool-1-thread-2] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:04:10 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:04:12 [pool-1-thread-2] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:04:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:04:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:04:18 [pool-1-thread-2] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:04:18 [pool-1-thread-3] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:04:21 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:04:24 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'asdasd' and 'asda'
+2025-03-24 21:04:24 [pool-1-thread-3] INFO  GameManager - Game started: asdasd vs asda
+2025-03-24 21:04:24 [pool-1-thread-3] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 21:04:24 [pool-1-thread-3] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 21:04:25 [pool-1-thread-1] INFO  ClientHandler - User 'asda' disconnected.
+2025-03-24 21:04:27 [pool-1-thread-3] INFO  ClientHandler - User 'asdasd' disconnected.
+2025-03-24 21:04:31 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:04:33 [pool-1-thread-3] INFO  GameManager - adadas is waiting for an opponent...
+2025-03-24 21:04:33 [pool-1-thread-3] INFO  ClientHandler - User 'adadas' logged in and added to queue
+2025-03-24 21:04:33 [pool-1-thread-3] INFO  ClientHandler - Client 'adadas' is ready
+2025-03-24 21:04:39 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:04:41 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'adada' and 'adadas'
+2025-03-24 21:04:41 [pool-1-thread-1] INFO  GameManager - Game started: adada vs adadas
+2025-03-24 21:04:41 [pool-1-thread-1] INFO  ClientHandler - User 'adada' logged in and added to queue
+2025-03-24 21:04:41 [pool-1-thread-1] INFO  ClientHandler - Client 'adada' is ready
+2025-03-24 21:04:41 [pool-1-thread-3] INFO  ClientHandler - User 'adadas' disconnected.
+2025-03-24 21:04:48 [pool-1-thread-1] INFO  ClientHandler - User 'adada' disconnected.
+2025-03-24 21:08:31 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:08:33 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:08:37 [pool-1-thread-1] INFO  GameManager - dsada is waiting for an opponent...
+2025-03-24 21:08:37 [pool-1-thread-1] INFO  ClientHandler - User 'dsada' logged in and added to queue
+2025-03-24 21:08:37 [pool-1-thread-1] INFO  ClientHandler - Client 'dsada' is ready
+2025-03-24 21:08:46 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:08:47 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdasda' and 'dsada'
+2025-03-24 21:08:47 [pool-1-thread-2] INFO  GameManager - Game started: asdasda vs dsada
+2025-03-24 21:08:47 [pool-1-thread-2] INFO  ClientHandler - User 'asdasda' logged in and added to queue
+2025-03-24 21:08:47 [pool-1-thread-2] INFO  ClientHandler - Client 'asdasda' is ready
+2025-03-24 21:08:47 [pool-1-thread-1] INFO  ClientHandler - User 'dsada' disconnected.
+2025-03-24 21:08:52 [pool-1-thread-2] INFO  ClientHandler - User 'asdasda' disconnected.
+2025-03-24 21:10:28 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:10:30 [pool-1-thread-3] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:11:00 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:11:02 [pool-1-thread-3] INFO  GameManager - asdsa is waiting for an opponent...
+2025-03-24 21:11:02 [pool-1-thread-3] INFO  ClientHandler - User 'asdsa' logged in and added to queue
+2025-03-24 21:11:02 [pool-1-thread-3] INFO  ClientHandler - Client 'asdsa' is ready
+2025-03-24 21:11:10 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:11:17 [pool-1-thread-4] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:11:21 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:11:24 [pool-1-thread-4] INFO  BattleshipGame - New game created between 'asdasd' and 'asdsa'
+2025-03-24 21:11:24 [pool-1-thread-4] INFO  GameManager - Game started: asdasd vs asdsa
+2025-03-24 21:11:24 [pool-1-thread-4] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 21:11:24 [pool-1-thread-4] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 21:11:24 [pool-1-thread-3] INFO  ClientHandler - User 'asdsa' disconnected.
+2025-03-24 21:14:09 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:14:14 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:14:17 [pool-1-thread-1] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:14:20 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:14:22 [pool-1-thread-1] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-24 21:14:22 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 21:14:22 [pool-1-thread-1] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 21:15:06 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:16:53 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:16:56 [pool-1-thread-1] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:17:01 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:17:05 [pool-1-thread-1] INFO  GameManager - fgh is waiting for an opponent...
+2025-03-24 21:17:05 [pool-1-thread-1] INFO  ClientHandler - User 'fgh' logged in and added to queue
+2025-03-24 21:17:05 [pool-1-thread-1] INFO  ClientHandler - Client 'fgh' is ready
+2025-03-24 21:17:15 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:17:18 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'fdsfs' and 'fgh'
+2025-03-24 21:17:18 [pool-1-thread-2] INFO  GameManager - Game started: fdsfs vs fgh
+2025-03-24 21:17:18 [pool-1-thread-2] INFO  ClientHandler - User 'fdsfs' logged in and added to queue
+2025-03-24 21:17:18 [pool-1-thread-2] INFO  ClientHandler - Client 'fdsfs' is ready
+2025-03-24 21:17:18 [pool-1-thread-1] INFO  ClientHandler - User 'fgh' disconnected.
+2025-03-24 21:17:23 [pool-1-thread-2] INFO  ClientHandler - User 'fdsfs' disconnected.
+2025-03-24 21:17:33 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:17:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:17:41 [pool-1-thread-1] INFO  GameManager - asdaa is waiting for an opponent...
+2025-03-24 21:17:41 [pool-1-thread-1] INFO  ClientHandler - User 'asdaa' logged in and added to queue
+2025-03-24 21:17:41 [pool-1-thread-1] INFO  ClientHandler - Client 'asdaa' is ready
+2025-03-24 21:21:28 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:21:32 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:21:55 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:22:32 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:22:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:22:39 [pool-1-thread-1] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:22:43 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:22:48 [pool-1-thread-1] INFO  GameManager - asdasd is waiting for an opponent...
+2025-03-24 21:22:48 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 21:22:48 [pool-1-thread-1] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 21:22:57 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:23:00 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asd' and 'asdasd'
+2025-03-24 21:23:00 [pool-1-thread-2] INFO  GameManager - Game started: asd vs asdasd
+2025-03-24 21:23:00 [pool-1-thread-2] INFO  ClientHandler - User 'asd' logged in and added to queue
+2025-03-24 21:23:00 [pool-1-thread-2] INFO  ClientHandler - Client 'asd' is ready
+2025-03-24 21:23:00 [pool-1-thread-1] INFO  ClientHandler - User 'asdasd' disconnected.
+2025-03-24 21:23:05 [pool-1-thread-2] INFO  ClientHandler - User 'asd' disconnected.
+2025-03-24 21:23:09 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:23:15 [pool-1-thread-2] INFO  GameManager - asdasda is waiting for an opponent...
+2025-03-24 21:23:15 [pool-1-thread-2] INFO  ClientHandler - User 'asdasda' logged in and added to queue
+2025-03-24 21:23:15 [pool-1-thread-2] INFO  ClientHandler - Client 'asdasda' is ready
+2025-03-24 21:23:24 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:23:28 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:23:30 [pool-1-thread-1] INFO  GameManager - adasdas is waiting for an opponent...
+2025-03-24 21:23:30 [pool-1-thread-1] INFO  ClientHandler - User 'adasdas' logged in and added to queue
+2025-03-24 21:23:30 [pool-1-thread-1] INFO  ClientHandler - Client 'adasdas' is ready
+2025-03-24 21:23:36 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:23:39 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdasd' and 'adasdas'
+2025-03-24 21:23:39 [pool-1-thread-2] INFO  GameManager - Game started: asdasd vs adasdas
+2025-03-24 21:23:39 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 21:23:39 [pool-1-thread-1] INFO  ClientHandler - User 'adasdas' disconnected.
+2025-03-24 21:23:39 [pool-1-thread-2] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 21:23:43 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' disconnected.
+2025-03-24 21:27:59 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:28:04 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:28:07 [pool-1-thread-1] INFO  ClientHandler - User 'null' disconnected.
+2025-03-24 21:28:10 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:28:12 [pool-1-thread-1] INFO  GameManager - yxcyx is waiting for an opponent...
+2025-03-24 21:28:12 [pool-1-thread-1] INFO  ClientHandler - User 'yxcyx' logged in and added to queue
+2025-03-24 21:28:12 [pool-1-thread-1] INFO  ClientHandler - Client 'yxcyx' is ready
+2025-03-24 21:28:14 [Thread-0] INFO  ClientHandler - User 'yxcyx' disconnected voluntarily.
+2025-03-24 21:28:14 [Thread-0] INFO  ClientHandler - User 'yxcyx' disconnected.
+2025-03-24 21:28:21 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:28:24 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'sdasda' and 'yxcyx'
+2025-03-24 21:28:24 [pool-1-thread-2] INFO  GameManager - Game started: sdasda vs yxcyx
+2025-03-24 21:28:24 [pool-1-thread-2] INFO  ClientHandler - User 'sdasda' logged in and added to queue
+2025-03-24 21:28:24 [pool-1-thread-2] INFO  ClientHandler - Client 'sdasda' is ready
+2025-03-24 21:28:24 [pool-1-thread-1] INFO  ClientHandler - User 'yxcyx' disconnected.
+2025-03-24 21:28:25 [Thread-1] INFO  ClientHandler - User 'sdasda' disconnected voluntarily.
+2025-03-24 21:28:25 [Thread-1] INFO  ClientHandler - User 'sdasda' disconnected.
+2025-03-24 21:28:25 [pool-1-thread-2] INFO  ClientHandler - User 'sdasda' disconnected.
+2025-03-24 21:28:30 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:28:33 [pool-1-thread-2] INFO  GameManager - xcfsdfs is waiting for an opponent...
+2025-03-24 21:28:33 [pool-1-thread-2] INFO  ClientHandler - User 'xcfsdfs' logged in and added to queue
+2025-03-24 21:28:33 [pool-1-thread-2] INFO  ClientHandler - Client 'xcfsdfs' is ready
+2025-03-24 21:29:13 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:29:16 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'asdas' and 'xcfsdfs'
+2025-03-24 21:29:16 [pool-1-thread-1] INFO  GameManager - Game started: asdas vs xcfsdfs
+2025-03-24 21:29:16 [pool-1-thread-1] INFO  ClientHandler - User 'asdas' logged in and added to queue
+2025-03-24 21:29:16 [pool-1-thread-1] INFO  ClientHandler - Client 'asdas' is ready
+2025-03-24 21:29:29 [Thread-2] INFO  ClientHandler - User 'xcfsdfs' disconnected voluntarily.
+2025-03-24 21:29:29 [Thread-2] INFO  ClientHandler - User 'xcfsdfs' disconnected.
+2025-03-24 21:29:29 [pool-1-thread-2] INFO  ClientHandler - User 'xcfsdfs' disconnected.
+2025-03-24 21:29:29 [Thread-3] INFO  ClientHandler - User 'asdas' disconnected voluntarily.
+2025-03-24 21:29:29 [Thread-3] INFO  ClientHandler - User 'asdas' disconnected.
+2025-03-24 21:29:29 [pool-1-thread-1] INFO  ClientHandler - User 'asdas' disconnected.
+2025-03-24 21:29:34 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:29:39 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:29:41 [pool-1-thread-1] INFO  GameManager - dfsdf is waiting for an opponent...
+2025-03-24 21:29:41 [pool-1-thread-1] INFO  ClientHandler - User 'dfsdf' logged in and added to queue
+2025-03-24 21:29:41 [pool-1-thread-1] INFO  ClientHandler - Client 'dfsdf' is ready
+2025-03-24 21:29:46 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:29:48 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdasd' and 'dfsdf'
+2025-03-24 21:29:48 [pool-1-thread-2] INFO  GameManager - Game started: asdasd vs dfsdf
+2025-03-24 21:29:48 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-24 21:29:48 [pool-1-thread-2] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-24 21:31:14 [main] INFO  Server - Server is starting on port 12345
+2025-03-24 21:31:24 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:31:31 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-24 21:31:49 [pool-1-thread-1] INFO  GameManager - wer is waiting for an opponent...
+2025-03-24 21:31:49 [pool-1-thread-1] INFO  ClientHandler - User 'wer' logged in and added to queue
+2025-03-24 21:31:49 [pool-1-thread-1] INFO  ClientHandler - Client 'wer' is ready
+2025-03-24 21:31:51 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'přeasd' and 'wer'
+2025-03-24 21:31:51 [pool-1-thread-2] INFO  GameManager - Game started: přeasd vs wer
+2025-03-24 21:31:51 [pool-1-thread-2] INFO  ClientHandler - User 'přeasd' logged in and added to queue
+2025-03-24 21:31:51 [pool-1-thread-2] INFO  ClientHandler - Client 'přeasd' is ready
+2025-03-24 21:31:54 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-24 21:31:54 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-24 21:31:54 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' successfully placed ship 'Battleship'
+2025-03-24 21:31:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' is placing ship 'PatrolBoat' at '2,4 3,4'
+2025-03-24 21:31:58 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,4, 3,4]
+2025-03-24 21:31:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' successfully placed ship 'PatrolBoat'
+2025-03-24 21:32:00 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' is placing ship 'L-Ship' at '6,1 7,1 7,2'
+2025-03-24 21:32:00 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,1, 7,1, 7,2]
+2025-03-24 21:32:00 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' successfully placed ship 'L-Ship'
+2025-03-24 21:32:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' is placing ship 'T-Ship' at '6,5 6,6 6,7 7,6'
+2025-03-24 21:32:02 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,6, 6,7, 7,6, 6,5]
+2025-03-24 21:32:02 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' successfully placed ship 'T-Ship'
+2025-03-24 21:32:04 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' is placing ship 'Destroyer' at '2,7 3,7 4,7'
+2025-03-24 21:32:04 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,7, 3,7, 4,7]
+2025-03-24 21:32:04 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' successfully placed ship 'Destroyer'
+2025-03-24 21:32:07 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' is placing ship 'PatrolBoat' at '1,1 2,1'
+2025-03-24 21:32:07 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,1, 2,1]
+2025-03-24 21:32:07 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' successfully placed ship 'PatrolBoat'
+2025-03-24 21:32:08 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' is placing ship 'Destroyer' at '1,3 2,3 3,3'
+2025-03-24 21:32:08 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3]
+2025-03-24 21:32:08 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' successfully placed ship 'Destroyer'
+2025-03-24 21:32:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' is placing ship 'T-Ship' at '1,5 1,6 1,7 2,6'
+2025-03-24 21:32:09 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,5, 1,6, 1,7, 2,6]
+2025-03-24 21:32:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' successfully placed ship 'T-Ship'
+2025-03-24 21:32:11 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' is placing ship 'Battleship' at '4,0 5,0 6,0 7,0'
+2025-03-24 21:32:11 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,0, 5,0, 6,0, 7,0]
+2025-03-24 21:32:11 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' successfully placed ship 'Battleship'
+2025-03-24 21:32:13 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' is placing ship 'L-Ship' at '6,3 7,3 7,4'
+2025-03-24 21:32:13 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,3, 7,3, 7,4]
+2025-03-24 21:32:13 [pool-1-thread-2] INFO  BattleshipGame - Game between 'přeasd' and 'wer' is now in progress
+2025-03-24 21:32:13 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' successfully placed ship 'L-Ship'
+2025-03-24 21:32:14 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' attempting move '3,1'
+2025-03-24 21:32:14 [pool-1-thread-1] WARN  BattleshipGame - Player 'wer' attempted a move out of turn
+2025-03-24 21:32:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' attempting move '3,1'
+2025-03-24 21:32:16 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-24 21:32:16 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-24 21:32:16 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-24 21:32:16 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-24 21:32:16 [pool-1-thread-2] INFO  Ship - Shot at '3,1' missed
+2025-03-24 21:32:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' missed at '3,1'
+2025-03-24 21:32:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' attempting move '1,2'
+2025-03-24 21:32:17 [pool-1-thread-1] INFO  Ship - Shot at '1,2' missed
+2025-03-24 21:32:17 [pool-1-thread-1] INFO  Ship - Shot at '1,2' missed
+2025-03-24 21:32:17 [pool-1-thread-1] INFO  Ship - Shot at '1,2' missed
+2025-03-24 21:32:17 [pool-1-thread-1] INFO  Ship - Shot at '1,2' missed
+2025-03-24 21:32:17 [pool-1-thread-1] INFO  Ship - Shot at '1,2' missed
+2025-03-24 21:32:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'wer' missed at '1,2'
+2025-03-24 21:32:21 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' attempting move '7,1'
+2025-03-24 21:32:21 [pool-1-thread-2] INFO  Ship - Shot at '7,1' missed
+2025-03-24 21:32:21 [pool-1-thread-2] INFO  Ship - Shot at '7,1' missed
+2025-03-24 21:32:21 [pool-1-thread-2] INFO  Ship - Ship hit at position '7,1'
+2025-03-24 21:32:21 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' hit a ship at '7,1'
+2025-03-24 21:32:26 [pool-1-thread-1] INFO  ClientHandler - User 'wer' disconnected.
+2025-03-24 21:32:30 [pool-1-thread-2] INFO  ClientHandler - User 'přeasd' disconnected.

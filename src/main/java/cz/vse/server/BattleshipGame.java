@@ -36,11 +36,11 @@ public class BattleshipGame {
         }
     }
 
-    public String getOpponent(String player) {
+    public synchronized String getOpponent(String player) {
         return player.equals(player1) ? player2 : player1;
     }
 
-    public boolean placeShip(String player, String shipType, String positions, PrintWriter out) {
+    public synchronized boolean placeShip(String player, String shipType, String positions, PrintWriter out) {
         logger.info("Player '{}' is placing ship '{}' at '{}'", player, shipType, positions);
 
         shipType = shipType.replaceAll("\\(\\d+\\)", "").trim();
@@ -99,7 +99,7 @@ public class BattleshipGame {
     }
 
 
-    public boolean isSetupComplete() {
+    public synchronized boolean isSetupComplete() {
         if (gameState == GameState.IN_PROGRESS) {
             return true;
         }
@@ -116,7 +116,7 @@ public class BattleshipGame {
 
     // In BattleshipGame.java
 // In BattleshipGame.java
-    public void processMove(String player, String move, PrintWriter out) {
+    public synchronized void processMove(String player, String move, PrintWriter out) {
         logger.info("Player '{}' attempting move '{}'", player, move);
 
         if (!isSetupComplete()) {
@@ -207,7 +207,7 @@ public class BattleshipGame {
         }
     }
     // In BattleshipGame.java
-    public boolean isAdjacent(String player, Set<String> newShipPositions) {
+    public synchronized boolean isAdjacent(String player, Set<String> newShipPositions) {
         List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
         Set<String> allPositions = new HashSet<>();
         for (Ship ship : fleet) {
@@ -229,7 +229,7 @@ public class BattleshipGame {
         }
         return false;
     }
-    private boolean allShipsSunk(List<Ship> fleet) {
+    private synchronized boolean allShipsSunk(List<Ship> fleet) {
         for (Ship ship : fleet) {
             if (!ship.isSunk()) {
                 return false;
