@@ -112,10 +112,10 @@ public class BattleshipGame {
             PrintWriter out2 = Server.getPlayerOutput(player2);
 
             if (out1 != null) {
-                out1.println("Your turn.");
+                out1.println("INFO: Game Started: Your turn.");
             }
             if (out2 != null) {
-                out2.println("Opponent's turn");
+                out2.println("INFO: Game Started: Opponent's turn");
             }
 
             return true;
