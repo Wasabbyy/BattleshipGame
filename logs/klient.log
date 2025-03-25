@@ -407,3 +407,692 @@
 2025-03-11 14:56:33 [pool-1-thread-1] INFO  GameManager - sfsdsfs is waiting for an opponent...
 2025-03-11 14:56:33 [pool-1-thread-1] INFO  ClientHandler - User 'sfsdsfs' logged in and added to queue
 2025-03-11 14:56:33 [pool-1-thread-1] INFO  ClientHandler - Client 'sfsdsfs' is ready
+2025-03-25 13:06:32 [main] INFO  Server - Server is starting on port 12345
+2025-03-25 13:06:57 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:07:20 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:07:28 [pool-1-thread-2] INFO  GameManager - adad is waiting for an opponent...
+2025-03-25 13:07:28 [pool-1-thread-2] INFO  ClientHandler - User 'adad' logged in and added to queue
+2025-03-25 13:07:28 [pool-1-thread-2] INFO  ClientHandler - Client 'adad' is ready
+2025-03-25 13:07:40 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:07:42 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'asdsa' and 'adad'
+2025-03-25 13:07:42 [pool-1-thread-3] INFO  GameManager - Game started: asdsa vs adad
+2025-03-25 13:07:42 [pool-1-thread-3] INFO  ClientHandler - User 'asdsa' logged in and added to queue
+2025-03-25 13:07:42 [pool-1-thread-3] INFO  ClientHandler - Client 'asdsa' is ready
+2025-03-25 13:07:44 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdsa' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-25 13:07:44 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-25 13:07:44 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdsa' successfully placed ship 'Battleship'
+2025-03-25 13:07:46 [pool-1-thread-3] INFO  ClientHandler - User 'asdsa' disconnected.
+2025-03-25 13:07:47 [pool-1-thread-2] INFO  ClientHandler - User 'adad' disconnected.
+2025-03-25 13:12:43 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:12:43 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:12:51 [pool-1-thread-4] INFO  GameManager - asdad is waiting for an opponent...
+2025-03-25 13:12:51 [pool-1-thread-4] INFO  ClientHandler - User 'asdad' logged in and added to queue
+2025-03-25 13:12:51 [pool-1-thread-4] INFO  ClientHandler - Client 'asdad' is ready
+2025-03-25 13:12:55 [pool-1-thread-5] INFO  BattleshipGame - New game created between 'sadasdas' and 'asdad'
+2025-03-25 13:12:55 [pool-1-thread-5] INFO  GameManager - Game started: sadasdas vs asdad
+2025-03-25 13:12:55 [pool-1-thread-5] INFO  ClientHandler - User 'sadasdas' logged in and added to queue
+2025-03-25 13:12:55 [pool-1-thread-5] INFO  ClientHandler - Client 'sadasdas' is ready
+2025-03-25 13:12:56 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdad' is placing ship 'Battleship' at '2,6 3,6 4,6 5,6'
+2025-03-25 13:12:56 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,6, 3,6, 4,6, 5,6]
+2025-03-25 13:12:56 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'Battleship'
+2025-03-25 13:12:58 [pool-1-thread-5] INFO  BattleshipGame - Player 'sadasdas' is placing ship 'Battleship' at '3,8 4,8 5,8 6,8'
+2025-03-25 13:12:58 [pool-1-thread-5] INFO  Ship - New ship created at positions: [4,8, 5,8, 6,8, 3,8]
+2025-03-25 13:12:58 [pool-1-thread-5] INFO  BattleshipGame - Player 'sadasdas' successfully placed ship 'Battleship'
+2025-03-25 13:13:00 [pool-1-thread-4] INFO  ClientHandler - User 'asdad' disconnected.
+2025-03-25 13:13:01 [pool-1-thread-5] INFO  ClientHandler - User 'sadasdas' disconnected.
+2025-03-25 13:13:42 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:13:45 [pool-1-thread-5] INFO  GameManager - asdad is waiting for an opponent...
+2025-03-25 13:13:45 [pool-1-thread-5] INFO  ClientHandler - User 'asdad' logged in and added to queue
+2025-03-25 13:13:45 [pool-1-thread-5] INFO  ClientHandler - Client 'asdad' is ready
+2025-03-25 13:18:39 [pool-1-thread-5] INFO  ClientHandler - User 'asdad' disconnected.
+2025-03-25 13:19:12 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:19:15 [pool-1-thread-5] INFO  BattleshipGame - New game created between 'adad' and 'asdad'
+2025-03-25 13:19:15 [pool-1-thread-5] INFO  GameManager - Game started: adad vs asdad
+2025-03-25 13:19:15 [pool-1-thread-5] INFO  ClientHandler - User 'adad' logged in and added to queue
+2025-03-25 13:19:15 [pool-1-thread-5] INFO  ClientHandler - Client 'adad' is ready
+2025-03-25 13:19:18 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:19:20 [pool-1-thread-6] INFO  GameManager - adada is waiting for an opponent...
+2025-03-25 13:19:20 [pool-1-thread-6] INFO  ClientHandler - User 'adada' logged in and added to queue
+2025-03-25 13:19:21 [pool-1-thread-6] INFO  ClientHandler - Client 'adada' is ready
+2025-03-25 13:19:25 [pool-1-thread-5] INFO  BattleshipGame - Player 'adad' is placing ship 'Battleship' at '2,2 3,2 4,2 5,2'
+2025-03-25 13:19:25 [pool-1-thread-5] INFO  Ship - New ship created at positions: [2,2, 3,2, 4,2, 5,2]
+2025-03-25 13:19:25 [pool-1-thread-5] INFO  BattleshipGame - Player 'adad' successfully placed ship 'Battleship'
+2025-03-25 13:19:51 [pool-1-thread-5] INFO  ClientHandler - User 'adad' disconnected.
+2025-03-25 13:20:12 [main] INFO  Server - Server is starting on port 12345
+2025-03-25 13:20:28 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:20:29 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:20:32 [pool-1-thread-2] INFO  GameManager - jghkj is waiting for an opponent...
+2025-03-25 13:20:32 [pool-1-thread-2] INFO  ClientHandler - User 'jghkj' logged in and added to queue
+2025-03-25 13:20:32 [pool-1-thread-2] INFO  ClientHandler - Client 'jghkj' is ready
+2025-03-25 13:20:36 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'jipj' and 'jghkj'
+2025-03-25 13:20:36 [pool-1-thread-1] INFO  GameManager - Game started: jipj vs jghkj
+2025-03-25 13:20:36 [pool-1-thread-1] INFO  ClientHandler - User 'jipj' logged in and added to queue
+2025-03-25 13:20:36 [pool-1-thread-1] INFO  ClientHandler - Client 'jipj' is ready
+2025-03-25 13:20:38 [pool-1-thread-1] INFO  BattleshipGame - Player 'jipj' is placing ship 'Battleship' at '2,0 3,0 4,0 5,0'
+2025-03-25 13:20:38 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,0, 3,0, 4,0, 5,0]
+2025-03-25 13:20:38 [pool-1-thread-1] INFO  BattleshipGame - Player 'jipj' successfully placed ship 'Battleship'
+2025-03-25 13:20:39 [pool-1-thread-2] INFO  BattleshipGame - Player 'jghkj' is placing ship 'Battleship' at '2,6 3,6 4,6 5,6'
+2025-03-25 13:20:39 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,6, 3,6, 4,6, 5,6]
+2025-03-25 13:20:39 [pool-1-thread-2] INFO  BattleshipGame - Player 'jghkj' successfully placed ship 'Battleship'
+2025-03-25 13:20:53 [pool-1-thread-2] INFO  ClientHandler - User 'jghkj' disconnected.
+2025-03-25 13:20:53 [pool-1-thread-1] INFO  ClientHandler - User 'jipj' disconnected.
+2025-03-25 13:23:07 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:23:07 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:23:11 [pool-1-thread-4] INFO  GameManager - ohohoi is waiting for an opponent...
+2025-03-25 13:23:11 [pool-1-thread-4] INFO  ClientHandler - User 'ohohoi' logged in and added to queue
+2025-03-25 13:23:11 [pool-1-thread-4] INFO  ClientHandler - Client 'ohohoi' is ready
+2025-03-25 13:23:16 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'jvhfcch' and 'ohohoi'
+2025-03-25 13:23:16 [pool-1-thread-3] INFO  GameManager - Game started: jvhfcch vs ohohoi
+2025-03-25 13:23:16 [pool-1-thread-3] INFO  ClientHandler - User 'jvhfcch' logged in and added to queue
+2025-03-25 13:23:16 [pool-1-thread-3] INFO  ClientHandler - Client 'jvhfcch' is ready
+2025-03-25 13:23:21 [pool-1-thread-3] INFO  BattleshipGame - Player 'jvhfcch' is placing ship 'Battleship' at '1,3 2,3 3,3 4,3'
+2025-03-25 13:23:21 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3, 4,3]
+2025-03-25 13:23:21 [pool-1-thread-3] INFO  BattleshipGame - Player 'jvhfcch' successfully placed ship 'Battleship'
+2025-03-25 13:23:23 [pool-1-thread-4] INFO  BattleshipGame - Player 'ohohoi' is placing ship 'Battleship' at '2,4 3,4 4,4 5,4'
+2025-03-25 13:23:23 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,4, 3,4, 4,4, 5,4]
+2025-03-25 13:23:23 [pool-1-thread-4] INFO  BattleshipGame - Player 'ohohoi' successfully placed ship 'Battleship'
+2025-03-25 13:23:30 [pool-1-thread-4] INFO  BattleshipGame - Player 'ohohoi' is placing ship 'PatrolBoat' at '3,7 4,7'
+2025-03-25 13:23:30 [pool-1-thread-4] INFO  Ship - New ship created at positions: [3,7, 4,7]
+2025-03-25 13:23:30 [pool-1-thread-4] INFO  BattleshipGame - Player 'ohohoi' successfully placed ship 'PatrolBoat'
+2025-03-25 13:30:32 [pool-1-thread-4] INFO  ClientHandler - User 'ohohoi' disconnected.
+2025-03-25 13:30:32 [pool-1-thread-3] INFO  ClientHandler - User 'jvhfcch' disconnected.
+2025-03-25 13:30:51 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:30:52 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:30:54 [pool-1-thread-3] INFO  GameManager - adewer is waiting for an opponent...
+2025-03-25 13:30:54 [pool-1-thread-3] INFO  ClientHandler - User 'adewer' logged in and added to queue
+2025-03-25 13:30:54 [pool-1-thread-3] INFO  ClientHandler - Client 'adewer' is ready
+2025-03-25 13:30:58 [pool-1-thread-4] INFO  BattleshipGame - New game created between 'serser' and 'adewer'
+2025-03-25 13:30:58 [pool-1-thread-4] INFO  GameManager - Game started: serser vs adewer
+2025-03-25 13:30:58 [pool-1-thread-4] INFO  ClientHandler - User 'serser' logged in and added to queue
+2025-03-25 13:30:58 [pool-1-thread-4] INFO  ClientHandler - Client 'serser' is ready
+2025-03-25 13:31:03 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' is placing ship 'Battleship' at '2,5 3,5 4,5 5,5'
+2025-03-25 13:31:03 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,5, 3,5, 4,5, 5,5]
+2025-03-25 13:31:03 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' successfully placed ship 'Battleship'
+2025-03-25 13:31:10 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' is placing ship 'PatrolBoat' at '2,2 3,2'
+2025-03-25 13:31:10 [pool-1-thread-4] INFO  Ship - New ship created at positions: [2,2, 3,2]
+2025-03-25 13:31:10 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' successfully placed ship 'PatrolBoat'
+2025-03-25 13:31:16 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' is placing ship 'Destroyer' at '0,8 1,8 2,8'
+2025-03-25 13:31:16 [pool-1-thread-4] INFO  Ship - New ship created at positions: [0,8, 1,8, 2,8]
+2025-03-25 13:31:16 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' successfully placed ship 'Destroyer'
+2025-03-25 13:31:19 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' is placing ship 'L-Ship' at '6,1 7,1 7,2'
+2025-03-25 13:31:19 [pool-1-thread-4] INFO  Ship - New ship created at positions: [6,1, 7,1, 7,2]
+2025-03-25 13:31:19 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' successfully placed ship 'L-Ship'
+2025-03-25 13:31:22 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' is placing ship 'T-Ship' at '7,6 7,7 7,8 8,7'
+2025-03-25 13:31:22 [pool-1-thread-4] INFO  Ship - New ship created at positions: [7,6, 7,7, 7,8, 8,7]
+2025-03-25 13:31:22 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' successfully placed ship 'T-Ship'
+2025-03-25 13:31:24 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' is placing ship 'Battleship' at '0,1 1,1 2,1 3,1'
+2025-03-25 13:31:24 [pool-1-thread-3] INFO  Ship - New ship created at positions: [0,1, 1,1, 2,1, 3,1]
+2025-03-25 13:31:24 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' successfully placed ship 'Battleship'
+2025-03-25 13:31:25 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' is placing ship 'PatrolBoat' at '1,4 2,4'
+2025-03-25 13:31:25 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,4, 2,4]
+2025-03-25 13:31:25 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' successfully placed ship 'PatrolBoat'
+2025-03-25 13:31:28 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' is placing ship 'Destroyer' at '1,8 2,8 3,8'
+2025-03-25 13:31:28 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,8, 2,8, 3,8]
+2025-03-25 13:31:28 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' successfully placed ship 'Destroyer'
+2025-03-25 13:31:31 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' is placing ship 'L-Ship' at '6,1 7,1 7,2'
+2025-03-25 13:31:31 [pool-1-thread-3] INFO  Ship - New ship created at positions: [6,1, 7,1, 7,2]
+2025-03-25 13:31:31 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' successfully placed ship 'L-Ship'
+2025-03-25 13:31:34 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' is placing ship 'T-Ship' at '6,6 6,7 6,8 7,7'
+2025-03-25 13:31:34 [pool-1-thread-3] INFO  Ship - New ship created at positions: [6,6, 6,7, 6,8, 7,7]
+2025-03-25 13:31:34 [pool-1-thread-3] INFO  BattleshipGame - Game between 'serser' and 'adewer' is now in progress
+2025-03-25 13:31:34 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' successfully placed ship 'T-Ship'
+2025-03-25 13:31:37 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' attempting move '2,2'
+2025-03-25 13:31:37 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-25 13:31:37 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-25 13:31:37 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-25 13:31:37 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-25 13:31:37 [pool-1-thread-4] INFO  Ship - Shot at '2,2' missed
+2025-03-25 13:31:37 [pool-1-thread-4] INFO  BattleshipGame - Player 'serser' missed at '2,2'
+2025-03-25 13:31:44 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' attempting move '2,1'
+2025-03-25 13:31:44 [pool-1-thread-3] INFO  Ship - Shot at '2,1' missed
+2025-03-25 13:31:44 [pool-1-thread-3] INFO  Ship - Shot at '2,1' missed
+2025-03-25 13:31:44 [pool-1-thread-3] INFO  Ship - Shot at '2,1' missed
+2025-03-25 13:31:44 [pool-1-thread-3] INFO  Ship - Shot at '2,1' missed
+2025-03-25 13:31:44 [pool-1-thread-3] INFO  Ship - Shot at '2,1' missed
+2025-03-25 13:31:44 [pool-1-thread-3] INFO  BattleshipGame - Player 'adewer' missed at '2,1'
+2025-03-25 13:36:19 [pool-1-thread-4] INFO  ClientHandler - User 'serser' disconnected.
+2025-03-25 13:36:19 [pool-1-thread-3] INFO  ClientHandler - User 'adewer' disconnected.
+2025-03-25 13:36:35 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:36:35 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:36:39 [pool-1-thread-4] INFO  GameManager - adasda is waiting for an opponent...
+2025-03-25 13:36:39 [pool-1-thread-4] INFO  ClientHandler - User 'adasda' logged in and added to queue
+2025-03-25 13:36:39 [pool-1-thread-4] INFO  ClientHandler - Client 'adasda' is ready
+2025-03-25 13:36:42 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'asdafa' and 'adasda'
+2025-03-25 13:36:42 [pool-1-thread-3] INFO  GameManager - Game started: asdafa vs adasda
+2025-03-25 13:36:42 [pool-1-thread-3] INFO  ClientHandler - User 'asdafa' logged in and added to queue
+2025-03-25 13:36:42 [pool-1-thread-3] INFO  ClientHandler - Client 'asdafa' is ready
+2025-03-25 13:36:46 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-25 13:36:46 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-25 13:36:46 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' successfully placed ship 'Battleship'
+2025-03-25 13:36:49 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' is placing ship 'PatrolBoat' at '1,6 2,6'
+2025-03-25 13:36:49 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,6, 2,6]
+2025-03-25 13:36:49 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' successfully placed ship 'PatrolBoat'
+2025-03-25 13:36:55 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' is placing ship 'Destroyer' at '0,9 1,9 2,9'
+2025-03-25 13:36:55 [pool-1-thread-3] INFO  Ship - New ship created at positions: [0,9, 1,9, 2,9]
+2025-03-25 13:36:55 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' successfully placed ship 'Destroyer'
+2025-03-25 13:36:58 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' is placing ship 'T-Ship' at '4,4 4,5 4,6 5,5'
+2025-03-25 13:36:58 [pool-1-thread-3] INFO  Ship - New ship created at positions: [4,4, 4,5, 4,6, 5,5]
+2025-03-25 13:36:58 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' successfully placed ship 'T-Ship'
+2025-03-25 13:37:08 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' is placing ship 'L-Ship' at '3,4 4,4 4,5'
+2025-03-25 13:37:08 [pool-1-thread-3] WARN  BattleshipGame - Player 'asdafa' tried to place a ship adjacent to another ship: 3,4 4,4 4,5
+2025-03-25 13:37:10 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' is placing ship 'L-Ship' at '8,5 9,5 9,6'
+2025-03-25 13:37:10 [pool-1-thread-3] INFO  Ship - New ship created at positions: [8,5, 9,5, 9,6]
+2025-03-25 13:37:10 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' successfully placed ship 'L-Ship'
+2025-03-25 13:37:15 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' is placing ship 'Destroyer' at '0,1 1,1 2,1'
+2025-03-25 13:37:15 [pool-1-thread-4] INFO  Ship - New ship created at positions: [0,1, 1,1, 2,1]
+2025-03-25 13:37:15 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' successfully placed ship 'Destroyer'
+2025-03-25 13:37:17 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' is placing ship 'PatrolBoat' at '1,4 2,4'
+2025-03-25 13:37:17 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,4, 2,4]
+2025-03-25 13:37:17 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' successfully placed ship 'PatrolBoat'
+2025-03-25 13:37:19 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' is placing ship 'T-Ship' at '1,5 1,6 1,7 2,6'
+2025-03-25 13:37:19 [pool-1-thread-4] WARN  BattleshipGame - Player 'adasda' tried to place a ship adjacent to another ship: 1,5 1,6 1,7 2,6
+2025-03-25 13:37:20 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' is placing ship 'T-Ship' at '1,7 1,8 1,9 2,8'
+2025-03-25 13:37:20 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,7, 1,8, 1,9, 2,8]
+2025-03-25 13:37:20 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' successfully placed ship 'T-Ship'
+2025-03-25 13:37:23 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' is placing ship 'Battleship' at '5,1 6,1 7,1 8,1'
+2025-03-25 13:37:23 [pool-1-thread-4] INFO  Ship - New ship created at positions: [5,1, 6,1, 7,1, 8,1]
+2025-03-25 13:37:23 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' successfully placed ship 'Battleship'
+2025-03-25 13:37:26 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' is placing ship 'L-Ship' at '5,5 6,5 6,6'
+2025-03-25 13:37:26 [pool-1-thread-4] INFO  Ship - New ship created at positions: [6,6, 5,5, 6,5]
+2025-03-25 13:37:26 [pool-1-thread-4] INFO  BattleshipGame - Game between 'asdafa' and 'adasda' is now in progress
+2025-03-25 13:37:26 [pool-1-thread-4] INFO  BattleshipGame - Player 'adasda' successfully placed ship 'L-Ship'
+2025-03-25 13:37:32 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' attempting move '3,1'
+2025-03-25 13:37:32 [pool-1-thread-3] INFO  Ship - Shot at '3,1' missed
+2025-03-25 13:37:32 [pool-1-thread-3] INFO  Ship - Shot at '3,1' missed
+2025-03-25 13:37:32 [pool-1-thread-3] INFO  Ship - Shot at '3,1' missed
+2025-03-25 13:37:32 [pool-1-thread-3] INFO  Ship - Shot at '3,1' missed
+2025-03-25 13:37:32 [pool-1-thread-3] INFO  Ship - Shot at '3,1' missed
+2025-03-25 13:37:32 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdafa' missed at '3,1'
+2025-03-25 13:40:04 [pool-1-thread-4] INFO  ClientHandler - User 'adasda' disconnected.
+2025-03-25 13:40:04 [pool-1-thread-3] INFO  ClientHandler - User 'asdafa' disconnected.
+2025-03-25 13:40:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:40:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:40:20 [pool-1-thread-4] INFO  GameManager - nkjjnl is waiting for an opponent...
+2025-03-25 13:40:20 [pool-1-thread-4] INFO  ClientHandler - User 'nkjjnl' logged in and added to queue
+2025-03-25 13:40:20 [pool-1-thread-4] INFO  ClientHandler - Client 'nkjjnl' is ready
+2025-03-25 13:40:27 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'ljjnnljn' and 'nkjjnl'
+2025-03-25 13:40:27 [pool-1-thread-3] INFO  GameManager - Game started: ljjnnljn vs nkjjnl
+2025-03-25 13:40:27 [pool-1-thread-3] INFO  ClientHandler - User 'ljjnnljn' logged in and added to queue
+2025-03-25 13:40:27 [pool-1-thread-3] INFO  ClientHandler - Client 'ljjnnljn' is ready
+2025-03-25 13:40:41 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-25 13:40:41 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-25 13:40:41 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' successfully placed ship 'Battleship'
+2025-03-25 13:40:45 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' is placing ship 'Destroyer' at '2,5 3,5 4,5'
+2025-03-25 13:40:45 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,5, 3,5, 4,5]
+2025-03-25 13:40:45 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' successfully placed ship 'Destroyer'
+2025-03-25 13:40:47 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' is placing ship 'PatrolBoat' at '1,9 2,9'
+2025-03-25 13:40:47 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,9, 2,9]
+2025-03-25 13:40:47 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' successfully placed ship 'PatrolBoat'
+2025-03-25 13:40:50 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' is placing ship 'L-Ship' at '7,2 8,2 8,3'
+2025-03-25 13:40:50 [pool-1-thread-3] INFO  Ship - New ship created at positions: [7,2, 8,2, 8,3]
+2025-03-25 13:40:50 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' successfully placed ship 'L-Ship'
+2025-03-25 13:40:52 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' is placing ship 'T-Ship' at '5,6 5,7 5,8 6,7'
+2025-03-25 13:40:52 [pool-1-thread-3] INFO  Ship - New ship created at positions: [5,7, 5,8, 6,7, 5,6]
+2025-03-25 13:40:52 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' successfully placed ship 'T-Ship'
+2025-03-25 13:40:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-25 13:40:54 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-25 13:40:54 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' successfully placed ship 'Battleship'
+2025-03-25 13:40:57 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' is placing ship 'Destroyer' at '1,3 2,3 3,3'
+2025-03-25 13:40:57 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3]
+2025-03-25 13:40:57 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' successfully placed ship 'Destroyer'
+2025-03-25 13:40:58 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' is placing ship 'PatrolBoat' at '1,5 2,5'
+2025-03-25 13:40:58 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,5, 2,5]
+2025-03-25 13:40:58 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' successfully placed ship 'PatrolBoat'
+2025-03-25 13:41:00 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' is placing ship 'L-Ship' at '5,3 6,3 6,4'
+2025-03-25 13:41:00 [pool-1-thread-4] INFO  Ship - New ship created at positions: [5,3, 6,3, 6,4]
+2025-03-25 13:41:00 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' successfully placed ship 'L-Ship'
+2025-03-25 13:41:02 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' is placing ship 'T-Ship' at '4,5 4,6 4,7 5,6'
+2025-03-25 13:41:02 [pool-1-thread-4] INFO  Ship - New ship created at positions: [4,5, 4,6, 4,7, 5,6]
+2025-03-25 13:41:02 [pool-1-thread-4] INFO  BattleshipGame - Game between 'ljjnnljn' and 'nkjjnl' is now in progress
+2025-03-25 13:41:02 [pool-1-thread-4] INFO  BattleshipGame - Player 'nkjjnl' successfully placed ship 'T-Ship'
+2025-03-25 13:41:14 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' attempting move '5,3'
+2025-03-25 13:41:14 [pool-1-thread-3] INFO  Ship - Shot at '5,3' missed
+2025-03-25 13:41:14 [pool-1-thread-3] INFO  Ship - Shot at '5,3' missed
+2025-03-25 13:41:14 [pool-1-thread-3] INFO  Ship - Shot at '5,3' missed
+2025-03-25 13:41:14 [pool-1-thread-3] INFO  Ship - Ship hit at position '5,3'
+2025-03-25 13:41:14 [pool-1-thread-3] INFO  BattleshipGame - Player 'ljjnnljn' hit a ship at '5,3'
+2025-03-25 13:43:28 [pool-1-thread-3] INFO  ClientHandler - User 'ljjnnljn' disconnected.
+2025-03-25 13:43:28 [pool-1-thread-4] INFO  ClientHandler - User 'nkjjnl' disconnected.
+2025-03-25 13:43:38 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:43:41 [pool-1-thread-4] INFO  GameManager - sfsfs is waiting for an opponent...
+2025-03-25 13:43:41 [pool-1-thread-4] INFO  ClientHandler - User 'sfsfs' logged in and added to queue
+2025-03-25 13:43:41 [pool-1-thread-4] INFO  ClientHandler - Client 'sfsfs' is ready
+2025-03-25 13:43:55 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 13:43:57 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'ydsad' and 'sfsfs'
+2025-03-25 13:43:57 [pool-1-thread-3] INFO  GameManager - Game started: ydsad vs sfsfs
+2025-03-25 13:43:57 [pool-1-thread-3] INFO  ClientHandler - User 'ydsad' logged in and added to queue
+2025-03-25 13:43:57 [pool-1-thread-3] INFO  ClientHandler - Client 'ydsad' is ready
+2025-03-25 13:44:01 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' is placing ship 'Battleship' at '1,3 2,3 3,3 4,3'
+2025-03-25 13:44:01 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3, 4,3]
+2025-03-25 13:44:01 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' successfully placed ship 'Battleship'
+2025-03-25 13:44:03 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' is placing ship 'PatrolBoat' at '0,5 1,5'
+2025-03-25 13:44:03 [pool-1-thread-3] INFO  Ship - New ship created at positions: [0,5, 1,5]
+2025-03-25 13:44:03 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' successfully placed ship 'PatrolBoat'
+2025-03-25 13:44:06 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' is placing ship 'Destroyer' at '0,9 1,9 2,9'
+2025-03-25 13:44:06 [pool-1-thread-3] INFO  Ship - New ship created at positions: [0,9, 1,9, 2,9]
+2025-03-25 13:44:06 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' successfully placed ship 'Destroyer'
+2025-03-25 13:44:11 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' is placing ship 'T-Ship' at '4,7 4,8 4,9 5,8'
+2025-03-25 13:44:11 [pool-1-thread-3] INFO  Ship - New ship created at positions: [4,8, 4,9, 5,8, 4,7]
+2025-03-25 13:44:11 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' successfully placed ship 'T-Ship'
+2025-03-25 13:44:14 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' is placing ship 'L-Ship' at '7,1 8,1 8,2'
+2025-03-25 13:44:14 [pool-1-thread-3] INFO  Ship - New ship created at positions: [7,1, 8,1, 8,2]
+2025-03-25 13:44:14 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' successfully placed ship 'L-Ship'
+2025-03-25 13:44:16 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' is placing ship 'Battleship' at '1,7 2,7 3,7 4,7'
+2025-03-25 13:44:16 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,7, 2,7, 3,7, 4,7]
+2025-03-25 13:44:16 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' successfully placed ship 'Battleship'
+2025-03-25 13:44:19 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' is placing ship 'Destroyer' at '1,1 2,1 3,1'
+2025-03-25 13:44:19 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1]
+2025-03-25 13:44:19 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' successfully placed ship 'Destroyer'
+2025-03-25 13:44:22 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' is placing ship 'PatrolBoat' at '1,3 2,3'
+2025-03-25 13:44:22 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,3, 2,3]
+2025-03-25 13:44:22 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' successfully placed ship 'PatrolBoat'
+2025-03-25 13:44:25 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' is placing ship 'T-Ship' at '6,1 6,2 6,3 7,2'
+2025-03-25 13:44:25 [pool-1-thread-4] INFO  Ship - New ship created at positions: [6,1, 6,2, 6,3, 7,2]
+2025-03-25 13:44:25 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' successfully placed ship 'T-Ship'
+2025-03-25 13:44:28 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' is placing ship 'L-Ship' at '6,5 7,5 7,6'
+2025-03-25 13:44:28 [pool-1-thread-4] INFO  Ship - New ship created at positions: [7,5, 7,6, 6,5]
+2025-03-25 13:44:28 [pool-1-thread-4] INFO  BattleshipGame - Game between 'ydsad' and 'sfsfs' is now in progress
+2025-03-25 13:44:28 [pool-1-thread-4] INFO  BattleshipGame - Player 'sfsfs' successfully placed ship 'L-Ship'
+2025-03-25 13:44:36 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' attempting move '3,1'
+2025-03-25 13:44:36 [pool-1-thread-3] INFO  Ship - Shot at '3,1' missed
+2025-03-25 13:44:36 [pool-1-thread-3] INFO  Ship - Ship hit at position '3,1'
+2025-03-25 13:44:36 [pool-1-thread-3] INFO  BattleshipGame - Player 'ydsad' hit a ship at '3,1'
+2025-03-25 14:17:35 [pool-1-thread-4] INFO  ClientHandler - User 'sfsfs' disconnected.
+2025-03-25 14:17:35 [pool-1-thread-3] INFO  ClientHandler - User 'ydsad' disconnected.
+2025-03-25 14:17:54 [main] INFO  Server - Server is starting on port 12345
+2025-03-25 14:18:24 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:18:26 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:18:31 [pool-1-thread-2] INFO  GameManager - dsfsdf is waiting for an opponent...
+2025-03-25 14:18:31 [pool-1-thread-2] INFO  ClientHandler - User 'dsfsdf' logged in and added to queue
+2025-03-25 14:18:31 [pool-1-thread-2] INFO  ClientHandler - Client 'dsfsdf' is ready
+2025-03-25 14:18:33 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'dfsfdss' and 'dsfsdf'
+2025-03-25 14:18:33 [pool-1-thread-1] INFO  GameManager - Game started: dfsfdss vs dsfsdf
+2025-03-25 14:18:33 [pool-1-thread-1] INFO  ClientHandler - User 'dfsfdss' logged in and added to queue
+2025-03-25 14:18:33 [pool-1-thread-1] INFO  ClientHandler - Client 'dfsfdss' is ready
+2025-03-25 14:18:35 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-25 14:18:35 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-25 14:18:35 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' successfully placed ship 'Battleship'
+2025-03-25 14:18:40 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' is placing ship 'PatrolBoat' at '1,5 2,5'
+2025-03-25 14:18:40 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,5, 2,5]
+2025-03-25 14:18:40 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' successfully placed ship 'PatrolBoat'
+2025-03-25 14:18:46 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' is placing ship 'L-Ship' at '6,0 7,0 7,1'
+2025-03-25 14:18:46 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,0, 7,0, 7,1]
+2025-03-25 14:18:46 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' successfully placed ship 'L-Ship'
+2025-03-25 14:18:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' is placing ship 'Destroyer' at '1,3 2,3 3,3'
+2025-03-25 14:18:50 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3]
+2025-03-25 14:18:50 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' successfully placed ship 'Destroyer'
+2025-03-25 14:19:07 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' is placing ship 'T-Ship' at '5,5 5,6 5,7 6,6'
+2025-03-25 14:19:07 [pool-1-thread-1] INFO  Ship - New ship created at positions: [5,7, 6,6, 5,5, 5,6]
+2025-03-25 14:19:07 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' successfully placed ship 'T-Ship'
+2025-03-25 14:19:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' is placing ship 'Battleship' at '3,4 4,4 5,4 6,4'
+2025-03-25 14:19:09 [pool-1-thread-2] INFO  Ship - New ship created at positions: [3,4, 4,4, 5,4, 6,4]
+2025-03-25 14:19:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' successfully placed ship 'Battleship'
+2025-03-25 14:19:11 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' is placing ship 'PatrolBoat' at '0,1 1,1'
+2025-03-25 14:19:11 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,1, 1,1]
+2025-03-25 14:19:11 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' successfully placed ship 'PatrolBoat'
+2025-03-25 14:19:14 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' is placing ship 'Destroyer' at '1,6 2,6 3,6'
+2025-03-25 14:19:14 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,6, 2,6, 3,6]
+2025-03-25 14:19:14 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' successfully placed ship 'Destroyer'
+2025-03-25 14:19:18 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' is placing ship 'L-Ship' at '6,0 7,0 7,1'
+2025-03-25 14:19:18 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,0, 7,0, 7,1]
+2025-03-25 14:19:18 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' successfully placed ship 'L-Ship'
+2025-03-25 14:19:22 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' is placing ship 'T-Ship' at '8,6 8,7 8,8 9,7'
+2025-03-25 14:19:22 [pool-1-thread-2] INFO  Ship - New ship created at positions: [8,6, 8,7, 8,8, 9,7]
+2025-03-25 14:19:22 [pool-1-thread-2] INFO  BattleshipGame - Game between 'dfsfdss' and 'dsfsdf' is now in progress
+2025-03-25 14:19:22 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' successfully placed ship 'T-Ship'
+2025-03-25 14:19:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' attempting move '3,1'
+2025-03-25 14:19:31 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-25 14:19:31 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-25 14:19:31 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-25 14:19:31 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-25 14:19:31 [pool-1-thread-1] INFO  Ship - Shot at '3,1' missed
+2025-03-25 14:19:31 [pool-1-thread-1] INFO  BattleshipGame - Player 'dfsfdss' missed at '3,1'
+2025-03-25 14:19:38 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' attempting move '3,4'
+2025-03-25 14:19:38 [pool-1-thread-2] INFO  Ship - Shot at '3,4' missed
+2025-03-25 14:19:38 [pool-1-thread-2] INFO  Ship - Shot at '3,4' missed
+2025-03-25 14:19:38 [pool-1-thread-2] INFO  Ship - Shot at '3,4' missed
+2025-03-25 14:19:38 [pool-1-thread-2] INFO  Ship - Shot at '3,4' missed
+2025-03-25 14:19:38 [pool-1-thread-2] INFO  Ship - Shot at '3,4' missed
+2025-03-25 14:19:38 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfsdf' missed at '3,4'
+2025-03-25 14:21:00 [pool-1-thread-2] INFO  ClientHandler - User 'dsfsdf' disconnected.
+2025-03-25 14:21:00 [pool-1-thread-1] INFO  ClientHandler - User 'dfsfdss' disconnected.
+2025-03-25 14:22:01 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:22:01 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:22:05 [pool-1-thread-4] INFO  GameManager - asdas is waiting for an opponent...
+2025-03-25 14:22:05 [pool-1-thread-4] INFO  ClientHandler - User 'asdas' logged in and added to queue
+2025-03-25 14:22:05 [pool-1-thread-4] INFO  ClientHandler - Client 'asdas' is ready
+2025-03-25 14:22:09 [pool-1-thread-3] INFO  BattleshipGame - New game created between 'asdasd' and 'asdas'
+2025-03-25 14:22:09 [pool-1-thread-3] INFO  GameManager - Game started: asdasd vs asdas
+2025-03-25 14:22:09 [pool-1-thread-3] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-25 14:22:09 [pool-1-thread-3] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-25 14:22:15 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Battleship' at '2,1 3,1 4,1 5,1'
+2025-03-25 14:22:15 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,1, 3,1, 4,1, 5,1]
+2025-03-25 14:22:15 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Battleship'
+2025-03-25 14:22:17 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' is placing ship 'Battleship' at '1,5 2,5 3,5 4,5'
+2025-03-25 14:22:17 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,5, 2,5, 3,5, 4,5]
+2025-03-25 14:22:17 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' successfully placed ship 'Battleship'
+2025-03-25 14:22:19 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' is placing ship 'PatrolBoat' at '0,2 1,2'
+2025-03-25 14:22:19 [pool-1-thread-4] INFO  Ship - New ship created at positions: [0,2, 1,2]
+2025-03-25 14:22:19 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' successfully placed ship 'PatrolBoat'
+2025-03-25 14:22:21 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' is placing ship 'Destroyer' at '1,0 2,0 3,0'
+2025-03-25 14:22:21 [pool-1-thread-4] INFO  Ship - New ship created at positions: [1,0, 2,0, 3,0]
+2025-03-25 14:22:21 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' successfully placed ship 'Destroyer'
+2025-03-25 14:22:26 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' is placing ship 'T-Ship' at '4,0 4,1 4,2 5,1'
+2025-03-25 14:22:26 [pool-1-thread-4] WARN  BattleshipGame - Player 'asdas' tried to place a ship adjacent to another ship: 4,0 4,1 4,2 5,1
+2025-03-25 14:22:26 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' is placing ship 'T-Ship' at '5,1 5,2 5,3 6,2'
+2025-03-25 14:22:26 [pool-1-thread-4] INFO  Ship - New ship created at positions: [5,1, 5,2, 5,3, 6,2]
+2025-03-25 14:22:26 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' successfully placed ship 'T-Ship'
+2025-03-25 14:22:30 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' is placing ship 'L-Ship' at '7,6 8,6 8,7'
+2025-03-25 14:22:30 [pool-1-thread-4] INFO  Ship - New ship created at positions: [7,6, 8,6, 8,7]
+2025-03-25 14:22:30 [pool-1-thread-4] INFO  BattleshipGame - Player 'asdas' successfully placed ship 'L-Ship'
+2025-03-25 14:22:33 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' is placing ship 'PatrolBoat' at '1,4 2,4'
+2025-03-25 14:22:33 [pool-1-thread-3] INFO  Ship - New ship created at positions: [1,4, 2,4]
+2025-03-25 14:22:33 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'PatrolBoat'
+2025-03-25 14:22:36 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '2,6 2,7 2,8 3,7'
+2025-03-25 14:22:36 [pool-1-thread-3] INFO  Ship - New ship created at positions: [2,6, 2,7, 2,8, 3,7]
+2025-03-25 14:22:36 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-25 14:22:39 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Destroyer' at '4,4 5,4 6,4'
+2025-03-25 14:22:39 [pool-1-thread-3] INFO  Ship - New ship created at positions: [4,4, 5,4, 6,4]
+2025-03-25 14:22:39 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Destroyer'
+2025-03-25 14:22:43 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '7,6 8,6 8,7'
+2025-03-25 14:22:43 [pool-1-thread-3] INFO  Ship - New ship created at positions: [7,6, 8,6, 8,7]
+2025-03-25 14:22:43 [pool-1-thread-3] INFO  BattleshipGame - Game between 'asdasd' and 'asdas' is now in progress
+2025-03-25 14:22:43 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'L-Ship'
+2025-03-25 14:22:48 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' attempting move '3,2'
+2025-03-25 14:22:48 [pool-1-thread-3] INFO  Ship - Shot at '3,2' missed
+2025-03-25 14:22:48 [pool-1-thread-3] INFO  Ship - Shot at '3,2' missed
+2025-03-25 14:22:48 [pool-1-thread-3] INFO  Ship - Shot at '3,2' missed
+2025-03-25 14:22:48 [pool-1-thread-3] INFO  Ship - Shot at '3,2' missed
+2025-03-25 14:22:48 [pool-1-thread-3] INFO  Ship - Shot at '3,2' missed
+2025-03-25 14:22:48 [pool-1-thread-3] INFO  BattleshipGame - Player 'asdasd' missed at '3,2'
+2025-03-25 14:26:26 [main] INFO  Server - Server is starting on port 12345
+2025-03-25 14:26:55 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:26:58 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:27:00 [pool-1-thread-2] INFO  GameManager - dsfds is waiting for an opponent...
+2025-03-25 14:27:00 [pool-1-thread-2] INFO  ClientHandler - User 'dsfds' logged in and added to queue
+2025-03-25 14:27:00 [pool-1-thread-2] INFO  ClientHandler - Client 'dsfds' is ready
+2025-03-25 14:27:03 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'asdfdsf' and 'dsfds'
+2025-03-25 14:27:03 [pool-1-thread-1] INFO  GameManager - Game started: asdfdsf vs dsfds
+2025-03-25 14:27:03 [pool-1-thread-1] INFO  ClientHandler - User 'asdfdsf' logged in and added to queue
+2025-03-25 14:27:03 [pool-1-thread-1] INFO  ClientHandler - Client 'asdfdsf' is ready
+2025-03-25 14:27:06 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' is placing ship 'Battleship' at '0,4 1,4 2,4 3,4'
+2025-03-25 14:27:06 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,4, 1,4, 2,4, 3,4]
+2025-03-25 14:27:06 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' successfully placed ship 'Battleship'
+2025-03-25 14:27:08 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' is placing ship 'Destroyer' at '1,1 2,1 3,1'
+2025-03-25 14:27:08 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1]
+2025-03-25 14:27:08 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' successfully placed ship 'Destroyer'
+2025-03-25 14:27:10 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' is placing ship 'PatrolBoat' at '5,1 6,1'
+2025-03-25 14:27:10 [pool-1-thread-1] INFO  Ship - New ship created at positions: [5,1, 6,1]
+2025-03-25 14:27:10 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' successfully placed ship 'PatrolBoat'
+2025-03-25 14:27:13 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' is placing ship 'T-Ship' at '2,7 2,8 2,9 3,8'
+2025-03-25 14:27:13 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,7, 2,8, 2,9, 3,8]
+2025-03-25 14:27:13 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' successfully placed ship 'T-Ship'
+2025-03-25 14:27:16 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' is placing ship 'L-Ship' at '6,7 7,7 7,8'
+2025-03-25 14:27:16 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,7, 7,7, 7,8]
+2025-03-25 14:27:16 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' successfully placed ship 'L-Ship'
+2025-03-25 14:27:18 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' is placing ship 'Battleship' at '1,9 2,9 3,9 4,9'
+2025-03-25 14:27:18 [pool-1-thread-2] INFO  Ship - New ship created at positions: [3,9, 4,9, 1,9, 2,9]
+2025-03-25 14:27:18 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' successfully placed ship 'Battleship'
+2025-03-25 14:27:20 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' is placing ship 'PatrolBoat' at '0,1 1,1'
+2025-03-25 14:27:20 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,1, 1,1]
+2025-03-25 14:27:20 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' successfully placed ship 'PatrolBoat'
+2025-03-25 14:27:23 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' is placing ship 'Destroyer' at '1,4 2,4 3,4'
+2025-03-25 14:27:23 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,4, 2,4, 3,4]
+2025-03-25 14:27:23 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' successfully placed ship 'Destroyer'
+2025-03-25 14:27:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' is placing ship 'L-Ship' at '5,1 6,1 6,2'
+2025-03-25 14:27:27 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,1, 6,1, 6,2]
+2025-03-25 14:27:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' successfully placed ship 'L-Ship'
+2025-03-25 14:27:30 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' is placing ship 'T-Ship' at '5,5 5,6 5,7 6,6'
+2025-03-25 14:27:30 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,7, 6,6, 5,5, 5,6]
+2025-03-25 14:27:30 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdfdsf' and 'dsfds' is now in progress
+2025-03-25 14:27:30 [pool-1-thread-2] INFO  BattleshipGame - Player 'dsfds' successfully placed ship 'T-Ship'
+2025-03-25 14:27:35 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' attempting move '2,1'
+2025-03-25 14:27:35 [pool-1-thread-1] INFO  Ship - Shot at '2,1' missed
+2025-03-25 14:27:35 [pool-1-thread-1] INFO  Ship - Shot at '2,1' missed
+2025-03-25 14:27:35 [pool-1-thread-1] INFO  Ship - Shot at '2,1' missed
+2025-03-25 14:27:35 [pool-1-thread-1] INFO  Ship - Shot at '2,1' missed
+2025-03-25 14:27:35 [pool-1-thread-1] INFO  Ship - Shot at '2,1' missed
+2025-03-25 14:27:35 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdfdsf' missed at '2,1'
+2025-03-25 14:29:31 [main] INFO  Server - Server is starting on port 12345
+2025-03-25 14:29:54 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:29:57 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:30:03 [pool-1-thread-2] INFO  GameManager - bbbbvx is waiting for an opponent...
+2025-03-25 14:30:03 [pool-1-thread-2] INFO  ClientHandler - User 'bbbbvx' logged in and added to queue
+2025-03-25 14:30:03 [pool-1-thread-2] INFO  ClientHandler - Client 'bbbbvx' is ready
+2025-03-25 14:30:05 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'asdsadas' and 'bbbbvx'
+2025-03-25 14:30:05 [pool-1-thread-1] INFO  GameManager - Game started: asdsadas vs bbbbvx
+2025-03-25 14:30:05 [pool-1-thread-1] INFO  ClientHandler - User 'asdsadas' logged in and added to queue
+2025-03-25 14:30:05 [pool-1-thread-1] INFO  ClientHandler - Client 'asdsadas' is ready
+2025-03-25 14:30:08 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-25 14:30:08 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-25 14:30:08 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' successfully placed ship 'Battleship'
+2025-03-25 14:30:11 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' is placing ship 'Destroyer' at '0,3 1,3 2,3'
+2025-03-25 14:30:11 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,3, 1,3, 2,3]
+2025-03-25 14:30:11 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' successfully placed ship 'Destroyer'
+2025-03-25 14:30:13 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' is placing ship 'PatrolBoat' at '0,6 1,6'
+2025-03-25 14:30:13 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,6, 1,6]
+2025-03-25 14:30:13 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' successfully placed ship 'PatrolBoat'
+2025-03-25 14:30:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' is placing ship 'L-Ship' at '4,6 5,6 5,7'
+2025-03-25 14:30:18 [pool-1-thread-1] INFO  Ship - New ship created at positions: [5,7, 4,6, 5,6]
+2025-03-25 14:30:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' successfully placed ship 'L-Ship'
+2025-03-25 14:30:20 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' is placing ship 'T-Ship' at '7,2 7,3 7,4 8,3'
+2025-03-25 14:30:20 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,2, 7,3, 7,4, 8,3]
+2025-03-25 14:30:20 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdsadas' successfully placed ship 'T-Ship'
+2025-03-25 14:30:22 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' is placing ship 'Battleship' at '0,1 1,1 2,1 3,1'
+2025-03-25 14:30:22 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,1, 1,1, 2,1, 3,1]
+2025-03-25 14:30:22 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' successfully placed ship 'Battleship'
+2025-03-25 14:30:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' is placing ship 'PatrolBoat' at '0,3 1,3'
+2025-03-25 14:30:27 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,3, 1,3]
+2025-03-25 14:30:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' successfully placed ship 'PatrolBoat'
+2025-03-25 14:30:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' is placing ship 'Destroyer' at '0,5 1,5 2,5'
+2025-03-25 14:30:29 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,5, 1,5, 2,5]
+2025-03-25 14:30:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' successfully placed ship 'Destroyer'
+2025-03-25 14:30:32 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' is placing ship 'L-Ship' at '5,2 6,2 6,3'
+2025-03-25 14:30:32 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,2, 6,2, 6,3]
+2025-03-25 14:30:32 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' successfully placed ship 'L-Ship'
+2025-03-25 14:30:35 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' is placing ship 'T-Ship' at '4,5 4,6 4,7 5,6'
+2025-03-25 14:30:35 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,5, 4,6, 4,7, 5,6]
+2025-03-25 14:30:35 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdsadas' and 'bbbbvx' is now in progress
+2025-03-25 14:30:35 [pool-1-thread-2] INFO  BattleshipGame - Player 'bbbbvx' successfully placed ship 'T-Ship'
+2025-03-25 14:35:26 [main] INFO  Server - Server is starting on port 12345
+2025-03-25 14:35:48 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:35:48 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:35:56 [pool-1-thread-2] INFO  GameManager - ads is waiting for an opponent...
+2025-03-25 14:35:56 [pool-1-thread-2] INFO  ClientHandler - User 'ads' logged in and added to queue
+2025-03-25 14:35:56 [pool-1-thread-2] INFO  ClientHandler - Client 'ads' is ready
+2025-03-25 14:36:03 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'asdad' and 'ads'
+2025-03-25 14:36:03 [pool-1-thread-1] INFO  GameManager - Game started: asdad vs ads
+2025-03-25 14:36:03 [pool-1-thread-1] INFO  ClientHandler - User 'asdad' logged in and added to queue
+2025-03-25 14:36:03 [pool-1-thread-1] INFO  ClientHandler - Client 'asdad' is ready
+2025-03-25 14:36:04 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-25 14:36:04 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-25 14:36:04 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'Battleship'
+2025-03-25 14:36:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' is placing ship 'Battleship' at '2,3 3,3 4,3 5,3'
+2025-03-25 14:36:06 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,3, 3,3, 4,3, 5,3]
+2025-03-25 14:36:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' successfully placed ship 'Battleship'
+2025-03-25 14:36:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'PatrolBoat' at '1,4 2,4'
+2025-03-25 14:36:09 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,4, 2,4]
+2025-03-25 14:36:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'PatrolBoat'
+2025-03-25 14:36:12 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'Destroyer' at '1,7 2,7 3,7'
+2025-03-25 14:36:12 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,7, 2,7, 3,7]
+2025-03-25 14:36:12 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'Destroyer'
+2025-03-25 14:36:15 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'T-Ship' at '4,3 4,4 4,5 5,4'
+2025-03-25 14:36:15 [pool-1-thread-1] INFO  Ship - New ship created at positions: [4,3, 4,4, 4,5, 5,4]
+2025-03-25 14:36:15 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'T-Ship'
+2025-03-25 14:36:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' is placing ship 'L-Ship' at '7,1 8,1 8,2'
+2025-03-25 14:36:18 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,1, 8,1, 8,2]
+2025-03-25 14:36:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'asdad' successfully placed ship 'L-Ship'
+2025-03-25 14:36:20 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' is placing ship 'PatrolBoat' at '0,5 1,5'
+2025-03-25 14:36:20 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,5, 1,5]
+2025-03-25 14:36:20 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' successfully placed ship 'PatrolBoat'
+2025-03-25 14:36:23 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' is placing ship 'Destroyer' at '1,7 2,7 3,7'
+2025-03-25 14:36:23 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,7, 2,7, 3,7]
+2025-03-25 14:36:23 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' successfully placed ship 'Destroyer'
+2025-03-25 14:36:26 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' is placing ship 'L-Ship' at '6,7 7,7 7,8'
+2025-03-25 14:36:26 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,7, 7,7, 7,8]
+2025-03-25 14:36:26 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' successfully placed ship 'L-Ship'
+2025-03-25 14:36:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' is placing ship 'T-Ship' at '7,1 7,2 7,3 8,2'
+2025-03-25 14:36:29 [pool-1-thread-2] INFO  Ship - New ship created at positions: [7,1, 7,2, 7,3, 8,2]
+2025-03-25 14:36:29 [pool-1-thread-2] INFO  BattleshipGame - Game between 'asdad' and 'ads' is now in progress
+2025-03-25 14:36:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'ads' successfully placed ship 'T-Ship'
+2025-03-25 14:36:58 [pool-1-thread-2] INFO  ClientHandler - User 'ads' disconnected.
+2025-03-25 14:36:59 [pool-1-thread-1] INFO  ClientHandler - User 'asdad' disconnected.
+2025-03-25 14:39:54 [main] INFO  Server - Server is starting on port 12345
+2025-03-25 14:40:18 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:40:18 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:40:22 [pool-1-thread-1] INFO  GameManager - fsfd is waiting for an opponent...
+2025-03-25 14:40:22 [pool-1-thread-1] INFO  ClientHandler - User 'fsfd' logged in and added to queue
+2025-03-25 14:40:22 [pool-1-thread-1] INFO  ClientHandler - Client 'fsfd' is ready
+2025-03-25 14:40:24 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'asdasd' and 'fsfd'
+2025-03-25 14:40:24 [pool-1-thread-2] INFO  GameManager - Game started: asdasd vs fsfd
+2025-03-25 14:40:24 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' logged in and added to queue
+2025-03-25 14:40:24 [pool-1-thread-2] INFO  ClientHandler - Client 'asdasd' is ready
+2025-03-25 14:40:26 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Battleship' at '1,2 2,2 3,2 4,2'
+2025-03-25 14:40:26 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,2, 2,2, 3,2, 4,2]
+2025-03-25 14:40:26 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Battleship'
+2025-03-25 14:40:28 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'PatrolBoat' at '1,4 2,4'
+2025-03-25 14:40:28 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,4, 2,4]
+2025-03-25 14:40:28 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'PatrolBoat'
+2025-03-25 14:40:30 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'Destroyer' at '1,7 2,7 3,7'
+2025-03-25 14:40:30 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,7, 2,7, 3,7]
+2025-03-25 14:40:30 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'Destroyer'
+2025-03-25 14:40:34 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'L-Ship' at '6,1 7,1 7,2'
+2025-03-25 14:40:34 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,1, 7,1, 7,2]
+2025-03-25 14:40:34 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'L-Ship'
+2025-03-25 14:40:40 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' is placing ship 'T-Ship' at '5,3 5,4 5,5 6,4'
+2025-03-25 14:40:40 [pool-1-thread-2] INFO  Ship - New ship created at positions: [5,3, 5,4, 5,5, 6,4]
+2025-03-25 14:40:40 [pool-1-thread-2] INFO  BattleshipGame - Player 'asdasd' successfully placed ship 'T-Ship'
+2025-03-25 14:41:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' is placing ship 'Battleship' at '3,0 4,0 5,0 6,0'
+2025-03-25 14:41:09 [pool-1-thread-1] INFO  Ship - New ship created at positions: [3,0, 4,0, 5,0, 6,0]
+2025-03-25 14:41:09 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' successfully placed ship 'Battleship'
+2025-03-25 14:41:12 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' is placing ship 'Destroyer' at '1,3 2,3 3,3'
+2025-03-25 14:41:12 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3]
+2025-03-25 14:41:12 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' successfully placed ship 'Destroyer'
+2025-03-25 14:41:14 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' is placing ship 'PatrolBoat' at '2,7 3,7'
+2025-03-25 14:41:14 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,7, 3,7]
+2025-03-25 14:41:14 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' successfully placed ship 'PatrolBoat'
+2025-03-25 14:41:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' is placing ship 'L-Ship' at '5,3 6,3 6,4'
+2025-03-25 14:41:17 [pool-1-thread-1] INFO  Ship - New ship created at positions: [5,3, 6,3, 6,4]
+2025-03-25 14:41:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' successfully placed ship 'L-Ship'
+2025-03-25 14:41:21 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' is placing ship 'T-Ship' at '7,6 7,7 7,8 8,7'
+2025-03-25 14:41:21 [pool-1-thread-1] INFO  Ship - New ship created at positions: [7,6, 7,7, 7,8, 8,7]
+2025-03-25 14:41:21 [pool-1-thread-1] INFO  BattleshipGame - Game between 'asdasd' and 'fsfd' is now in progress
+2025-03-25 14:41:21 [pool-1-thread-1] INFO  BattleshipGame - Player 'fsfd' successfully placed ship 'T-Ship'
+2025-03-25 14:42:36 [pool-1-thread-2] INFO  ClientHandler - User 'asdasd' disconnected.
+2025-03-25 14:42:36 [pool-1-thread-1] INFO  ClientHandler - User 'fsfd' disconnected.
+2025-03-25 14:42:48 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:42:51 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:42:55 [pool-1-thread-1] INFO  GameManager - ydd is waiting for an opponent...
+2025-03-25 14:42:55 [pool-1-thread-1] INFO  ClientHandler - User 'ydd' logged in and added to queue
+2025-03-25 14:42:55 [pool-1-thread-1] INFO  ClientHandler - Client 'ydd' is ready
+2025-03-25 14:42:57 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'easea' and 'ydd'
+2025-03-25 14:42:57 [pool-1-thread-2] INFO  GameManager - Game started: easea vs ydd
+2025-03-25 14:42:57 [pool-1-thread-2] INFO  ClientHandler - User 'easea' logged in and added to queue
+2025-03-25 14:42:57 [pool-1-thread-2] INFO  ClientHandler - Client 'easea' is ready
+2025-03-25 14:42:58 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' is placing ship 'Battleship' at '2,1 3,1 4,1 5,1'
+2025-03-25 14:42:58 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,1, 3,1, 4,1, 5,1]
+2025-03-25 14:42:58 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' successfully placed ship 'Battleship'
+2025-03-25 14:43:00 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' is placing ship 'PatrolBoat' at '1,5 2,5'
+2025-03-25 14:43:00 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,5, 2,5]
+2025-03-25 14:43:00 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' successfully placed ship 'PatrolBoat'
+2025-03-25 14:43:04 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' is placing ship 'L-Ship' at '4,4 5,4 5,5'
+2025-03-25 14:43:04 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,4, 5,4, 5,5]
+2025-03-25 14:43:04 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' successfully placed ship 'L-Ship'
+2025-03-25 14:43:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' is placing ship 'T-Ship' at '3,6 3,7 3,8 4,7'
+2025-03-25 14:43:06 [pool-1-thread-2] INFO  Ship - New ship created at positions: [3,6, 3,7, 3,8, 4,7]
+2025-03-25 14:43:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' successfully placed ship 'T-Ship'
+2025-03-25 14:43:09 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' is placing ship 'Destroyer' at '5,2 6,2 7,2'
+2025-03-25 14:43:09 [pool-1-thread-2] WARN  BattleshipGame - Player 'easea' tried to place a ship adjacent to another ship: 5,2 6,2 7,2
+2025-03-25 14:43:10 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' is placing ship 'Destroyer' at '6,3 7,3 8,3'
+2025-03-25 14:43:10 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,3, 7,3, 8,3]
+2025-03-25 14:43:10 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' successfully placed ship 'Destroyer'
+2025-03-25 14:43:13 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' is placing ship 'Battleship' at '1,1 2,1 3,1 4,1'
+2025-03-25 14:43:13 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,1, 2,1, 3,1, 4,1]
+2025-03-25 14:43:13 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' successfully placed ship 'Battleship'
+2025-03-25 14:43:15 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' is placing ship 'PatrolBoat' at '0,4 1,4'
+2025-03-25 14:43:15 [pool-1-thread-1] INFO  Ship - New ship created at positions: [0,4, 1,4]
+2025-03-25 14:43:15 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' successfully placed ship 'PatrolBoat'
+2025-03-25 14:43:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' is placing ship 'Destroyer' at '1,7 2,7 3,7'
+2025-03-25 14:43:17 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,7, 2,7, 3,7]
+2025-03-25 14:43:17 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' successfully placed ship 'Destroyer'
+2025-03-25 14:43:19 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' is placing ship 'T-Ship' at '3,3 3,4 3,5 4,4'
+2025-03-25 14:43:19 [pool-1-thread-1] INFO  Ship - New ship created at positions: [3,3, 3,4, 3,5, 4,4]
+2025-03-25 14:43:19 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' successfully placed ship 'T-Ship'
+2025-03-25 14:43:22 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' is placing ship 'L-Ship' at '7,3 8,3 8,4'
+2025-03-25 14:43:22 [pool-1-thread-1] INFO  Ship - New ship created at positions: [8,4, 7,3, 8,3]
+2025-03-25 14:43:22 [pool-1-thread-1] INFO  BattleshipGame - Game between 'easea' and 'ydd' is now in progress
+2025-03-25 14:43:22 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' successfully placed ship 'L-Ship'
+2025-03-25 14:43:55 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' attempting move '4,1'
+2025-03-25 14:43:55 [pool-1-thread-1] WARN  BattleshipGame - Player 'ydd' attempted a move out of turn
+2025-03-25 14:44:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' attempting move '4,3'
+2025-03-25 14:44:06 [pool-1-thread-2] INFO  Ship - Shot at '4,3' missed
+2025-03-25 14:44:06 [pool-1-thread-2] INFO  Ship - Shot at '4,3' missed
+2025-03-25 14:44:06 [pool-1-thread-2] INFO  Ship - Shot at '4,3' missed
+2025-03-25 14:44:06 [pool-1-thread-2] INFO  Ship - Shot at '4,3' missed
+2025-03-25 14:44:06 [pool-1-thread-2] INFO  Ship - Shot at '4,3' missed
+2025-03-25 14:44:06 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' missed at '4,3'
+2025-03-25 14:44:16 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' attempting move '7,6'
+2025-03-25 14:44:16 [pool-1-thread-2] WARN  BattleshipGame - Player 'easea' attempted a move out of turn
+2025-03-25 14:44:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' attempting move '5,5'
+2025-03-25 14:44:18 [pool-1-thread-1] INFO  Ship - Shot at '5,5' missed
+2025-03-25 14:44:18 [pool-1-thread-1] INFO  Ship - Shot at '5,5' missed
+2025-03-25 14:44:18 [pool-1-thread-1] INFO  Ship - Ship hit at position '5,5'
+2025-03-25 14:44:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' hit a ship at '5,5'
+2025-03-25 14:44:24 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' attempting move '8,3'
+2025-03-25 14:44:24 [pool-1-thread-2] INFO  Ship - Shot at '8,3' missed
+2025-03-25 14:44:24 [pool-1-thread-2] INFO  Ship - Shot at '8,3' missed
+2025-03-25 14:44:24 [pool-1-thread-2] INFO  Ship - Shot at '8,3' missed
+2025-03-25 14:44:24 [pool-1-thread-2] INFO  Ship - Shot at '8,3' missed
+2025-03-25 14:44:24 [pool-1-thread-2] INFO  Ship - Ship hit at position '8,3'
+2025-03-25 14:44:24 [pool-1-thread-2] INFO  BattleshipGame - Player 'easea' hit a ship at '8,3'
+2025-03-25 14:44:29 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' attempting move '0,5'
+2025-03-25 14:44:29 [pool-1-thread-1] INFO  Ship - Shot at '0,5' missed
+2025-03-25 14:44:29 [pool-1-thread-1] INFO  Ship - Shot at '0,5' missed
+2025-03-25 14:44:29 [pool-1-thread-1] INFO  Ship - Shot at '0,5' missed
+2025-03-25 14:44:29 [pool-1-thread-1] INFO  Ship - Shot at '0,5' missed
+2025-03-25 14:44:29 [pool-1-thread-1] INFO  Ship - Shot at '0,5' missed
+2025-03-25 14:44:29 [pool-1-thread-1] INFO  BattleshipGame - Player 'ydd' missed at '0,5'
+2025-03-25 14:44:39 [pool-1-thread-1] INFO  ClientHandler - User 'ydd' disconnected.
+2025-03-25 14:44:39 [pool-1-thread-2] INFO  ClientHandler - User 'easea' disconnected.
+2025-03-25 14:45:16 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:45:22 [main] INFO  Server - New client connected: /127.0.0.1
+2025-03-25 14:45:24 [pool-1-thread-1] INFO  GameManager - popo is waiting for an opponent...
+2025-03-25 14:45:24 [pool-1-thread-1] INFO  ClientHandler - User 'popo' logged in and added to queue
+2025-03-25 14:45:24 [pool-1-thread-1] INFO  ClientHandler - Client 'popo' is ready
+2025-03-25 14:45:27 [pool-1-thread-2] INFO  BattleshipGame - New game created between 'kmlpm' and 'popo'
+2025-03-25 14:45:27 [pool-1-thread-2] INFO  GameManager - Game started: kmlpm vs popo
+2025-03-25 14:45:27 [pool-1-thread-2] INFO  ClientHandler - User 'kmlpm' logged in and added to queue
+2025-03-25 14:45:27 [pool-1-thread-2] INFO  ClientHandler - Client 'kmlpm' is ready
+2025-03-25 14:45:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' is placing ship 'Battleship' at '2,1 3,1 4,1 5,1'
+2025-03-25 14:45:27 [pool-1-thread-2] INFO  Ship - New ship created at positions: [2,1, 3,1, 4,1, 5,1]
+2025-03-25 14:45:27 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' successfully placed ship 'Battleship'
+2025-03-25 14:45:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' is placing ship 'PatrolBoat' at '1,3 2,3'
+2025-03-25 14:45:29 [pool-1-thread-2] INFO  Ship - New ship created at positions: [1,3, 2,3]
+2025-03-25 14:45:29 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' successfully placed ship 'PatrolBoat'
+2025-03-25 14:45:31 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' is placing ship 'Destroyer' at '0,6 1,6 2,6'
+2025-03-25 14:45:31 [pool-1-thread-2] INFO  Ship - New ship created at positions: [0,6, 1,6, 2,6]
+2025-03-25 14:45:31 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' successfully placed ship 'Destroyer'
+2025-03-25 14:45:34 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' is placing ship 'L-Ship' at '5,5 6,5 6,6'
+2025-03-25 14:45:34 [pool-1-thread-2] INFO  Ship - New ship created at positions: [6,6, 5,5, 6,5]
+2025-03-25 14:45:34 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' successfully placed ship 'L-Ship'
+2025-03-25 14:45:36 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' is placing ship 'T-Ship' at '4,7 4,8 4,9 5,8'
+2025-03-25 14:45:36 [pool-1-thread-2] INFO  Ship - New ship created at positions: [4,8, 4,9, 5,8, 4,7]
+2025-03-25 14:45:36 [pool-1-thread-2] INFO  BattleshipGame - Player 'kmlpm' successfully placed ship 'T-Ship'
+2025-03-25 14:45:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' is placing ship 'Battleship' at '1,3 2,3 3,3 4,3'
+2025-03-25 14:45:39 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,3, 2,3, 3,3, 4,3]
+2025-03-25 14:45:39 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' successfully placed ship 'Battleship'
+2025-03-25 14:45:41 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' is placing ship 'PatrolBoat' at '1,7 2,7'
+2025-03-25 14:45:41 [pool-1-thread-1] INFO  Ship - New ship created at positions: [1,7, 2,7]
+2025-03-25 14:45:41 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' successfully placed ship 'PatrolBoat'
+2025-03-25 14:45:52 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' is placing ship 'T-Ship' at '6,0 6,1 6,2 7,1'
+2025-03-25 14:45:52 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,0, 6,1, 6,2, 7,1]
+2025-03-25 14:45:52 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' successfully placed ship 'T-Ship'
+2025-03-25 14:45:55 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' is placing ship 'L-Ship' at '6,6 7,6 7,7'
+2025-03-25 14:45:55 [pool-1-thread-1] INFO  Ship - New ship created at positions: [6,6, 7,6, 7,7]
+2025-03-25 14:45:55 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' successfully placed ship 'L-Ship'
+2025-03-25 14:45:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' is placing ship 'Destroyer' at '2,5 3,5 4,5'
+2025-03-25 14:45:58 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,5, 3,5, 4,5]
+2025-03-25 14:45:58 [pool-1-thread-1] INFO  BattleshipGame - Game between 'kmlpm' and 'popo' is now in progress
+2025-03-25 14:45:58 [pool-1-thread-1] INFO  BattleshipGame - Player 'popo' successfully placed ship 'Destroyer'
+2025-03-25 14:46:20 [pool-1-thread-1] INFO  ClientHandler - User 'popo' disconnected.
+2025-03-25 14:46:21 [pool-1-thread-2] INFO  ClientHandler - User 'kmlpm' disconnected.

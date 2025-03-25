@@ -105,9 +105,18 @@ public class BattleshipGame {
         }
 
         if (fleet1.size() == 5 && fleet2.size() == 5) {
-               gameState = GameState.IN_PROGRESS;
+            gameState = GameState.IN_PROGRESS;
             logger.info("Game between '{}' and '{}' is now in progress", player1, player2);
 
+            PrintWriter out1 = Server.getPlayerOutput(player1);
+            PrintWriter out2 = Server.getPlayerOutput(player2);
+
+            if (out1 != null) {
+                out1.println("Your turn.");
+            }
+            if (out2 != null) {
+                out2.println("Opponent's turn");
+            }
 
             return true;
         }
