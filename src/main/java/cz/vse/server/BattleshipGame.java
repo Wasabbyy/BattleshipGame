@@ -36,18 +36,17 @@ public class BattleshipGame {
         }
     }
 
-    public String getOpponent(String player) {
+    public synchronized String getOpponent(String player) {
         return player.equals(player1) ? player2 : player1;
     }
 
-    public boolean placeShip(String player, String shipType, String positions, PrintWriter out) {
+    public synchronized boolean placeShip(String player, String shipType, String positions, PrintWriter out) {
         logger.info("Player '{}' is placing ship '{}' at '{}'", player, shipType, positions);
 
         shipType = shipType.replaceAll("\\(\\d+\\)", "").trim();
         char[][] grid = player.equals(player1) ? grid1 : grid2;
         List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
 
-        // ❌ Kontrola, jestli už hráč tento typ lodi umístil
         for (Ship ship : fleet) {
             if (ship.getType().equalsIgnoreCase(shipType)) {
                 out.println("ERROR: You have already placed a " + shipType + "!");
@@ -55,6 +54,16 @@ public class BattleshipGame {
                 return false;
             }
         }
+        // In BattleshipGame.java
+            Set<String> newShipPositions = new HashSet<>(Arrays.asList(positions.split(" ")));
+            if (isAdjacent(player, newShipPositions)) {
+                out.println("ERROR: Ships cannot be placed adjacent to each other!");
+                logger.warn("Player '{}' tried to place a ship adjacent to another ship: {}", player, positions);
+                return false;
+            }
+
+
+
 
         Set<String> shipCoords = new HashSet<>();
         for (String coord : positions.split(" ")) {
@@ -90,7 +99,7 @@ public class BattleshipGame {
     }
 
 
-    public boolean isSetupComplete() {
+    public synchronized boolean isSetupComplete() {
         if (gameState == GameState.IN_PROGRESS) {
             return true;
         }
@@ -105,7 +114,9 @@ public class BattleshipGame {
         return false;
     }
 
-    public void processMove(String player, String move, PrintWriter out) {
+    // In BattleshipGame.java
+// In BattleshipGame.java
+    public synchronized void processMove(String player, String move, PrintWriter out) {
         logger.info("Player '{}' attempting move '{}'", player, move);
 
         if (!isSetupComplete()) {
@@ -140,14 +151,22 @@ public class BattleshipGame {
             for (Ship ship : enemyFleet) {
                 if (ship.registerHit(coord)) {
                     hit = true;
+                    out.println("SUCCESS: HIT: " + coord);
+                    if (opponentOut != null) opponentOut.println("SUCCESS: Opponent HIT: " + coord);
+                    logger.info("Player '{}' hit a ship at '{}'", player, coord);
+
                     if (ship.isSunk()) {
-                        out.println("SUCCESS: SUNK: " + coord);
-                        if (opponentOut != null) opponentOut.println("SUNK: " + coord);
-                        logger.info("Player '{}' sunk a ship at '{}'", player, coord);
-                    } else {
-                        out.println("SUCCESS: HIT: " + coord);
-                        if (opponentOut != null) opponentOut.println("HIT: " + coord);
-                        logger.info("Player '{}' hit a ship at '{}'", player, coord);
+                        String sunkCoords = String.join(" ", ship.getPositions());
+                        out.println("SUCCESS: SUNK: " + sunkCoords);
+                        if (opponentOut != null) opponentOut.println("SUNK: " + sunkCoords);
+                        logger.info("Player '{}' sunk a ship at '{}'", player, sunkCoords);
+
+                        if (allShipsSunk(enemyFleet)) {
+                            out.println("INFO: You win! All enemy ships have been sunk.");
+                            if (opponentOut != null) opponentOut.println("INFO: You lose! All your ships have been sunk.");
+                            logger.info("Player '{}' wins the game by sinking all enemy ships.", player);
+                            gameState = GameState.FINISHED;
+                        }
                     }
                     break;
                 }
@@ -156,7 +175,7 @@ public class BattleshipGame {
             if (!hit) {
                 enemyGrid[x][y] = 'O';
                 out.println("SUCCESS: MISS: " + coord);
-                if (opponentOut != null) opponentOut.println("MISS: " + coord);
+                if (opponentOut != null) opponentOut.println("SUCCESS: Opponent MISS: " + coord);
                 logger.info("Player '{}' missed at '{}'", player, coord);
             }
 
@@ -169,6 +188,7 @@ public class BattleshipGame {
             logger.error("Invalid coordinate format entered by player '{}': '{}'", player, move, e);
         }
     }
+
     public void forfeit(String player) {
         if (gameState == GameState.FINISHED) return;
 
@@ -185,5 +205,36 @@ public class BattleshipGame {
         if (loserOut != null) {
             loserOut.println("You forfeited the game!");
         }
+    }
+    // In BattleshipGame.java
+    public synchronized boolean isAdjacent(String player, Set<String> newShipPositions) {
+        List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
+        Set<String> allPositions = new HashSet<>();
+        for (Ship ship : fleet) {
+            allPositions.addAll(ship.getPositions());
+        }
+
+        for (String pos : newShipPositions) {
+            int x = Integer.parseInt(pos.split(",")[0]);
+            int y = Integer.parseInt(pos.split(",")[1]);
+            String[] adjacentPositions = {
+                    (x-1) + "," + y, (x+1) + "," + y,
+                    x + "," + (y-1), x + "," + (y+1)
+            };
+            for (String adjPos : adjacentPositions) {
+                if (allPositions.contains(adjPos)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    private synchronized boolean allShipsSunk(List<Ship> fleet) {
+        for (Ship ship : fleet) {
+            if (!ship.isSunk()) {
+                return false;
+            }
+        }
+        return true;
     }
 }

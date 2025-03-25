@@ -46,6 +46,27 @@ class ClientHandler implements Runnable {
                 }
             }
 
+            // Start a new thread to monitor the "EXIT" command
+            Thread exitMonitor = new Thread(() -> {
+                try {
+                    while (true) {
+                        if (in.ready()) {
+                            String exitMessage = in.readLine();
+                            if ("EXIT".equalsIgnoreCase(exitMessage)) {
+                                out.println("Goodbye, " + username + "!");
+                                logger.info("User '{}' disconnected voluntarily.", username);
+                                handleDisconnection();
+                                return;
+                            }
+                        }
+                        Thread.sleep(100); // Sleep briefly to avoid busy-waiting
+                    }
+                } catch (IOException | InterruptedException e) {
+                    logger.error("Error reading exit command for '{}'", username, e);
+                }
+            });
+            exitMonitor.start();
+
             // Process READY message
             message = in.readLine();
             if ("READY".equalsIgnoreCase(message)) {
@@ -100,19 +121,9 @@ class ClientHandler implements Runnable {
                     return;
                 }
 
-                if ("EXIT".equalsIgnoreCase(message)) {
-                    out.println("Goodbye, " + username + "!");
-                    logger.info("User '{}' disconnected voluntarily.", username);
-                    handleDisconnection();
-                    return;
-                }
-
                 if (message.startsWith("FIRE ")) {
                     String move = message.substring(5).trim();
                     game.processMove(username, move, out);
-                    logger.info("User '{}' fired at {}", username, move);
-                } else {
-                    out.println("Invalid command! Use 'FIRE x,y' to shoot.");
                 }
             }
 
@@ -134,7 +145,7 @@ class ClientHandler implements Runnable {
         if (username != null) {
             Server.activeUsers.remove(username);
             Server.removePlayerOutput(username);
-            Server.checkAndShutdown();
+            //Server.checkAndShutdown();
         }
         try {
             clientSocket.close();
