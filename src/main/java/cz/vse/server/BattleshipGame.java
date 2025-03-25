@@ -96,7 +96,7 @@ public class BattleshipGame {
         }
 
         if (fleet1.size() == 5 && fleet2.size() == 5) {
-            gameState = GameState.IN_PROGRESS;
+               gameState = GameState.IN_PROGRESS;
             logger.info("Game between '{}' and '{}' is now in progress", player1, player2);
 
 
