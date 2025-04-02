@@ -186,11 +186,13 @@ public class BattleshipGame {
                 out.println("SUCCESS: MISS: " + coord);
                 if (opponentOut != null) opponentOut.println("SUCCESS: Opponent MISS: " + coord);
                 logger.info("Player '{}' missed at '{}'", player, coord);
+                currentTurn = getOpponent(player);
+                if (opponentOut != null) opponentOut.println("SUCCESS: Your turn");
+                out.println("SUCCESS: Opponent's turn");
+            } else {
+                out.println("SUCCESS: Your turn again");
+                if (opponentOut != null) opponentOut.println("SUCCESS: Opponent's turn again");
             }
-
-            currentTurn = getOpponent(player);
-            if (opponentOut != null) opponentOut.println("SUCCESS: Your turn");
-            out.println("SUCCESS: Opponent's turn");
 
         } catch (NumberFormatException e) {
             out.println("ERROR: Invalid coordinates! Use numbers between 0-9.");
