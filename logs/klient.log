@@ -3749,3 +3749,38 @@
 2025-03-24 21:32:21 [pool-1-thread-2] INFO  BattleshipGame - Player 'přeasd' hit a ship at '7,1'
 2025-03-24 21:32:26 [pool-1-thread-1] INFO  ClientHandler - User 'wer' disconnected.
 2025-03-24 21:32:30 [pool-1-thread-2] INFO  ClientHandler - User 'přeasd' disconnected.
+2025-04-02 15:06:18 [main] INFO  Server - Server is starting on port 12345
+2025-04-02 15:06:43 [main] INFO  Server - New client connected: /127.0.0.1
+2025-04-02 15:06:43 [main] INFO  Server - New client connected: /127.0.0.1
+2025-04-02 15:06:49 [pool-1-thread-2] INFO  GameManager - adasda is waiting for an opponent...
+2025-04-02 15:06:49 [pool-1-thread-2] INFO  ClientHandler - User 'adasda' logged in and added to queue
+2025-04-02 15:06:49 [pool-1-thread-2] INFO  ClientHandler - Client 'adasda' is ready
+2025-04-02 15:06:54 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'sadad' and 'adasda'
+2025-04-02 15:06:54 [pool-1-thread-1] INFO  GameManager - Game started: sadad vs adasda
+2025-04-02 15:06:54 [pool-1-thread-1] INFO  ClientHandler - User 'sadad' logged in and added to queue
+2025-04-02 15:06:55 [pool-1-thread-1] INFO  ClientHandler - Client 'sadad' is ready
+2025-04-02 15:07:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadad' is placing ship 'Battleship' at '2,4 3,4 4,4 5,4'
+2025-04-02 15:07:18 [pool-1-thread-1] INFO  Ship - New ship created at positions: [2,4, 3,4, 4,4, 5,4]
+2025-04-02 15:07:18 [pool-1-thread-1] INFO  BattleshipGame - Player 'sadad' successfully placed ship 'Battleship'
+2025-04-02 15:07:44 [pool-1-thread-1] INFO  ClientHandler - User 'sadad' disconnected.
+2025-04-02 15:07:45 [pool-1-thread-2] INFO  ClientHandler - User 'adasda' disconnected.
+2025-04-02 15:08:17 [main] INFO  Server - Server is starting on port 12345
+2025-04-02 15:08:27 [main] INFO  Server - New client connected: /127.0.0.1
+2025-04-02 15:08:30 [main] INFO  Server - New client connected: /127.0.0.1
+2025-04-02 15:08:34 [pool-1-thread-2] INFO  GameManager - sdasda is waiting for an opponent...
+2025-04-02 15:08:34 [pool-1-thread-2] INFO  ClientHandler - User 'sdasda' logged in and added to queue
+2025-04-02 15:08:34 [pool-1-thread-2] INFO  ClientHandler - Client 'sdasda' is ready
+2025-04-02 15:08:39 [pool-1-thread-1] INFO  BattleshipGame - New game created between 'sgdfgdf' and 'sdasda'
+2025-04-02 15:08:39 [pool-1-thread-1] INFO  GameManager - Game started: sgdfgdf vs sdasda
+2025-04-02 15:08:39 [pool-1-thread-1] INFO  ClientHandler - User 'sgdfgdf' logged in and added to queue
+2025-04-02 15:08:39 [pool-1-thread-1] INFO  ClientHandler - Client 'sgdfgdf' is ready
+2025-04-02 15:08:39 [Timer-1] INFO  ClientHandler - User 'sdasda' is AFK. Declaring as lost.
+2025-04-02 15:08:39 [Timer-0] INFO  ClientHandler - User 'sdasda' is AFK. Declaring as lost.
+2025-04-02 15:08:39 [Timer-1] INFO  ClientHandler - User 'sdasda' disconnected.
+2025-04-02 15:08:39 [Timer-0] INFO  ClientHandler - User 'sdasda' disconnected.
+2025-04-02 15:08:39 [pool-1-thread-2] INFO  ClientHandler - User 'sdasda' disconnected.
+2025-04-02 15:08:44 [Timer-2] INFO  ClientHandler - User 'sgdfgdf' is AFK. Declaring as lost.
+2025-04-02 15:08:44 [Timer-2] INFO  ClientHandler - User 'sgdfgdf' disconnected.
+2025-04-02 15:08:44 [pool-1-thread-1] INFO  ClientHandler - User 'sgdfgdf' disconnected.
+2025-04-02 15:08:44 [Timer-3] INFO  ClientHandler - User 'sgdfgdf' is AFK. Declaring as lost.
+2025-04-02 15:08:44 [Timer-3] INFO  ClientHandler - User 'sgdfgdf' disconnected.

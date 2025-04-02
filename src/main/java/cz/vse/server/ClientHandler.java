@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Logger;
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 class ClientHandler implements Runnable {
     private static final Logger logger = LogManager.getLogger(ClientHandler.class);
@@ -14,6 +16,8 @@ class ClientHandler implements Runnable {
     private BufferedReader in;
     private PrintWriter out;
     private String username;
+    private Timer afkTimer;
+    private static final long AFK_TIMEOUT = 2 * 60 * 5000; // 2 minutes
 
     public ClientHandler(Socket socket) {
         this.clientSocket = socket;
@@ -30,6 +34,7 @@ class ClientHandler implements Runnable {
 
             String message;
             while ((message = in.readLine()) != null) {
+                resetAfkTimer();
                 if (message.startsWith("LOGIN: ")) {
                     username = message.substring(7).trim();
                     if (Server.activeUsers.contains(username)) {
@@ -46,12 +51,15 @@ class ClientHandler implements Runnable {
                 }
             }
 
+            startAfkTimer();
+
             // Start a new thread to monitor the "EXIT" command
             Thread exitMonitor = new Thread(() -> {
                 try {
                     while (true) {
                         if (in.ready()) {
                             String exitMessage = in.readLine();
+                            resetAfkTimer();
                             if ("EXIT".equalsIgnoreCase(exitMessage)) {
                                 out.println("Goodbye, " + username + "!");
                                 logger.info("User '{}' disconnected voluntarily.", username);
@@ -83,6 +91,7 @@ class ClientHandler implements Runnable {
             int shipsPlaced = 0;
             while (shipsPlaced < 5) {
                 message = in.readLine();
+                resetAfkTimer();
                 if (message == null) {
                     handleDisconnection();
                     return;
@@ -116,6 +125,7 @@ class ClientHandler implements Runnable {
 
             while (true) {
                 message = in.readLine();
+                resetAfkTimer();
                 if (message == null) {
                     handleDisconnection();
                     return;
@@ -134,6 +144,33 @@ class ClientHandler implements Runnable {
         } finally {
             cleanup();
         }
+    }
+
+    private void startAfkTimer() {
+        afkTimer = new Timer(true);
+        afkTimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handleAfk();
+            }
+        }, AFK_TIMEOUT);
+    }
+
+    private void resetAfkTimer() {
+        if (afkTimer != null) {
+            afkTimer.cancel();
+        }
+        startAfkTimer();
+    }
+
+    private void handleAfk() {
+        logger.info("User '{}' is AFK. Declaring as lost.", username);
+        out.println("INFO: You have been inactive for too long. You lose!");
+        PrintWriter opponentOut = Server.getPlayerOutput(GameManager.getOpponent(username));
+        if (opponentOut != null) {
+            opponentOut.println("INFO: Your opponent was inactive for too long. You win!");
+        }
+        handleDisconnection();
     }
 
     private void handleDisconnection() {
