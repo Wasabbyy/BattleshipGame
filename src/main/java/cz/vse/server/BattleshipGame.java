@@ -216,7 +216,7 @@ public class BattleshipGame {
         }
     }
     // In BattleshipGame.java
-    public synchronized boolean isAdjacent(String player, Set<String> newShipPositions) {
+    private synchronized boolean isAdjacent(String player, Set<String> newShipPositions) {
         List<Ship> fleet = player.equals(player1) ? fleet1 : fleet2;
         Set<String> allPositions = new HashSet<>();
         for (Ship ship : fleet) {
@@ -228,7 +228,9 @@ public class BattleshipGame {
             int y = Integer.parseInt(pos.split(",")[1]);
             String[] adjacentPositions = {
                     (x-1) + "," + y, (x+1) + "," + y,
-                    x + "," + (y-1), x + "," + (y+1)
+                    x + "," + (y-1), x + "," + (y+1),
+                    (x-1) + "," + (y-1), (x-1) + "," + (y+1),
+                    (x+1) + "," + (y-1), (x+1) + "," + (y+1)
             };
             for (String adjPos : adjacentPositions) {
                 if (allPositions.contains(adjPos)) {
