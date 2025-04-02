@@ -108,6 +108,15 @@ public class BattleshipGame {
             gameState = GameState.IN_PROGRESS;
             logger.info("Game between '{}' and '{}' is now in progress", player1, player2);
 
+            PrintWriter out1 = Server.getPlayerOutput(player1);
+            PrintWriter out2 = Server.getPlayerOutput(player2);
+
+            if (out1 != null) {
+                out1.println("INFO: Game Started: Your turn.");
+            }
+            if (out2 != null) {
+                out2.println("INFO: Game Started: Opponent's turn");
+            }
 
             return true;
         }
