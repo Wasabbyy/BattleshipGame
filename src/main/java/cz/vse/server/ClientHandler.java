@@ -17,7 +17,11 @@ class ClientHandler implements Runnable {
     private PrintWriter out;
     private String username;
     private Timer afkTimer;
-    private static final long AFK_TIMEOUT = 2 * 60 * 1000; // 2 minutes
+    private static final long AFK_TIMEOUT = 2 * 60 * 1000; // 2 minuty
+
+    // --- KEEP-ALIVE ---
+    private Timer keepAliveTimer;
+    private static final long KEEP_ALIVE_INTERVAL = 30 * 1000; // 30 sekund
 
     public ClientHandler(Socket socket) {
         this.clientSocket = socket;
@@ -52,6 +56,7 @@ class ClientHandler implements Runnable {
             }
 
             startAfkTimer();
+            startKeepAlive(); // --- Spuštění keep-alive ---
 
             // Start a new thread to monitor the "EXIT" command
             Thread exitMonitor = new Thread(() -> {
@@ -69,7 +74,7 @@ class ClientHandler implements Runnable {
                                 }
                             }
                         }
-                        Thread.sleep(100); // Sleep briefly to avoid busy-waiting
+                        Thread.sleep(100);
                     }
                 } catch (IOException | InterruptedException e) {
                     logger.error("Error reading exit command for '{}'", username, e);
@@ -176,11 +181,12 @@ class ClientHandler implements Runnable {
         }
         handleDisconnection();
     }
+
     private synchronized String readInput() throws IOException {
         return in.readLine();
     }
 
-    private synchronized void  handleDisconnection() {
+    private synchronized void handleDisconnection() {
         logger.info("User '{}' disconnected.", username);
         cleanup();
     }
@@ -190,6 +196,10 @@ class ClientHandler implements Runnable {
             if (afkTimer != null) {
                 afkTimer.cancel();
                 afkTimer = null;
+            }
+            if (keepAliveTimer != null) { // --- Zrušení keep-alive timeru ---
+                keepAliveTimer.cancel();
+                keepAliveTimer = null;
             }
             if (username != null) {
                 Server.activeUsers.remove(username);
@@ -210,5 +220,22 @@ class ClientHandler implements Runnable {
                 logger.error("Error closing resources for {}", username, e);
             }
         }
+    }
+
+    private void startKeepAlive() {
+        keepAliveTimer = new Timer(true);
+        keepAliveTimer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                try {
+                    out.println("PING");
+                    out.flush();
+                    System.out.println("[" + username + "] Server odeslal PING klientovi.");
+                } catch (Exception e) {
+                    logger.error("Keep-alive PING failed for '{}'", username, e);
+                    handleDisconnection();
+                }
+            }
+        }, KEEP_ALIVE_INTERVAL, KEEP_ALIVE_INTERVAL);
     }
 }
