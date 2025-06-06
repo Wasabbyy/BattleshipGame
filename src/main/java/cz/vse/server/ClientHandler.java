@@ -33,12 +33,18 @@ class ClientHandler implements Runnable {
             in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             out = new PrintWriter(clientSocket.getOutputStream(), true);
 
-            out.println("INFO: Welcome to Battleships Server! Please log in using 'LOGIN: username'");
-            out.flush();
-
             String message;
+            // Přihlašovací smyčka s prioritou na CHECK
             while ((message = in.readLine()) != null) {
                 resetAfkTimer();
+                if (message.equalsIgnoreCase("CHECK")) {
+                    out.println("OK");
+                    out.flush();
+                    continue;
+                }
+                // První ne-CHECK zpráva → pošli uvítací zprávu a pokračuj v login procesu
+                out.println("INFO: Welcome to Battleships Server! Please log in using 'LOGIN: username'");
+                out.flush();
                 if (message.startsWith("LOGIN: ")) {
                     username = message.substring(7).trim();
                     if (Server.activeUsers.contains(username)) {
@@ -53,12 +59,13 @@ class ClientHandler implements Runnable {
                         break;
                     }
                 }
+                // Pokud to nebyl login, pokračuj ve smyčce
             }
 
             startAfkTimer();
-            startKeepAlive(); // --- Spuštění keep-alive ---
+            startKeepAlive();
 
-            // Start a new thread to monitor the "EXIT" command
+            // Monitorování příkazu EXIT a CHECK v samostatném vlákně
             Thread exitMonitor = new Thread(() -> {
                 try {
                     while (true) {
@@ -72,6 +79,10 @@ class ClientHandler implements Runnable {
                                     handleDisconnection();
                                     return;
                                 }
+                                if ("CHECK".equalsIgnoreCase(exitMessage)) {
+                                    out.println("OK");
+                                    out.flush();
+                                }
                             }
                         }
                         Thread.sleep(100);
@@ -82,10 +93,23 @@ class ClientHandler implements Runnable {
             });
             exitMonitor.start();
 
-            // Process READY message
-            message = in.readLine();
-            if ("READY".equalsIgnoreCase(message)) {
-                logger.info("Client '{}' is ready", username);
+            // Čekání na READY s prioritou na CHECK
+            while (true) {
+                message = in.readLine();
+                resetAfkTimer();
+                if (message == null) {
+                    handleDisconnection();
+                    return;
+                }
+                if (message.equalsIgnoreCase("CHECK")) {
+                    out.println("OK");
+                    out.flush();
+                    continue;
+                }
+                if ("READY".equalsIgnoreCase(message)) {
+                    logger.info("Client '{}' is ready", username);
+                    break;
+                }
             }
 
             BattleshipGame game;
@@ -105,7 +129,11 @@ class ClientHandler implements Runnable {
                     handleDisconnection();
                     return;
                 }
-
+                if (message.equalsIgnoreCase("CHECK")) {
+                    out.println("OK");
+                    out.flush();
+                    continue;
+                }
                 if (message.startsWith("PLACE ")) {
                     String[] parts = message.split(" ", 3);
                     if (parts.length < 3) {
@@ -132,6 +160,7 @@ class ClientHandler implements Runnable {
             out.println("INFO: Game started! Your opponent is " + game.getOpponent(username));
             out.flush();
 
+            // Hlavní smyčka pro zpracování zpráv během hry
             while (true) {
                 message = in.readLine();
                 resetAfkTimer();
@@ -139,7 +168,11 @@ class ClientHandler implements Runnable {
                     handleDisconnection();
                     return;
                 }
-
+                if (message.equalsIgnoreCase("CHECK")) {
+                    out.println("OK");
+                    out.flush();
+                    continue;
+                }
                 if (message.startsWith("FIRE ")) {
                     String move = message.substring(5).trim();
                     game.processMove(username, move, out);
@@ -197,7 +230,7 @@ class ClientHandler implements Runnable {
                 afkTimer.cancel();
                 afkTimer = null;
             }
-            if (keepAliveTimer != null) { // --- Zrušení keep-alive timeru ---
+            if (keepAliveTimer != null) {
                 keepAliveTimer.cancel();
                 keepAliveTimer = null;
             }
