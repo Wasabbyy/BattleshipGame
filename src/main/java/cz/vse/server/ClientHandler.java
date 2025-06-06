@@ -88,8 +88,10 @@ class ClientHandler implements Runnable {
                 Thread.sleep(500);
             }
 
-            out.println("INFO: Place your ships using 'PLACE shipType x,y x,y' (5 ships total)");
+            out.println("OPPONENT: " + game.getOpponent(username));
+            out.flush();
 
+            out.println("INFO: Place your ships using 'PLACE shipType x,y x,y' (5 ships total)");
             int shipsPlaced = 0;
             while (shipsPlaced < 5) {
                 message = in.readLine();

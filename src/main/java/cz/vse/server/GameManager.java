@@ -3,6 +3,7 @@ package cz.vse.server;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ConcurrentHashMap;
@@ -21,6 +22,7 @@ public class GameManager {
             activeGames.put(username, game);
             activeGames.put(opponent, game);
             logger.info("Game started: {} vs {}", username, opponent);
+
         } else {
             waitingPlayers.add(username);
             logger.info("{} is waiting for an opponent...", username);
