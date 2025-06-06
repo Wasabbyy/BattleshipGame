@@ -14,7 +14,7 @@ public class GameManager {
     private static final Queue<String> waitingPlayers = new ConcurrentLinkedQueue<>();
     private static final Map<String, BattleshipGame> activeGames = new ConcurrentHashMap<>();
 
-    public static synchronized void addPlayerToQueue(String username) {
+    public static void addPlayerToQueue(String username) {
         if (!waitingPlayers.isEmpty()) {
             String opponent = waitingPlayers.poll();
             BattleshipGame game = new BattleshipGame(username, opponent);

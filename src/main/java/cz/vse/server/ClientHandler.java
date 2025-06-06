@@ -17,7 +17,7 @@ class ClientHandler implements Runnable {
     private PrintWriter out;
     private String username;
     private Timer afkTimer;
-    private static final long AFK_TIMEOUT = 2 * 60 * 5000; // 2 minutes
+    private static final long AFK_TIMEOUT = 2 * 60 * 1000; // 2 minutes
 
     public ClientHandler(Socket socket) {
         this.clientSocket = socket;
@@ -57,14 +57,16 @@ class ClientHandler implements Runnable {
             Thread exitMonitor = new Thread(() -> {
                 try {
                     while (true) {
-                        if (in.ready()) {
-                            String exitMessage = in.readLine();
-                            resetAfkTimer();
-                            if ("EXIT".equalsIgnoreCase(exitMessage)) {
-                                out.println("Goodbye, " + username + "!");
-                                logger.info("User '{}' disconnected voluntarily.", username);
-                                handleDisconnection();
-                                return;
+                        synchronized (in) {
+                            if (in.ready()) {
+                                String exitMessage = readInput();
+                                resetAfkTimer();
+                                if ("EXIT".equalsIgnoreCase(exitMessage)) {
+                                    out.println("Goodbye, " + username + "!");
+                                    logger.info("User '{}' disconnected voluntarily.", username);
+                                    handleDisconnection();
+                                    return;
+                                }
                             }
                         }
                         Thread.sleep(100); // Sleep briefly to avoid busy-waiting
@@ -172,22 +174,39 @@ class ClientHandler implements Runnable {
         }
         handleDisconnection();
     }
+    private synchronized String readInput() throws IOException {
+        return in.readLine();
+    }
 
-    private void handleDisconnection() {
+    private synchronized void  handleDisconnection() {
         logger.info("User '{}' disconnected.", username);
         cleanup();
     }
 
     private void cleanup() {
-        if (username != null) {
-            Server.activeUsers.remove(username);
-            Server.removePlayerOutput(username);
-            //Server.checkAndShutdown();
-        }
         try {
-            clientSocket.close();
-        } catch (IOException e) {
-            logger.error("Error closing client socket for '{}'", username, e);
+            if (afkTimer != null) {
+                afkTimer.cancel();
+                afkTimer = null;
+            }
+            if (username != null) {
+                Server.activeUsers.remove(username);
+                Server.removePlayerOutput(username);
+                GameManager.removePlayer(username);
+
+                BattleshipGame game = GameManager.getGame(username);
+                if (game != null && game.getGameState() != GameState.FINISHED) {
+                    game.forfeit(username);
+                }
+            }
+        } catch (Exception e) {
+            logger.error("Error during cleanup for {}", username, e);
+        } finally {
+            try (BufferedReader ignored = in; PrintWriter ignoredOut = out) {
+                if (clientSocket != null) clientSocket.close();
+            } catch (IOException e) {
+                logger.error("Error closing resources for {}", username, e);
+            }
         }
     }
 }

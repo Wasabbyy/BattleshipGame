@@ -19,6 +19,7 @@ public class BattleshipGame {
     private GameState gameState;
     private List<Ship> fleet1 = new ArrayList<>();
     private List<Ship> fleet2 = new ArrayList<>();
+    private static final int GRID_SIZE = 10;
 
     public BattleshipGame(String player1, String player2) {
         this.player1 = player1;
@@ -147,6 +148,7 @@ public class BattleshipGame {
             return;
         }
 
+
         try {
             int x = Integer.parseInt(parts[0].trim());
             int y = Integer.parseInt(parts[1].trim());
@@ -155,6 +157,11 @@ public class BattleshipGame {
             char[][] enemyGrid = player.equals(player1) ? grid2 : grid1;
             List<Ship> enemyFleet = player.equals(player1) ? fleet2 : fleet1;
             PrintWriter opponentOut = Server.getPlayerOutput(getOpponent(player));
+
+            if (x < 0 || x >= GRID_SIZE || y < 0 || y >= GRID_SIZE) {
+                out.println("ERROR: Move out of bounds! Valid coordinates are between 0 and " + (GRID_SIZE - 1));
+                return;
+            }
 
             boolean hit = false;
             for (Ship ship : enemyFleet) {
@@ -249,5 +256,13 @@ public class BattleshipGame {
             }
         }
         return true;
+    }
+
+    public synchronized GameState getGameState() {
+        return gameState;
+    }
+
+    public synchronized void setGameState(GameState newState) {
+        this.gameState = newState;
     }
 }
