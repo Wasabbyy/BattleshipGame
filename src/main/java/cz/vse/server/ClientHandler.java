@@ -8,6 +8,7 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 class ClientHandler implements Runnable {
     private static final Logger logger = LogManager.getLogger(ClientHandler.class);
@@ -17,11 +18,12 @@ class ClientHandler implements Runnable {
     private PrintWriter out;
     private String username;
     private Timer afkTimer;
-    private static final long AFK_TIMEOUT = 2 * 60 * 1000; // 2 minuty
+    private static final long AFK_TIMEOUT = 20 * 1000; // 20 seconds
+    private final AtomicBoolean isConnected = new AtomicBoolean(true);
 
     // --- KEEP-ALIVE ---
     private Timer keepAliveTimer;
-    private static final long KEEP_ALIVE_INTERVAL = 30 * 1000; // 30 sekund
+    private static final long KEEP_ALIVE_INTERVAL = 30 * 1000; // 30 seconds
 
     public ClientHandler(Socket socket) {
         this.clientSocket = socket;
@@ -34,7 +36,6 @@ class ClientHandler implements Runnable {
             out = new PrintWriter(clientSocket.getOutputStream(), true);
 
             String message;
-            // Přihlašovací smyčka s prioritou na CHECK
             while ((message = in.readLine()) != null) {
                 resetAfkTimer();
                 if (message.equalsIgnoreCase("CHECK")) {
@@ -42,7 +43,6 @@ class ClientHandler implements Runnable {
                     out.flush();
                     continue;
                 }
-                // První ne-CHECK zpráva → pošli uvítací zprávu a pokračuj v login procesu
                 out.println("INFO: Welcome to Battleships Server! Please log in using 'LOGIN: username'");
                 out.flush();
                 if (message.startsWith("LOGIN: ")) {
@@ -59,16 +59,14 @@ class ClientHandler implements Runnable {
                         break;
                     }
                 }
-                // Pokud to nebyl login, pokračuj ve smyčce
             }
 
             startAfkTimer();
             startKeepAlive();
 
-            // Monitorování příkazu EXIT a CHECK v samostatném vlákně
             Thread exitMonitor = new Thread(() -> {
                 try {
-                    while (true) {
+                    while (isConnected.get()) {
                         synchronized (in) {
                             if (in.ready()) {
                                 String exitMessage = readInput();
@@ -87,20 +85,23 @@ class ClientHandler implements Runnable {
                         }
                         Thread.sleep(100);
                     }
-                } catch (IOException | InterruptedException e) {
-                    logger.error("Error reading exit command for '{}'", username, e);
+                } catch (IOException e) {
+                    if (isConnected.get()) {
+                        logger.debug("Exit monitor detected disconnection for '{}'", username);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
                 }
             });
             exitMonitor.start();
 
-            // Čekání na READY s prioritou na CHECK
-            while (true) {
+            while (isConnected.get()) {
                 message = in.readLine();
-                resetAfkTimer();
                 if (message == null) {
                     handleDisconnection();
                     return;
                 }
+                resetAfkTimer();
                 if (message.equalsIgnoreCase("CHECK")) {
                     out.println("OK");
                     out.flush();
@@ -111,24 +112,46 @@ class ClientHandler implements Runnable {
                     break;
                 }
             }
-
-            BattleshipGame game;
-            while ((game = GameManager.getGame(username)) == null) {
-                Thread.sleep(500);
+            BattleshipGame game = null;  // Explicitly initialize to null
+            try {
+                while (isConnected.get()) {
+                    game = GameManager.getGame(username);
+                    if (game != null) {
+                        break;  // Found a game, exit the loop
+                    }
+                    Thread.sleep(500);
+                }
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                logger.warn("Game waiting loop interrupted for '{}'", username);
+                handleDisconnection();
+                return;
             }
 
+// Comprehensive null check
+            if (game == null) {
+                if (isConnected.get()) {
+                    // Only log this as an error if we're still connected
+                    logger.error("Failed to find game for player '{}'", username);
+                    out.println("ERROR: Failed to start game");
+                }
+                handleDisconnection();
+                return;
+            }
+
+// Now we can safely use the game object
             out.println("OPPONENT: " + game.getOpponent(username));
             out.flush();
 
             out.println("INFO: Place your ships using 'PLACE shipType x,y x,y' (5 ships total)");
             int shipsPlaced = 0;
-            while (shipsPlaced < 5) {
+            while (isConnected.get() && shipsPlaced < 5) {
                 message = in.readLine();
-                resetAfkTimer();
                 if (message == null) {
                     handleDisconnection();
                     return;
                 }
+                resetAfkTimer();
                 if (message.equalsIgnoreCase("CHECK")) {
                     out.println("OK");
                     out.flush();
@@ -152,22 +175,25 @@ class ClientHandler implements Runnable {
                 }
             }
 
+            if (!isConnected.get()) return;
+
             out.println("INFO: All ships placed! Waiting for opponent...");
-            while (!game.isSetupComplete()) {
+            while (isConnected.get() && !game.isSetupComplete()) {
                 Thread.sleep(500);
             }
+
+            if (!isConnected.get()) return;
 
             out.println("INFO: Game started! Your opponent is " + game.getOpponent(username));
             out.flush();
 
-            // Hlavní smyčka pro zpracování zpráv během hry
-            while (true) {
+            while (isConnected.get()) {
                 message = in.readLine();
-                resetAfkTimer();
                 if (message == null) {
                     handleDisconnection();
                     return;
                 }
+                resetAfkTimer();
                 if (message.equalsIgnoreCase("CHECK")) {
                     out.println("OK");
                     out.flush();
@@ -189,11 +215,15 @@ class ClientHandler implements Runnable {
     }
 
     private void startAfkTimer() {
+        if (!isConnected.get()) return;
+
         afkTimer = new Timer(true);
         afkTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                handleAfk();
+                if (isConnected.get()) {
+                    handleAfk();
+                }
             }
         }, AFK_TIMEOUT);
     }
@@ -202,15 +232,23 @@ class ClientHandler implements Runnable {
         if (afkTimer != null) {
             afkTimer.cancel();
         }
-        startAfkTimer();
+        if (isConnected.get()) {
+            startAfkTimer();
+        }
     }
 
     private void handleAfk() {
+        if (username == null || !isConnected.get()) {
+            return;
+        }
         logger.info("User '{}' is AFK. Declaring as lost.", username);
         out.println("INFO: You have been inactive for too long. You lose!");
-        PrintWriter opponentOut = Server.getPlayerOutput(GameManager.getOpponent(username));
-        if (opponentOut != null) {
-            opponentOut.println("INFO: Your opponent was inactive for too long. You win!");
+        String opponent = GameManager.getOpponent(username);
+        if (opponent != null) {
+            PrintWriter opponentOut = Server.getPlayerOutput(opponent);
+            if (opponentOut != null) {
+                opponentOut.println("INFO: Your opponent was inactive for too long. You win!");
+            }
         }
         handleDisconnection();
     }
@@ -220,7 +258,24 @@ class ClientHandler implements Runnable {
     }
 
     private synchronized void handleDisconnection() {
-        logger.info("User '{}' disconnected.", username);
+        if (!isConnected.getAndSet(false)) {
+            return;
+        }
+
+        if (username != null) {
+            logger.info("User '{}' disconnected.", username);
+
+            // Notify the opponent
+            String opponent = GameManager.getOpponent(username);
+            if (opponent != null) {
+                PrintWriter opponentOut = Server.getPlayerOutput(opponent);
+                if (opponentOut != null) {
+                    opponentOut.println("INFO: Your opponent has left the game.");
+                    logger.info("Notified opponent '{}' about '{}' disconnection.", opponent, username);
+                }
+            }
+        }
+
         cleanup();
     }
 
@@ -234,7 +289,7 @@ class ClientHandler implements Runnable {
                 keepAliveTimer.cancel();
                 keepAliveTimer = null;
             }
-            if (username != null) {
+            if (username != null && isConnected.get()) {
                 Server.activeUsers.remove(username);
                 Server.removePlayerOutput(username);
                 GameManager.removePlayer(username);
@@ -247,7 +302,9 @@ class ClientHandler implements Runnable {
         } catch (Exception e) {
             logger.error("Error during cleanup for {}", username, e);
         } finally {
-            try (BufferedReader ignored = in; PrintWriter ignoredOut = out) {
+            try {
+                if (in != null) in.close();
+                if (out != null) out.close();
                 if (clientSocket != null) clientSocket.close();
             } catch (IOException e) {
                 logger.error("Error closing resources for {}", username, e);
@@ -260,6 +317,10 @@ class ClientHandler implements Runnable {
         keepAliveTimer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
+                if (!isConnected.get()) {
+                    this.cancel();
+                    return;
+                }
                 try {
                     out.println("PING");
                     out.flush();
